@@ -67,30 +67,30 @@ class DataCollection:
         self.logger.log("INFO", "STARTING EXPERIMENT")
         dir = os.listdir(self.workspacePath)
         for item in dir:
-            if (os.path.isdir(self.workspacePath + item)):
+            if os.path.isdir(self.workspacePath + item):
                 print("--------------------------------------")
                 self.logger.log("INFO", "TESTING PACKAGE: " + item)
                 path = self.workspacePath + item + "/"
                 apkDir = os.listdir(path)
                 for apk_item in apkDir:
                     regex = re.compile(self.apk_regex)
-                    if (os.path.isfile(path + apk_item) and regex.match(apk_item) != None):
+                    if os.path.isfile(path + apk_item) and regex.match(apk_item) is not None:
                         self.logger.log("INFO", "TESTING PACKAGE: " + item)
                         for i in range(0, self.numberOfRun):
                             self.logger.log("INFO", "RUN: " + str(i) + " OF: " + str(self.numberOfRun))
                             fileName = path + str(self.numberOfEvents) + self.resultName + str(i) + ".csv"
                             fileNameErr = path + str(self.numberOfEvents) + self.resultName + str(i) + ".csv.err"
-                            if (os.path.exists(fileName) == False and os.path.exists(fileNameErr) == False):
+                            if os.path.exists(fileName) == False and os.path.exists(fileNameErr) == False:
                                 self.logger.log("INFO", "RUN: " + str(i) + " OF: " + str(self.numberOfRun))
                                 emulatorInterface = EmulatorInterface(self.playerPath, self.VMName, self.emulator)
                                 emulatorInterface.restoreSnapshot("Snap1")
-                                emulatorInterface.runEmulator();
-                                controller = Controller(self.numberOfEvents, self.throttle);
-                                controller.run(path + apk_item, fileName, self.rndSeed);
-                                emulatorInterface.stopEmulator();
+                                emulatorInterface.runEmulator()
+                                controller = Controller(self.numberOfEvents, self.throttle)
+                                controller.run(path + apk_item, fileName, self.rndSeed)
+                                emulatorInterface.stopEmulator()
                             else:
-                                self.logger.log("INFO", "FILENAME: " + fileName + " ALREADY EXIST -- SKIPPPING");
-        self.logger.log("INFO", "FINISH EXPERIMENT");
+                                self.logger.log("INFO", "FILENAME: " + fileName + " ALREADY EXIST -- SKIPPPING")
+        self.logger.log("INFO", "FINISH EXPERIMENT")
 
 
 @click.command()
@@ -106,7 +106,7 @@ class DataCollection:
 @click.option("--throttle", default=1, help="Delay in microsecond between inputs events")
 def hello(workspacepath, resultname, emulator, playerpath, vmname, apk_regex, run, event, rndseed, throttle):
     experiment = DataCollection(workspacepath, resultname, emulator, playerpath, vmname, apk_regex, run, event, rndseed,
-                                throttle);
+                                throttle)
     experiment.runExperiment()
 
 

@@ -125,7 +125,7 @@ class WorkspacePreparator:
     # @param packageName = name of the package contained in the apk
     def InstallAndRun(self, apkName, packageName):
         genyUtil = EmulatorInterface(self.playerPath, self.VMName, self.emulator)
-        genyUtil.restoreSnapshot("Snap1")
+        # genyUtil.restoreSnapshot("Snap1") # Elad add : seems to be useless
         genyUtil.runEmulator()
         res = self.androidToolInterface.installAPK(apkName)
         if res == -1:

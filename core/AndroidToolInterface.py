@@ -151,7 +151,7 @@ class AndroidToolInterface:
             self.logger.log("ERROR", "ERROR LAUNCHING APPLICATION")
             return -1
 
-        (proc, err) = monkeyProcess.communicate();
+        (proc, err) = monkeyProcess.communicate()
 
         # catch no activity error
         if "No activities found to run, monkey aborted" in str(proc):
