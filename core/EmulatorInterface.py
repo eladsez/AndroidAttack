@@ -213,7 +213,7 @@ class EmulatorInterface:
         genyThread.start()
         genyThread.join(120)
 
-        if genyThread.isAlive():
+        if genyThread.is_alive():
             genyThread.join(0.150)
             self.logger.log("INFO", "GENYMOTION THREAD TIMEOUT")
             self.stopBoot = True

@@ -171,8 +171,7 @@ class MetricsCollector:
     # it return 0 if all went ok or -1 if there was an error
     # @param procOut = string containing the content of /proc/net/dev file
     def parseProcNetDev(self, procOut):
-        regex = re.compile(
-            "eth0:\s+\d+\s+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+")
+        regex = re.compile("wifi_eth:\s+\d+\s+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+")
         procOut = regex.findall(procOut)
         if len(procOut) == 0:
             self.logger.log("ERROR", "ERROR PARSING proc/net/dev, LENGHT: 0")
@@ -205,10 +204,10 @@ class MetricsCollector:
     # @param procOut = string containing the content of /proc/[pid]/stat file
     def parseProcPidStat(self, procOut):
         defLen = 0
-        if self.android_version == 4:
-            defLen = 47
-        elif self.android_version == 6:
-            defLen = 52
+        # if self.android_version == 4: # Elad comment because we in 52
+        #     defLen = 47
+        # elif self.android_version == 6:
+        defLen = 52
 
         procOut = procOut.split()
         if len(procOut) != defLen:
@@ -282,17 +281,17 @@ class MetricsCollector:
     # - /proc/[pid]/stat
     # - /proc/[pid]/statm
     # it return a string with the concatenated content of the file or -1 if there was an error
-    def readAll(self):
-        bashCommand = ['adb shell cat /proc/stat zz /proc/net/dev zz /proc/' + \
-                       str(self.pid) + '/stat zz /proc/' + str(self.pid) + '/statm']
+    def readAll(self):  # Elad comment the try and except because it seems like error was thrown when it was fine
+        # bashCommand = ['adb shell cat /proc/stat zz /proc/net/dev zz /proc/' +
+        # str(self.pid) + '/stat zz /proc/' + str(self.pid) + '/statm']
         try:
-            proc = subprocess.check_output(bashCommand, stderr=subprocess.STDOUT, shell=True)
-            # self.logger.log("DEBUG", "READ ALL COMMAND DONE");
-            return str(proc)
+            proc = [self.readProcStat(), self.readProcPidStat(), self.readProcNetDev(), self.readProcPidStatM()]
+            self.logger.log("DEBUG", "READ ALL COMMAND DONE")
+            return proc
         except subprocess.CalledProcessError as e:
             self.logger.log("ERROR", "ERROR READING FILE IN proc/pid/fd DONE")
             self.logger.log("ERROR", str(e.output))
-            return -1
+            return -1  # Elad comment
 
     # This method parse the concatenated content of files:
     # - /proc/stat
@@ -305,12 +304,12 @@ class MetricsCollector:
         self.procMetrics.time = str(datetime.now())
         res = self.readAll()
         if res != -1:
-            cmd = res.split("/system/bin/sh: cat: zz: No such file or directory")
+            # cmd = res.split("/system/bin/sh: cat: zz: No such file or directory") #  Elad comment this shit
             self.procMetrics.error = 0
-            if self.parseProcStat(cmd[0]) == -1: return -1
-            if self.parseProcNetDev(cmd[1]) == -1: return -1
-            if self.parseProcPidStat(cmd[2]) == -1: self.procMetrics.error = self.procMetrics.error + 1;
-            if self.parseProcPidStatM(cmd[3]) == -1: self.procMetrics.error = self.procMetrics.error + 1;
+            if self.parseProcStat(res[0]) == -1: return -1
+            if self.parseProcNetDev(res[2]) == -1: return -1
+            if self.parseProcPidStat(res[1]) == -1: self.procMetrics.error = self.procMetrics.error + 1
+            if self.parseProcPidStatM(res[3]) == -1: self.procMetrics.error = self.procMetrics.error + 1
             return self.procMetrics
         else:
             self.logger.log("ERROR", "ERROR READING FROM PROC")

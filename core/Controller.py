@@ -233,7 +233,7 @@ class Controller:
         monkey_thread.start()
         monkey_thread.join(300)
 
-        if monkey_thread.isAlive():
+        if monkey_thread.is_alive():
             self.logger.log("INFO", "MONKEY THREAD TIMEOUT")
             self.monkeyError = True
 
@@ -246,7 +246,7 @@ class Controller:
         self.logger.log("VERBOSE DEBUG", "QUEUE EMPTY")
         printingThread.do_run = False
 
-        while printingThread.isAlive():
+        while printingThread.is_alive():
             printingThread.do_run = False
             self.logger.log("VERBOSE DEBUG", "WAITING FOR PRINTING THREAD TO EXIT")
             time.sleep(0.2)
