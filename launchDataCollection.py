@@ -73,8 +73,9 @@ class DataCollection:
                 path = self.workspacePath + item + "/"
                 apkDir = os.listdir(path)
                 for apk_item in apkDir:
-                    regex = re.compile(self.apk_regex)
-                    if os.path.isfile(path + apk_item) and regex.match(apk_item) is not None:
+                    # regex = re.compile(self.apk_regex) # Elad commented
+                    # if os.path.isfile(path + apk_item) and regex.match(apk_item) is not None: # Elad commented
+                    if os.path.isfile(path + apk_item):
                         self.logger.log("INFO", "TESTING PACKAGE: " + item)
                         for i in range(0, self.numberOfRun):
                             self.logger.log("INFO", "RUN: " + str(i) + " OF: " + str(self.numberOfRun))
@@ -83,7 +84,7 @@ class DataCollection:
                             if os.path.exists(fileName) == False and os.path.exists(fileNameErr) == False:
                                 self.logger.log("INFO", "RUN: " + str(i) + " OF: " + str(self.numberOfRun))
                                 emulatorInterface = EmulatorInterface(self.playerPath, self.VMName, self.emulator)
-                                emulatorInterface.restoreSnapshot("Snap1")
+                                # emulatorInterface.restoreSnapshot("Snap1") # Elad commented seems to be not working
                                 emulatorInterface.runEmulator()
                                 controller = Controller(self.numberOfEvents, self.throttle)
                                 controller.run(path + apk_item, fileName, self.rndSeed)
