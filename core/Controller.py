@@ -96,7 +96,7 @@ class Controller:
             try:
                 self.logger.log("VERBOSE DEBUG", "DO RUN: " + str(getattr(t, "do_run", True)))
                 item = self.q.get(False)
-                out_file.write(item + "\n")
+                out_file.write(str(item) + "\n")   # Elad added
                 self.q.task_done()
             except Queue.Empty:
                 self.logger.log("VERBOSE DEBUG", "EMPTY")

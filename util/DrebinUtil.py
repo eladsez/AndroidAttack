@@ -17,7 +17,7 @@ import subprocess
 from util.Logger import Logger
 
 
-##This class implement some functions that are useful to deal with Drebin dataset;
+# This class implement some functions that are useful to deal with Drebin dataset;
 
 class DrebinUtil:
     datasetPath = ""  # PATH DEL DATASET

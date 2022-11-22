@@ -13,6 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import sys
+
 sys.path.append('/home/elad/Desktop/AndroidAttack/ANDRODfa/')
 from classification.MalwareClassifier import MalwareClassifier
 from classification.DataLoader import DataLoader
@@ -32,16 +33,17 @@ droidScribeFamily = ["Adrd", "BaseBridge", "DroidDream", "DroidKungFu", "Exploit
 
 
 @click.command()
-@click.option('--f', default=["feature.txt"], help='Data file to use. Use multiple times to load multiple files', multiple=True)
+@click.option('--f', default=["feature.txt"], help='Data file to use. Use multiple times to load multiple files',
+              multiple=True)
 @click.option('--experimentname', default="classification.txt", help='Name of the experiment, used for saving results')
-@click.option('--algorithm', default="poly", help="algorithm for classification: \
+@click.option('--algorithm', default="linear", help="algorithm for classification: \
 											  'linear':linear svm\n \
 											  'sgdSvm': linear svm with sgd\n \
 											  'rbf': non linear svm with rbf kernel\n \
 											  'poly': non linear svm with 3 poly kernel\n \
 											  'forest': random forest classifier\n")
-@click.option('--repetition', type=int, default=3, help='number of experiment repetition')
-@click.option('--threshold', type=int, default=0,
+@click.option('--repetition', type=int, default=1, help='number of experiment repetition')
+@click.option('--threshold', type=int, default=1,
               help="threshold for selecting families. If == 0 use same family as droidscribe")
 def mymain(f, experimentname, repetition, algorithm, threshold):
     warnings.filterwarnings("ignore")

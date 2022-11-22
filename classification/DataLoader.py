@@ -76,13 +76,13 @@ class DataLoader:
         data = np.concatenate([x["data"] for x in dataList])
         packageStr = np.concatenate([x["packageStr"] for x in dataList])
         familyStr = np.concatenate([x["familyStr"] for x in dataList])
-        familyEncoder = preprocessing.LabelEncoder();
-        family = familyEncoder.fit_transform(familyStr);
-        packageEncoder = preprocessing.LabelEncoder();
-        package = packageEncoder.fit_transform(packageStr);
-        return ({'data': data, 'package': package, 'family': family, \
-                 'familyEncoder': familyEncoder, 'packetEncoder': packageEncoder, \
-                 'familyStr': familyStr, 'packageStr': packageStr});
+        familyEncoder = preprocessing.LabelEncoder()
+        family = familyEncoder.fit_transform(familyStr)
+        packageEncoder = preprocessing.LabelEncoder()
+        package = packageEncoder.fit_transform(packageStr)
+        return ({'data': data, 'package': package, 'family': family,
+                 'familyEncoder': familyEncoder, 'packetEncoder': packageEncoder,
+                 'familyStr': familyStr, 'packageStr': packageStr})
 
     ##This method merge data loaded from different files
     # It return the same object of load data extended to all data in the dataList
@@ -91,12 +91,12 @@ class DataLoader:
         dataLists = []
         for i, filename in enumerate(fileLists):
             if os.path.isfile(filename):
-                data = self.loadData(filename);
+                data = self.loadData(filename)
                 for j in range(0, len(data["packageStr"])):
-                    data["packageStr"][j] += "_" + str(i);
-                dataLists.append(data);
+                    data["packageStr"][j] += "_" + str(i)
+                dataLists.append(data)
             else:
                 print("File note found: " + filename)
-        if (len(dataLists) > 0):
+        if len(dataLists) > 0:
             datas = self.mergeData(dataLists)
-        return (datas);
+        return datas

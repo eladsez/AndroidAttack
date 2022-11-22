@@ -86,7 +86,7 @@ class ProcMetrics:
               self.transmit_packet + "," + self.state + "," + self.minflt + "," + self.cminflt + "," + \
               self.majflt + "," + self.cmajflt + "," + self.utime + "," + self.stime + "," + self.cutime + "," + \
               self.cstime + "," + self.numthreads + "," + self.vss + "," + self.rss + "," + self.processor + "," + \
-              self.rmsize + "," + self.vmsize + "," + self.shared + "," + self.text + "," + self.data;
+              self.rmsize + "," + self.vmsize + "," + self.shared + "," + self.text + "," + self.data
         return str
 
 
@@ -268,8 +268,10 @@ class MetricsCollector:
             self.procMetrics.text = "0"
             self.procMetrics.data = "0"
             return -1
-
-        self.procMetrics.rmsize = procOut[0]  # total size
+        if 'b\'' in procOut[0]:
+            self.procMetrics.rmsize = procOut[0].replace('b\'', '')
+        else:
+            self.procMetrics.rmsize = procOut[0]    # total size
         self.procMetrics.vmsize = procOut[1]
         self.procMetrics.shared = procOut[2]
         self.procMetrics.text = procOut[3]

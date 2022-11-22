@@ -21,9 +21,9 @@ import warnings
 @click.command()
 @click.option('--dictionarypath', default="./drebin_apk", help='Path of Drebin Dataset Dictionary')
 @click.option('--workspacepath', default="./workspace/", help='Path of framework workspace')
-@click.option('--algorithm', default="sampen", help='Feature extraction algorithm: sampen,dfa')
+@click.option('--algorithm', default="dfa", help='Feature extraction algorithm: sampen,dfa')
 @click.option('--filename', default="feature.txt", help='filename for saving feature.txt (optional)')
-@click.option('--regex', default="\w*300_result_\d+.csv", help='regex for file name')
+@click.option('--regex', default="\w*300data_out\d+.csv", help='regex for file name')
 @click.option('--ncpus', default=1, help='number of cpus for parallel processing')
 def mymain(dictionarypath, workspacepath, algorithm, filename, regex, ncpus):
     featuresExtractor = FeaturesExtractor(dictionarypath, workspacepath, algorithm, regex, ncpus)

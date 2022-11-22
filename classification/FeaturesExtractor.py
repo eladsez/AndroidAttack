@@ -40,7 +40,7 @@ class FeaturesExtractor:
     resObj = ""
     ncpus = 1
 
-    ##The constructor
+    # The constructor
     # @param dictionaryPath = path of the drebin dataset dictionary
     # @param workspacePath = path of the workspace where malware execution data are stored
     # @param algorithm = to use for feature.txt extraction
@@ -54,7 +54,7 @@ class FeaturesExtractor:
         self.dataRegexStr = regex
         self.ncpus = ncpus
 
-    ##This methods process the metrics read from data file and prepare them for feature.txt
+    # This methods process the metrics read from data file and prepare them for feature.txt
     # extraction algorithms.
     # It returns a matrix with the processed data
     # @param metrics = matrix of the metrics read from the file
@@ -62,84 +62,83 @@ class FeaturesExtractor:
         # u_cpu,n_cpu,s_cpu,i_cpu,io_cpu,irq_cpu,sirq_cpu,st_cpu,utime,stime,cutime,cstime
         cpuData = np.concatenate((metrics[:, range(0, 8)], metrics[:, range(16, 20)]), axis=1)
         cpuTotal = np.sum(cpuData, axis=1)
-        cpuTotalDiff = np.diff(cpuTotal);
-        cpuDataDiff = np.diff(cpuData, axis=0);
+        cpuTotalDiff = np.diff(cpuTotal)
+        cpuDataDiff = np.diff(cpuData, axis=0)
         cpuZero = np.where(cpuTotalDiff == 0)
-        cpuTotalDiff = np.delete(cpuTotalDiff, cpuZero);
-        cpuDataDiff = np.delete(cpuDataDiff, cpuZero, axis=0);
-        cpuPerc = np.divide(cpuDataDiff, cpuTotalDiff.reshape(cpuTotalDiff.shape[0], 1) \
-                            .repeat(12, axis=1));
+        cpuTotalDiff = np.delete(cpuTotalDiff, cpuZero)
+        cpuDataDiff = np.delete(cpuDataDiff, cpuZero, axis=0)
+        cpuPerc = np.divide(cpuDataDiff, cpuTotalDiff.reshape(cpuTotalDiff.shape[0], 1)
+                            .repeat(12, axis=1))
 
         # receive_byte,receive_packet,transmit_byte,transmit_packet
-        wifiData = metrics[:, range(8, 12)];
-        wifiDataDiff = np.diff(wifiData, axis=0);
-        wifiDataDiff = np.delete(wifiDataDiff, cpuZero, axis=0);
+        wifiData = metrics[:, range(8, 12)]
+        wifiDataDiff = np.diff(wifiData, axis=0)
+        wifiDataDiff = np.delete(wifiDataDiff, cpuZero, axis=0)
 
         # thread, processor
-        systemData = metrics[:, (20, 23)];
-        systemData = np.delete(systemData, cpuZero, axis=0);
-        systemData = np.delete(systemData, 0, axis=0);
+        systemData = metrics[:, (20, 23)]
+        systemData = np.delete(systemData, cpuZero, axis=0)
+        systemData = np.delete(systemData, 0, axis=0)
 
         # vss,rss,rmsize,shared
-        memoryData = metrics[:, (21, 22, 24, 26)];
-        memoryData = np.delete(memoryData, cpuZero, axis=0);
-        memoryData = np.delete(memoryData, 0, axis=0);
+        memoryData = metrics[:, (21, 22, 24, 26)]
+        memoryData = np.delete(memoryData, cpuZero, axis=0)
+        memoryData = np.delete(memoryData, 0, axis=0)
 
         # min,cmin,maj,cmaj
-        errorData = metrics[:, (12, 13, 14, 15)];
-        errorData = np.delete(errorData, cpuZero, axis=0);
-        errorData = np.delete(errorData, 0, axis=0);
+        errorData = metrics[:, (12, 13, 14, 15)]
+        errorData = np.delete(errorData, cpuZero, axis=0)
+        errorData = np.delete(errorData, 0, axis=0)
         datas = np.concatenate((cpuPerc, memoryData, systemData, errorData, wifiDataDiff), axis=1)
-        return (datas);
+        return datas
 
     ##This method calculate to percentile resource consumption for cpus metrics
-    # It return an array with the percentile of cpu usage for each cpu metrics
+    # It returns an array with the percentile of cpu usage for each cpu metrics
     # @param metrics = matrix of the metrics read from the data file
     def consumption(self, metrics):
         cpuData = np.concatenate((metrics[:, range(0, 8)], metrics[:, range(16, 20)]), axis=1)
-        cpuTotal = np.sum(cpuData, axis=1);
-        totalTimeCpu = np.sum(cpuTotal);
+        cpuTotal = np.sum(cpuData, axis=1)
+        totalTimeCpu = np.sum(cpuTotal)
 
         ret = np.empty([cpuData.shape[1], 1])
         for i in range(0, cpuData.shape[1]):
-            ret[i] = np.sum(cpuData[:, i]) / totalTimeCpu;
-        return (ret);
+            ret[i] = np.sum(cpuData[:, i]) / totalTimeCpu
+        return ret
 
-    ##This method read data registered during application execution
-    # It return an object with 3 keys:
+    # This method read data registered during application execution
+    # It returns an object with 3 keys:
     # - data: matrix of the data read
     # - error: true if there was an error reading data
-    # - time: timestamp of the each row of the data matrix
+    # - time: timestamp of the row of the data matrix
     # @param name = name of the file to read
     def readFile(self, name):
-        column = list(range(1, 13)) + list(range(14, 29));
+        column = list(range(1, 13)) + list(range(14, 29))
         try:
             my_data = np.genfromtxt(name, delimiter=',', skip_header=3, usecols=column, dtype=float)
-            error = False;
+            error = False
         except:
             my_data = np.zeros([27, 2])
-            error = True;
-
+            error = True
         try:
             rss = np.genfromtxt(name, delimiter=',', skip_header=3, usecols=26, dtype=str)
             for i in range(0, rss.shape[0]):
                 rss[i] = rss[i].replace('\\r\\n', '')
                 my_data[i, 24] = int(rss[i])
-            error = False;
+            error = False
         except:
             my_data = np.zeros([27, 2])
-            error = True;
+            error = True
 
         try:
             time = np.genfromtxt(name, delimiter=',', skip_header=3, usecols=[0], dtype=None, encoding=None)
-            error = False;
+            error = False
         except:
             time = np.zeros([1, 2])
-            error = True;
+            error = True
 
-        return ({"data": my_data, "error": error, "time": time});
+        return {"data": my_data, "error": error, "time": time}
 
-    ##This method compute the correlation matrix between all the metrics and select the
+    # This method compute the correlation matrix between all the metrics and select the
     # under diagonal pieces of the matrix.
     # It returns the under diagonal matrix as a one dimensional array
     # @param  data = data matrix to compute correlation
@@ -147,13 +146,13 @@ class FeaturesExtractor:
         temp = np.corrcoef(data.T)
         numFeat = int(round((temp.shape[0] * temp.shape[0]) - temp.shape[0]) / 2)
         feature = np.zeros([numFeat, 1])
-        count = 0;
+        count = 0
         for i in range(0, temp.shape[0]):
             for j in range(0, temp.shape[0]):
-                if (i < j):
+                if i < j:
                     feature[count] = temp[i, j]
                     count += 1
-        return (feature)
+        return feature
 
     ##This method handle extraction of the feature.txt with the selected algorithm for a single
     # file.
@@ -162,8 +161,7 @@ class FeaturesExtractor:
     def processSingleFile(self, file):
         self.logger.log("INFO", "EXTRACTING FEATURE {} FROM FILE: {}".format(self.algorithm, file))
 
-        res = self.readFile(file);
-
+        res = self.readFile(file)
         if self.algorithm == 'DfaMeanCorr':
             feature = np.zeros([378, 1])
         else:
@@ -244,7 +242,6 @@ class FeaturesExtractor:
     # it returns the feature.txt matrix in which rows correspond to different file
     # @param path = path of the folder to process
     def parallelProcessDataFile(self, path):
-        featuresMatrix = None
         N = 0
         files = os.listdir(path)
         regex = re.compile(self.dataRegexStr)
@@ -321,7 +318,6 @@ class FeaturesExtractor:
             if os.path.isdir(self.workspacePath + item):
                 path = self.workspacePath + item + "/"
                 res = self.processPackageFolder(path, item)
-                print(res)
                 if "error" not in res:
                     featureMatrix = res["featureMatrix"]
                     packetLabels = packetLabels + res["packetLabel"]
@@ -342,7 +338,6 @@ class FeaturesExtractor:
         else:
             obj = {"featureMatrix": features, "familyLabels": familyLabels, "packetLabels": packetLabels}
             self.resObj = obj
-            print(obj)
             return self.resObj
 
     # This method save the result of feature.txt extraction into a file that will be used for
