@@ -57,7 +57,6 @@ class WorkspacePreparator:
         self.obfuscatorPath = obfuscatorPath
         self.androidToolInterface = AndroidToolInterface()
         self.logger = Logger(3)
-        print(self.emulator)
 
     # This methods check if an apk directory already exists. if it exist it creates a new
     # folder with the incremental name of the package
@@ -85,7 +84,7 @@ class WorkspacePreparator:
         datasetFiles = os.listdir(self.datasetPath)
         copiedCount = 0
         self.logger.log("INFO", "FOUND {} IN DATASET FOLDER".format(len(datasetFiles)))
-        # regex = re.compile('\w{64}')
+        # regex = re.compile('\w{64}')  Elad comment (check with filename is a word with 64 chars)
         for file in datasetFiles:
             # if (regex.match(file) != None):
             self.logger.log("INFO", "ANALISING FILE: {}".format(file))
@@ -164,7 +163,7 @@ class WorkspacePreparator:
     def testPackage(self, filename, folder, packageName):
         if self.test == "run":
             res = self.InstallAndRun(filename, packageName)
-        elif self.test == "none":
+        elif self.test == "null":
             res = 0
         elif self.test == "obfrun":
             obfName = folder + "/obf_" + packageName + ".apk"
@@ -196,13 +195,13 @@ class WorkspacePreparator:
 
 
 @click.command()
-@click.option('--command', default="", required=1, help='prepare|clear')
-@click.option('--datasetpath', default="", help='Path of Drebin Dataset Dictionary')
-@click.option('--workspacepath', default="", required=1, help='Path of framework workspace')
-@click.option('--emulator', default="", help='Emulator to use vbox|geny')
+@click.option('--command', default="prepare", required=1, help='prepare|clear')
+@click.option('--datasetpath', default="apk_data/drebin_apk/", help='Path of Drebin Dataset Dictionary')
+@click.option('--workspacepath', default="./workspace/", required=1, help='Path of framework workspace')
+@click.option('--emulator', default="vbox", help='Emulator to use vbox|geny')
 @click.option('--playerpath', default="", help='Path of genymotion player')
-@click.option('--vmname', default="", help='Virtual Machine Name')
-@click.option('--test', default="", help='Test Type: run,obf,obfrun,null')
+@click.option('--vmname', default="AndroidAttack", help='Virtual Machine Name')
+@click.option('--test', default="null", help='Test Type: run,obf,obfrun,null')
 @click.option('--obfuscatorpath', default="", help='Path to shield4j jar')
 def main(command, datasetpath, workspacepath, emulator, playerpath, vmname, test, obfuscatorpath):
     workspacePreparator = WorkspacePreparator(datasetpath, workspacepath, emulator, playerpath, vmname, test,

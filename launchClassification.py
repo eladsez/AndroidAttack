@@ -13,18 +13,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import sys
-
 sys.path.append('/home/elad/Desktop/AndroidAttack/ANDRODfa/')
+
 from classification.MalwareClassifier import MalwareClassifier
 from classification.DataLoader import DataLoader
-from classification.Classifier import Classifier
 import warnings
-import pickle
-import os
 import click
-from sklearn.decomposition import PCA
-from sklearn.feature_selection import SelectPercentile
-from sklearn.feature_selection import mutual_info_classif
 
 droidScribeFamily = ["Adrd", "BaseBridge", "DroidDream", "DroidKungFu", "ExploitLinuxLotoor",
                      "FakeDoc", "FakeInstaller", "FakeRun", "Gappusin", "GinMaster", "Glodream",
@@ -54,6 +48,7 @@ def mymain(f, experimentname, repetition, algorithm, threshold):
         datas = malwareClassifier.selDataByFamily(datas, droidScribeFamily)
     else:
         datas = malwareClassifier.cleanClass(datas, threshold)
+        print(datas)
     res = malwareClassifier.prepareAndRunExperiment(datas, repetition, algorithm, experimentname)
 
 

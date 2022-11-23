@@ -23,11 +23,11 @@ import warnings
 @click.option('--workspacepath', default="./workspace/", help='Path of framework workspace')
 @click.option('--algorithm', default="dfa", help='Feature extraction algorithm: sampen,dfa')
 @click.option('--filename', default="feature.txt", help='filename for saving feature.txt (optional)')
-@click.option('--regex', default="\w*300data_out\d+.csv", help='regex for file name')
+@click.option('--regex', default="\w*500out_data\d+.csv", help='regex for file name')
 @click.option('--ncpus', default=1, help='number of cpus for parallel processing')
 def mymain(dictionarypath, workspacepath, algorithm, filename, regex, ncpus):
     featuresExtractor = FeaturesExtractor(dictionarypath, workspacepath, algorithm, regex, ncpus)
-    featuresExtractor.extractFeature()
+    print(featuresExtractor.extractFeature())
     featuresExtractor.saveData(filename)
 
 

@@ -95,16 +95,16 @@ class DataCollection:
 
 
 @click.command()
-@click.option("--workspacepath", default="", help="Workspace path of apk")
-@click.option("--resultname", default="", help="Prefix of data files")
-@click.option("--emulator", default="", help="Name of emulator: vbox|geny")
+@click.option("--workspacepath", default="./workspace/", help="Workspace path of apk")
+@click.option("--resultname", default="out_data", help="Prefix of data files")
+@click.option("--emulator", default="vbox", help="Name of emulator: vbox|geny")
 @click.option("--playerpath", default="", help="Path of genymotion player")
-@click.option("--vmname", default="", help="Name of virtual machine")
-@click.option("--apk_regex", default="\w{64}.apk", help="Regex for apk files (optional)")
-@click.option("--run", default=0, help="Number of run for each packet")
-@click.option("--event", default=0, help="Number of event for each run")
+@click.option("--vmname", default="AndroidAttack", help="Name of virtual machine")
+@click.option("--apk_regex", default="*.apk", help="Regex for apk files (optional)")
+@click.option("--run", default=1, help="Number of run for each packet")
+@click.option("--event", default=500, help="Number of event for each run")
 @click.option("--rndseed", default=False, help="True if you want change the simulated event every run")
-@click.option("--throttle", default=1, help="Delay in microsecond between inputs events")
+@click.option("--throttle", default=50, help="Delay in microsecond between inputs events")
 def hello(workspacepath, resultname, emulator, playerpath, vmname, apk_regex, run, event, rndseed, throttle):
     experiment = DataCollection(workspacepath, resultname, emulator, playerpath, vmname, apk_regex, run, event, rndseed,
                                 throttle)
