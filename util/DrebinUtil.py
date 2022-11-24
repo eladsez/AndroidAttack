@@ -48,8 +48,8 @@ class DrebinUtil:
         else:
             malwareFamilyList = output.split(",")
             malwareFamily = malwareFamilyList[1]
-            malwareFamily = malwareFamily.replace("\r", " ")
-            malwareFamily = malwareFamily.replace("\n", " ")
+            malwareFamily = malwareFamily.replace("\r", "")
+            malwareFamily = malwareFamily.replace("\n", "")
             self.logger.log("INFO", "MALWARE FAMILY: " + malwareFamily)
         return malwareFamily
 

@@ -1,6 +1,6 @@
+import re
 import subprocess
 import click
-import os
 from progressbar import *  # just a simple progress bar
 
 
@@ -13,12 +13,13 @@ def write_family(apk_list, family):
     index = 0
 
     for apk in apk_list:
-        bash_array = ["sha256sum", apk]
-        process = subprocess.Popen(bash_array, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        sha, error = process.communicate()
-        if error or not sha:
-            continue
-        family_out += str(sha.decode().split()[0]) + ',' + family + '\n'
+        if ".apk" in apk:
+            bash_array = ["sha256sum", apk]
+            process = subprocess.Popen(bash_array, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            sha, error = process.communicate()
+            if error or not sha:
+                continue
+            family_out += str(sha.decode().split()[0]) + ',' + family + '\n'
 
         index += 1
         pbar.update(index)
@@ -27,8 +28,8 @@ def write_family(apk_list, family):
 
 
 @click.command()
-@click.option('--benign_path', default="./apk_data/benign_apk/test/", help='')
-@click.option('--drebin_path', default="./apk_data/drebin_apk", help='')
+@click.option('--benign_path', default="./../class_data/bnign_apk/0/train/", help='')
+@click.option('--drebin_path', default="./../class_data", help='')
 @click.option('--output_path', default="apk_dict.txt", help='')
 def my_main(benign_path, drebin_path, output_path):
     cwd = os.getcwd()
@@ -40,11 +41,11 @@ def my_main(benign_path, drebin_path, output_path):
     res = write_family(benign_apks, "benign")
     output_file.write(res)
 
-    os.chdir(cwd)
-    drebin_apks = os.listdir(drebin_path)
-    os.chdir(drebin_path)
-    res = write_family(drebin_apks, "drebin")
-    output_file.write(res)
+    # os.chdir(cwd)
+    # drebin_apks = os.listdir(drebin_path)
+    # os.chdir(drebin_path)
+    # res = write_family(drebin_apks, "drebin")
+    # output_file.write(res)
 
     output_file.close()
 
