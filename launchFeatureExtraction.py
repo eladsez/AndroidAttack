@@ -19,7 +19,7 @@ import warnings
 
 
 @click.command()
-@click.option('--dictionarypath', default="./drebin_apk", help='Path of Drebin Dataset Dictionary')
+@click.option('--dictionarypath', default="", help='Path of Drebin Dataset Dictionary')
 @click.option('--workspacepath', default="./workspace/", help='Path of framework workspace')
 @click.option('--algorithm', default="dfa", help='Feature extraction algorithm: sampen,dfa')
 @click.option('--filename', default="feature.txt", help='filename for saving feature.txt (optional)')

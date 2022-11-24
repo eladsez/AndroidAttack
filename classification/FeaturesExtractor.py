@@ -283,11 +283,11 @@ class FeaturesExtractor:
         malwareFamily = "undefined"
         # search for malware family
         for apk in dataFiles:
-            # regex = re.compile('\w{64}.apk')  # Elad comment
-            # if (regex.match(apk) != None): # Elad comment
-            name = apk.split(".")
-            self.logger.log("DEBUG", name[0])
-            malwareFamily = self.drebinUtil.readMalwareFamily(name[0])
+            pattern = "*apk"
+            regex = re.compile(pattern)
+            if regex.match(apk) is not None:
+                self.logger.log("DEBUG", apk)
+                malwareFamily = self.drebinUtil.readMalwareFamily(apk)
         self.logger.log("INFO", "MALWARE FAMILY: " + malwareFamily)
 
         # feature.txt calculation for each data file

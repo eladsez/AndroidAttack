@@ -20,11 +20,12 @@ from classification.DataLoader import DataLoader
 import warnings
 import click
 
-droidScribeFamily = ["Adrd", "BaseBridge", "DroidDream", "DroidKungFu", "ExploitLinuxLotoor",
-                     "FakeDoc", "FakeInstaller", "FakeRun", "Gappusin", "GinMaster", "Glodream",
-                     "Iconosys", "Jifake", "Kmin", "Opfake", "Plankton", "SMSreg", "SendPay",
-                     "Yzhc", "MobileTx", "Imlog", "Boxer", "Geinimi"]
+# droidScribeFamily = ["Adrd", "BaseBridge", "DroidDream", "DroidKungFu", "ExploitLinuxLotoor",
+#                      "FakeDoc", "FakeInstaller", "FakeRun", "Gappusin", "GinMaster", "Glodream",
+#                      "Iconosys", "Jifake", "Kmin", "Opfake", "Plankton", "SMSreg", "SendPay",
+#                      "Yzhc", "MobileTx", "Imlog", "Boxer", "Geinimi"]
 
+droidScribeFamily = ["bengin", "drebin"]
 
 @click.command()
 @click.option('--f', default=["feature.txt"], help='Data file to use. Use multiple times to load multiple files',
