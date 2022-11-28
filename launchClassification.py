@@ -38,8 +38,8 @@ droidScribeFamily = ["bengin", "drebin"]
 'rbf': non linear svm with rbf kernel\n \
 'poly': non linear svm with 3 poly kernel\n \
 'forest': random forest classifier\n")
-@click.option('--repetition', type=int, default=1, help='number of experiment repetition')
-@click.option('--threshold', type=int, default=0,
+@click.option('--repetition', type=int, default=20, help='number of experiment repetition')
+@click.option('--threshold', type=int, default=2,
               help="threshold for selecting families. If == 0 use same family as droidscribe")
 def mymain(f, experimentname, repetition, algorithm, threshold):
     warnings.filterwarnings("ignore")
@@ -50,8 +50,8 @@ def mymain(f, experimentname, repetition, algorithm, threshold):
         datas = malwareClassifier.selDataByFamily(datas, droidScribeFamily)
     else:
         datas = malwareClassifier.cleanClass(datas, threshold)
-        print(datas)
     res = malwareClassifier.prepareAndRunExperiment(datas, repetition, algorithm, experimentname)
+    print(res)
 
 
 if __name__ == '__main__':

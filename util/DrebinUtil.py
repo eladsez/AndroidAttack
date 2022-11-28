@@ -15,6 +15,7 @@
 
 import subprocess
 from util.Logger import Logger
+import hashlib
 
 
 # This class implement some functions that are useful to deal with Drebin dataset;
@@ -26,7 +27,7 @@ class DrebinUtil:
     logLevel = 3
     __logger = ""
 
-    ##The constructor:
+    # The constructor:
     # @param datasetPath = path of the dataset;
     # @param testPath = path of the workspace;
     # @param dictionaryPath = path of the drebin dictionary;
@@ -38,11 +39,12 @@ class DrebinUtil:
 
     # This method read from the dictionary the family of a sample;
     # @param fileName = the name of the sample to find the family  ;  
-    def readMalwareFamily(self, fileName):
-        bashArray = ["grep", fileName, self.dictionary]
+    def readMalwareFamily(self, fullPath):
+        sha256 = subprocess.check_output(f"sha256sum {fullPath}", stderr=subprocess.STDOUT, shell=True).split()[0]
+        bashArray = ["grep", sha256, self.dictionary]
         process = subprocess.Popen(bashArray, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output, error = process.communicate()
-        output = str(output)
+        output = str(output.decode())
         if error or not output:
             malwareFamily = "UKNOWN"
         else:

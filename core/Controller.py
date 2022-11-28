@@ -166,7 +166,7 @@ class Controller:
     def get_pid(self, packageName):
         splinted = packageName.split('.')
         new_package_name = ''
-        for i in range(0, len(splinted) - 2):
+        for i in range(0, len(splinted) - 1):
             if i != 0:
                 new_package_name += '.'
             new_package_name += splinted[i]

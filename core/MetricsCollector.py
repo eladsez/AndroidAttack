@@ -139,7 +139,10 @@ class MetricsCollector:
         if len(procOut) == 0:
             self.logger.log("ERROR", "ERROR PARSING proc/net/dev, LENGHT: 0")
             return -1
-        procOut = procOut[0].split()
+        if type(procOut[0]) is str:
+            procOut = procOut[0].split()
+        else:
+            return -1
         if len(procOut) != 11:
             self.logger.log("ERROR", "ERROR PARSING proc/stat, LENGHT: " + str(len(procOut)))
             return -1
@@ -171,12 +174,16 @@ class MetricsCollector:
     # it return 0 if all went ok or -1 if there was an error
     # @param procOut = string containing the content of /proc/net/dev file
     def parseProcNetDev(self, procOut):
-        regex = re.compile("wifi_eth:\s+\d+\s+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+")
+        regex = re.compile(
+            "wifi_eth:\s+\d+\s+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+")
         procOut = regex.findall(procOut)
         if len(procOut) == 0:
             self.logger.log("ERROR", "ERROR PARSING proc/net/dev, LENGHT: 0")
             return -1
-        procOut = procOut[0].split()
+        if type(procOut[0]) is str:
+            procOut = procOut[0].split()
+        else:
+            return -1
         if len(procOut) != 17:
             self.logger.log("ERROR", "ERROR PARSING proc/net/dev, LENGHT: " + str(len(procOut)))
             return -1
@@ -208,8 +215,10 @@ class MetricsCollector:
         #     defLen = 47
         # elif self.android_version == 6:
         defLen = 52
-
-        procOut = procOut.split()
+        if type(procOut) is str:
+            procOut = procOut.split()
+        else:
+            return -1
         if len(procOut) != defLen:
             self.logger.log("ERROR", "ERROR PARSING proc/pid/stat, LENGHT: " + str(len(procOut)))
             self.procMetrics.state = "0"  # status
@@ -259,7 +268,10 @@ class MetricsCollector:
     # it return 0 if all went ok or -1 if there was an error
     # @param procOut = string containing the content of /proc/[pid]/statm file
     def parseProcPidStatM(self, procOut):
-        procOut = procOut.split()
+        if type(procOut) is str:
+            procOut = procOut.split()
+        else:
+            return -1
         if len(procOut) != 7:
             self.logger.log("ERROR", "ERROR PARSING proc/pid/statm, LENGHT: " + str(len(procOut)))
             self.procMetrics.rmsize = "0"  # total size
@@ -271,7 +283,7 @@ class MetricsCollector:
         if 'b\'' in procOut[0]:
             self.procMetrics.rmsize = procOut[0].replace('b\'', '')
         else:
-            self.procMetrics.rmsize = procOut[0]    # total size
+            self.procMetrics.rmsize = procOut[0]  # total size
         self.procMetrics.vmsize = procOut[1]
         self.procMetrics.shared = procOut[2]
         self.procMetrics.text = procOut[3]
