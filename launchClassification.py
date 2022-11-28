@@ -39,7 +39,7 @@ droidScribeFamily = ["bengin", "drebin"]
 'poly': non linear svm with 3 poly kernel\n \
 'forest': random forest classifier\n")
 @click.option('--repetition', type=int, default=1, help='number of experiment repetition')
-@click.option('--threshold', type=int, default=1,
+@click.option('--threshold', type=int, default=0,
               help="threshold for selecting families. If == 0 use same family as droidscribe")
 def mymain(f, experimentname, repetition, algorithm, threshold):
     warnings.filterwarnings("ignore")

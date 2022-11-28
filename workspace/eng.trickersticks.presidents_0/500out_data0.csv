@@ -1,3 +1,0 @@
-#eng.trickersticks.presidents
-#./workspace/eng.trickersticks.presidents_0/app3297.apk
-#time,user_cpu,nice_cpu,system_cpu,idle_cpu,iowait_cpu,irq_cpu,softirq_cpu,steal_cpu,receive_byte,receive_packet,transmit_byte,transmit_packet,state,minflt,cminflt,majflt,cmahflat,utime,stime,cutime,cstime,numthread,vss,rss,processor,rmsize,vmsize,shared,text,data

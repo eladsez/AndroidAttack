@@ -196,7 +196,7 @@ class WorkspacePreparator:
 
 @click.command()
 @click.option('--command', default="prepare", required=1, help='prepare|clear')
-@click.option('--datasetpath', default="apk_data/drebin_apk/", help='Path of Drebin Dataset Dictionary')
+@click.option('--datasetpath', default="apk_data/", help='Path of Drebin Dataset Dictionary')
 @click.option('--workspacepath', default="./workspace/", required=1, help='Path of framework workspace')
 @click.option('--emulator', default="vbox", help='Emulator to use vbox|geny')
 @click.option('--playerpath', default="", help='Path of genymotion player')
