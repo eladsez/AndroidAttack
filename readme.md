@@ -102,10 +102,6 @@ Drebin Dataset: https://www.sec.cs.tu-bs.de/~danarp/drebin/
 
 * [Python]
 
-## Authors
-
-Luca Massarelli (massarelli@dis.uniroma1.it)
-
 ## License
 
 GNU GENERAL PUBLIC LICENSE Version 3.0
