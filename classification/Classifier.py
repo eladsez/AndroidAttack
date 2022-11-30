@@ -62,7 +62,7 @@ class Classifier:
     # @param trainTarget = label of the training data
     def svmLinear(self, trainData, trainTarget):
         print("LINEAR")
-        c_grid = [0.1, 1, 10, 50, 100, 500, 1000];
+        c_grid = [0.1, 1, 10, 50, 100, 500, 1000]
         scoreMax = 0
         bestC = 0
         for C in c_grid:
