@@ -94,6 +94,7 @@ class DataCollection:
         self.logger.log("INFO", "FINISH EXPERIMENT")
 
 
+
 @click.command()
 @click.option("--workspacepath", default="./workspace/", help="Workspace path of apk")
 @click.option("--resultname", default="out_data", help="Prefix of data files")
@@ -102,9 +103,9 @@ class DataCollection:
 @click.option("--vmname", default="AndroidAttack", help="Name of virtual machine")
 @click.option("--apk_regex", default="*.apk", help="Regex for apk files (optional)")
 @click.option("--run", default=1, help="Number of run for each packet")
-@click.option("--event", default=10000, help="Number of event for each run")
+@click.option("--event", default=500, help="Number of event for each run")
 @click.option("--rndseed", default=False, help="True if you want change the simulated event every run")
-@click.option("--throttle", default=20, help="Delay in microsecond between inputs events")
+@click.option("--throttle", default=50, help="Delay in microsecond between inputs events")
 def hello(workspacepath, resultname, emulator, playerpath, vmname, apk_regex, run, event, rndseed, throttle):
     experiment = DataCollection(workspacepath, resultname, emulator, playerpath, vmname, apk_regex, run, event, rndseed,
                                 throttle)
