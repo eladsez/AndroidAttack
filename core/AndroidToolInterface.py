@@ -4,6 +4,8 @@
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # any later version.
+import os
+import time
 
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -23,6 +25,7 @@ import threading
 # N.B. the adb has to be already connected to a device before to call any method
 # of this class;
 
+
 class AndroidToolInterface:
     logLevel = 3
     __logger = ""
@@ -30,6 +33,7 @@ class AndroidToolInterface:
     __obfError = False
 
     def __init__(self):
+        self.run = True
         self.monkeyProcess = None
         self.obfError = None
         self.logger = Logger(self.logLevel)
@@ -38,8 +42,10 @@ class AndroidToolInterface:
     # @param fileName = The name of the apk to investigate;
     def findPackageName(self, fileName):
         bashCommand = "aapt dump badging " + fileName + " |grep package"
+
         try:
-            proc = subprocess.check_output(bashCommand, stderr=subprocess.STDOUT, shell=True)
+            # proc = subprocess.check_output(bashCommand, stderr=subprocess.STDOUT, shell=True) # ELAD comment it
+            proc = os.popen(bashCommand).read()
             commandSplit = str(proc).split()
             if len(commandSplit) >= 2:
                 name = commandSplit[1].split("=")
@@ -53,7 +59,7 @@ class AndroidToolInterface:
                 return -1
             self.logger.log("INFO", "FIND PACKAGE NAME: " + name)
             return name
-        except subprocess.CalledProcessError:
+        except Exception:
             self.logger.log("ERROR", "ERROR CALLING AAPT")
             return -1
 
@@ -101,16 +107,22 @@ class AndroidToolInterface:
         self.logger.log("INFO", "OBFUSCATION COMPLETED: " + fileName)
         return 0
 
+    # elad add it because cuple of application needed it
+    def press_install_any_way(self):
+        while self.run:
+            os.popen("adb shell input tap 600 460")
+            time.sleep(0.2)
+
     # This method install an apk to the connected device:
     # @param fileName = name of apk to install;
     def installAPK(self, fileName):
         self.logger.log("INFO", "INSTALLING APK: " + fileName)
         bashCommand = "adb install " + fileName
         try:
-            subprocess.check_call(bashCommand, stderr=subprocess.STDOUT, shell=True)
+            os.popen(bashCommand)
             self.logger.log("INFO", "APK CORRECTLY INSTALLED: " + fileName)
             return 0
-        except subprocess.CalledProcessError:
+        except Exception:
             self.logger.log("ERROR", "ERROR INSTALLING APK")
             return -1
 

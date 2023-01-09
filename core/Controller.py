@@ -4,6 +4,7 @@
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # any later version.
+import os
 
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -96,7 +97,7 @@ class Controller:
             try:
                 self.logger.log("VERBOSE DEBUG", "DO RUN: " + str(getattr(t, "do_run", True)))
                 item = self.q.get(False)
-                out_file.write(str(item) + "\n")   # Elad added
+                out_file.write(str(item) + "\n")  # Elad added
                 self.q.task_done()
             except Queue.Empty:
                 self.logger.log("VERBOSE DEBUG", "EMPTY")
@@ -162,22 +163,30 @@ class Controller:
             self.logger.log("ERROR", "CANNOT FIND PID OF PACKAGE: " + packageName)
             return -1
 
+    def find_pid_from_top(self, top_output, pkg_name):
+        for i in range(len(pkg_name)):
+            if i == 0:
+                find_pkg = pkg_name
+            else:
+                find_pkg = pkg_name[:-i]
+            for line in top_output.split("\n"):
+                if find_pkg in line:
+                    return line.split()[0]
+
+        return None
+
     # Elad added because his getPID func doesnt work
     def get_pid(self, packageName):
-        splinted = packageName.split('.')
-        new_package_name = ''
-        for i in range(0, len(splinted) - 1):
-            if i != 0:
-                new_package_name += '.'
-            new_package_name += splinted[i]
-        bashCommand = [f'adb shell top -d 1 -n 1 | grep {new_package_name}']
+        bashCommand = [f'adb shell top -d 1 -n 1']
         try:
-            pid = subprocess.check_output(bashCommand, stderr=subprocess.STDOUT, shell=True)
+            top_out = subprocess.check_output(bashCommand, stderr=subprocess.STDOUT, shell=True).decode()
+            pid = self.find_pid_from_top(top_out, packageName)
             self.logger.log("DEBUG", "TOP DONE")
             if pid:
-                pid = pid.split()[0]
-                self.logger.log("DEBUG", "PACKAGE: " + packageName + " PID: " + pid.decode())
-                return pid.decode()
+                self.logger.log("DEBUG", "PACKAGE: " + packageName + " PID: " + pid)
+                return pid
+
+            return -1
         except subprocess.CalledProcessError as e:
             self.logger.log("ERROR", "ERROR TOP")
             self.logger.log("ERROR", str(e.output))

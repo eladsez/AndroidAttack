@@ -18,6 +18,7 @@ from util.Logger import Logger
 import subprocess
 import threading
 import time
+from pynput.keyboard import Key, Controller
 
 
 # This class implement an interface with an android device emulator, it supports
@@ -41,10 +42,13 @@ class EmulatorInterface:
     # @emulator = the type of emulator to use: "vbox" for virtual box with android_x86
     # or "geny" for genymotion
     def __init__(self, playerPath, VMName, emulator):
+        self.timeout = False
+        self.press = True
         self.playerPath = playerPath
         self.VMName = VMName
         self.logger = Logger(1)
         self.emulator = emulator
+        self.keyboard = Controller()
 
     # This method launch the chosen emulator;
     def runEmulator(self):
@@ -134,13 +138,14 @@ class EmulatorInterface:
 
     # This method wait for a device to be connected to adb
     def waitForDevice(self):
-        bashCommand = ["adb wait-for-device"]
-        # bashCommand = ["timeout 20 adb wait-for-device"]  # Elad add
+        # bashCommand = ["adb wait-for-device"]
+        bashCommand = ["timeout 60 adb wait-for-device"]  # Elad add
         try:
             subprocess.check_output(bashCommand, stderr=subprocess.STDOUT, shell=True)
             self.logger.log("DEBUG", "ADB CONNECTED (After wait for device)")
             return 0
         except subprocess.CalledProcessError as e:
+            self.timeout = True
             self.logger.log("ERROR", "ERROR WAITING FOR DEVICE, TRY AGAIN")
             return -1
 
@@ -175,20 +180,26 @@ class EmulatorInterface:
 
     # This method force the adb to connect to localhost:5555;
     def adbConnect(self):
-        bashCommand = ["adb connect 192.168.56.101:5555"]
+        bashCommand = ["time out 20 adb connect 192.168.56.103:5555"]
         try:
-            self.logger.log("DEBUG", "TRYING ADB CONNECT TO THE DEVICE")
+            self.logger.log("DEBUG", "TRYING TO CONNECT TROUGH ADB TO THE DEVICE")
             wait = True
-            while wait:
+            count = 0
+            while wait and count < 10:
                 out = subprocess.check_output(bashCommand, stderr=subprocess.STDOUT, shell=True)
                 if out.decode().split()[0] != 'failed':
                     wait = False
-                else:
-                    time.sleep(1)
+                print("ADB FAILED. TRY AGAIN")
+                count += 1
+                time.sleep(0.5)
+
+            if count >= 10:
+                self.timeout = True
 
             self.logger.log("DEBUG", "ADB CONNECTED")
             return 0
         except subprocess.CalledProcessError as e:
+            self.timeout = True
             self.logger.log("ERROR", "ERROR CONNECTING TO DEVICE")
             self.logger.log("ERROR", str(e.output))
             return -1
@@ -234,15 +245,27 @@ class EmulatorInterface:
             self.logger.log("ERROR", str(e.output))
             return -1
 
+    def press_enter(self):
+        while self.press:
+            self.keyboard.press(Key.enter)
+            self.keyboard.release(Key.enter)
+            time.sleep(0.5)
+
     # This method start virtual box process
     def startVirtualBoxVM(self):
         bashCommand = "vboxmanage startvm " + self.VMName
         try:
             out_code = 1
             while out_code == 1:
-                out_code = subprocess.call(bashCommand.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)  # continue immediately
-                time.sleep(1)
+                out_code = subprocess.call(bashCommand.split(), stdout=subprocess.PIPE,
+                                           stderr=subprocess.PIPE)  # continue immediately
+                time.sleep(0.5)
             self.logger.log("DEBUG", "VIRTUAL MACHINE START DONE")
+            self.press = True
+            threading.Thread(target=self.press_enter).start()
+            time.sleep(1)
+            self.press = False
+
             return 0
         except subprocess.CalledProcessError as e:
             self.logger.log("ERROR", "ERROR STARTING PLAYER")
@@ -268,19 +291,19 @@ class EmulatorInterface:
         self.logger.log("DEBUG", "STARTING VIRTUAL BOX VM")
         res = self.startVirtualBoxVM()
         if res == 0:
+            self.timeout = False
             self.adbConnect()
             self.waitForDevice()
             # self.clearBufLogcat()
             res = -1
             startTime = datetime.now()
-            timeout = False
-            while res == -1 and not timeout:
+            while res == -1 and not self.timeout:
                 res = self.checkBootCompleted()
-                time.sleep(0.1)
+                time.sleep(0.2)
                 t = datetime.now() - startTime
                 if t.total_seconds() > 10:
-                    timeout = True
-                if not timeout:
+                    self.timeout = True
+                if not self.timeout:
                     self.logger.log("VERBOSE DEBUG", "RUN VIRTUAL BOX DONE")
                 else:
                     self.logger.log("VERBOSE DEBUG", "RUN VIRTUAL BOX TIMEOUT")

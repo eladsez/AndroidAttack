@@ -6,7 +6,7 @@
 # any later version.
 
 # This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# but WITHOUT ANY WARRANTY without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 
@@ -32,27 +32,27 @@ class Classifier:
     # @param trainData = data for training the model
     # @param trainTarget = label of the training data
     def svmRBF(self, trainData, trainTarget):
-        c_grid = [0.1, 1, 10, 100, 1000];
-        gamma_grid = [0.1, 10, 100, 1000];
-        scoreMax = 0;
-        bestC = 0;
-        bestGamma = 0;
+        c_grid = [0.1, 1, 10, 100, 1000]
+        gamma_grid = [0.1, 10, 100, 1000]
+        scoreMax = 0
+        bestC = 0
+        bestGamma = 0
         combinations = list(itertools.product(c_grid, gamma_grid))
-        count = 0;
+        count = 0
         for C, GAMMA in combinations:
-            svc = svm.SVC(kernel='rbf', C=C, gamma=GAMMA, decision_function_shape='ovo');
-            score = np.mean(cross_val_score(svc, trainData, trainTarget, cv=5, n_jobs=-1));
+            svc = svm.SVC(kernel='rbf', C=C, gamma=GAMMA, decision_function_shape='ovo')
+            score = np.mean(cross_val_score(svc, trainData, trainTarget, cv=5, n_jobs=-1))
             if (score > scoreMax):
                 bestC = C
-                bestGamma = GAMMA;
+                bestGamma = GAMMA
                 scoreMax = score
-            count += 1;
-            # print(str(count));
-        bestSvc = svm.SVC(kernel='rbf', C=bestC, gamma=bestGamma, probability=True, \
-                          decision_function_shape='ovo', verbose=False, random_state=1234, \
-                          cache_size=100).fit(trainData, trainTarget, );
-        res = {"svc": bestSvc, "score": scoreMax};
-        return (res);
+            count += 1
+            # print(str(count))
+        bestSvc = svm.SVC(kernel='rbf', C=bestC, gamma=bestGamma, probability=True,
+                          decision_function_shape='ovo', verbose=False, random_state=1234,
+                          cache_size=100).fit(trainData, trainTarget, )
+        res = {"svc": bestSvc, "score": scoreMax}
+        return res
 
     ##This method train using cross validation a linear svm model.
     # It return an object with two keys:
@@ -61,7 +61,6 @@ class Classifier:
     # @param trainData = data for training the model
     # @param trainTarget = label of the training data
     def svmLinear(self, trainData, trainTarget):
-        print("LINEAR")
         c_grid = [0.1, 1, 10, 50, 100, 500, 1000]
         scoreMax = 0
         bestC = 0
@@ -102,21 +101,21 @@ class Classifier:
     # - svc: the trained model
     # - score: score on cross validation of the trained model
     def svmPoly(self, trainData, trainTarget):
-        c_grid = [0.1, 1, 10, 50, 100, 500, 1000];
-        gamma_grid = [0.1, 10, 50, 100, 500, 1000];
-        scoreMax = 0;
-        bestC = 0;
-        bestGamma = 0;
+        c_grid = [0.1, 1, 10, 50, 100, 500, 1000]
+        gamma_grid = [0.1, 10, 50, 100, 500, 1000]
+        scoreMax = 0
+        bestC = 0
+        bestGamma = 0
         combinations = list(itertools.product(c_grid, gamma_grid))
         for C, GAMMA in combinations:
-            svc = svm.SVC(kernel='poly', degree=5, C=C, gamma=GAMMA);
-            score = np.mean(cross_val_score(svc, trainData, trainTarget, cv=5));
-            if (score > scoreMax):
+            svc = svm.SVC(kernel='poly', degree=5, C=C, gamma=GAMMA)
+            score = np.mean(cross_val_score(svc, trainData, trainTarget, cv=5))
+            if score > scoreMax:
                 bestC = C
-                bestGamma = GAMMA;
+                bestGamma = GAMMA
                 scoreMax = score
-        bestSvc = svm.SVC(kernel='rbf', C=bestC, gamma=bestGamma).fit(trainData, trainTarget);
-        res = {"svc": bestSvc, "score": scoreMax};
+        bestSvc = svm.SVC(kernel='rbf', C=bestC, gamma=bestGamma).fit(trainData, trainTarget)
+        res = {"svc": bestSvc, "score": scoreMax}
         return score
 
     ##This method a random forest model 
@@ -127,5 +126,5 @@ class Classifier:
     def randomForest(self, trainData, trainTarget, n):
         clf = ensemble.RandomForestClassifier(n_estimators=n)
         clf = clf.fit(trainData, trainTarget)
-        res = {"svc": clf, "score": 1};
-        return (clf)
+        res = {"svc": clf, "score": 1}
+        return clf
