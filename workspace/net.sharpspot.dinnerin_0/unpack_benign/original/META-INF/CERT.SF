@@ -1,0 +1,199 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: KHpdNG7JEy51VQMyC+BmgJJaKRU=
+
+Name: res/drawable-mdpi/list_add.png
+SHA1-Digest: Kjd3O7zinDC4GQ56JEksgn83K1o=
+
+Name: res/color/vpi__dark_theme.xml
+SHA1-Digest: jXMK69sr/wggZkxqbU6fI8qqKkE=
+
+Name: res/layout/recipe.xml
+SHA1-Digest: czPFAy9uu9cupG9HEFk7DDh6skI=
+
+Name: res/drawable/background.jpg
+SHA1-Digest: xZX98fPFjkRxnLn95N8oyHAu8ro=
+
+Name: res/drawable-mdpi/vpi__tab_selected_pressed_holo.9.png
+SHA1-Digest: sGdVilDs64LUw4d41dUm9R1BCqU=
+
+Name: res/layout/edit_ingredient_dialog.xml
+SHA1-Digest: 3wyxiKOv8ev64CYS9MboIuUASMI=
+
+Name: res/layout/sign_in.xml
+SHA1-Digest: tpB2xcCwFgRdBA2Zyz/B5msezSo=
+
+Name: res/drawable-mdpi/vpi__tab_selected_holo.9.png
+SHA1-Digest: o26WQfakMhKTxZxkX9WknnGxOLE=
+
+Name: res/layout/browse.xml
+SHA1-Digest: gYa9NfPr/Cu6uJUzLx/YnYI5zaU=
+
+Name: res/layout/recipe_list_item.xml
+SHA1-Digest: xEi0oa6XUhae2iD7cJ4l4HvOsOs=
+
+Name: res/drawable-hdpi/vpi__tab_selected_holo.9.png
+SHA1-Digest: 6QRxcHDNZeROcPqDJuMol7V9Fcc=
+
+Name: assets/StepTemplate.htm
+SHA1-Digest: +o2Sv2KVvrfwHZ8wrnvKvzTFcaY=
+
+Name: res/drawable-hdpi/vpi__tab_unselected_focused_holo.9.png
+SHA1-Digest: JF+YteuWRoHYD//BjD0DrAHshAI=
+
+Name: res/drawable-xhdpi/vpi__tab_selected_pressed_holo.9.png
+SHA1-Digest: Dh0GwqQXpxXo88AfOC73XuCbhfU=
+
+Name: res/layout/simple_list_item.xml
+SHA1-Digest: T0Y19mBXYUWg1VdYBZ6r+0KlE+w=
+
+Name: res/drawable-mdpi/arrow_right.png
+SHA1-Digest: 1uBKCNfwiBes4vOiMLASvjUcXtQ=
+
+Name: res/layout/recipe_details.xml
+SHA1-Digest: FpNK/Rejjwjgn1Mhyxty4mkmlyg=
+
+Name: res/layout-land/main.xml
+SHA1-Digest: RM13KR4eEoHKwYSTPsyt7tVfe8Y=
+
+Name: res/drawable/list_view_divider.xml
+SHA1-Digest: v+jBVL63ds3YdAbTxwKctIcVbVE=
+
+Name: res/drawable-mdpi/vpi__tab_unselected_pressed_holo.9.png
+SHA1-Digest: mr8uFdSvGKPagn5uSVxT0WraiJg=
+
+Name: res/drawable/dropshadow.9.png
+SHA1-Digest: ZNf0cdjAtY5Y/Rz14tJ6gkE4Pw8=
+
+Name: res/layout/main.xml
+SHA1-Digest: jEcfcocxI02VOp8p7WSUvyFR7iU=
+
+Name: res/layout/step_list_item.xml
+SHA1-Digest: E6YYO0kdnh+firFOqy8sX23wvm4=
+
+Name: res/drawable-xhdpi/vpi__tab_unselected_holo.9.png
+SHA1-Digest: XlQaKK4xrtCbbciM20STSOMneX8=
+
+Name: res/menu/context_menu.xml
+SHA1-Digest: EoDMFmZU9JE92ezgM3xWLsT8NsA=
+
+Name: assets/ShareTemplate.htm
+SHA1-Digest: ardp6IVdyU7DXC9OeBFmYCTaYZ8=
+
+Name: res/layout/recipe_links.xml
+SHA1-Digest: e/ERUy8976MhCb5s13xc4/jyKHI=
+
+Name: res/xml/searchable.xml
+SHA1-Digest: S4woqqzDZKxlsGTn9qUGjoVh86c=
+
+Name: res/layout/edit_measurement.xml
+SHA1-Digest: YKFoHn4LSiKfx5tCPSmjqhztWfo=
+
+Name: res/drawable-xhdpi/vpi__tab_unselected_focused_holo.9.png
+SHA1-Digest: rPIGOPye+iiIzxUZ4P8T4E7nqq4=
+
+Name: res/drawable-hdpi/vpi__tab_unselected_pressed_holo.9.png
+SHA1-Digest: PnBa1s/rkd1RHXOVVXLzp9B1F2E=
+
+Name: res/layout/ingredient_list_item.xml
+SHA1-Digest: X36U6uWEXv3v1sLjk49lMMY4PQc=
+
+Name: res/color/vpi__light_theme.xml
+SHA1-Digest: ITf2Qr2Y8CSxXt+PIy736V45liY=
+
+Name: res/layout/recipe_steps.xml
+SHA1-Digest: 76EYn8ZEOm4vYoxQfzEgFQ2qBu0=
+
+Name: res/menu/debug_menu.xml
+SHA1-Digest: XdCVG6F46A+pO0KD9TzUHSHK3PQ=
+
+Name: res/drawable-xhdpi/vpi__tab_unselected_pressed_holo.9.png
+SHA1-Digest: 037WUbcOpR+8iofDd3Ju85Z5XHA=
+
+Name: res/layout/browse_list_item.xml
+SHA1-Digest: Z5pgg1vj4pPyqBrZPd6pGmjv9jg=
+
+Name: res/layout/import_recipe.xml
+SHA1-Digest: m9EyEbOw8S1zm1ZzyUkHt003kDo=
+
+Name: resources.arsc
+SHA1-Digest: Ar85F4OI1TuXQOP0rVEfRRoLc3U=
+
+Name: assets/IngredientTemplate.htm
+SHA1-Digest: 54y/xFwPV5e+HRe7lk8V/Yl/BpU=
+
+Name: res/drawable-xhdpi/vpi__tab_selected_focused_holo.9.png
+SHA1-Digest: PgAs7EqITzYGo3bSaAaW65oiG70=
+
+Name: res/drawable-mdpi/vpi__tab_unselected_holo.9.png
+SHA1-Digest: ew9WwLQ2mqsugLxLs5eQtb91R1g=
+
+Name: res/drawable/title_background.xml
+SHA1-Digest: 5aDxKcUw4+px0/+/YnD3LO3bHXA=
+
+Name: AndroidManifest.xml
+SHA1-Digest: XTv2INKumC/SWIg/xKsUT26d0Aw=
+
+Name: res/drawable-hdpi/vpi__tab_selected_pressed_holo.9.png
+SHA1-Digest: 1bMuNr6x1eULplYpxDbig8Tv4S0=
+
+Name: res/menu/image_context_menu.xml
+SHA1-Digest: fhINYr6Fdh4QyvRSOSmMHgxIw0w=
+
+Name: res/drawable-mdpi/arrow_down.png
+SHA1-Digest: T7P417ED64BeZEaVDRwgOaTWHig=
+
+Name: res/drawable/dialog_background.xml
+SHA1-Digest: yhlTLetOl0+E7+LueQZ10iJCByw=
+
+Name: res/drawable-hdpi/vpi__tab_selected_focused_holo.9.png
+SHA1-Digest: LHme0buVFFEndQRsXVRB/Gdkvos=
+
+Name: res/menu/recipe_menu.xml
+SHA1-Digest: 8HSTdxO46lEsapwYkrfeh2guWZI=
+
+Name: res/drawable/no_image.png
+SHA1-Digest: 3ix3h9285NL+ur/cKMLZ0EWPgao=
+
+Name: res/drawable-mdpi/vpi__tab_selected_focused_holo.9.png
+SHA1-Digest: uJRSIOIQqtQUTEGerVTUD0CycNw=
+
+Name: res/layout/dialog.xml
+SHA1-Digest: AVj4X0OMaF9ZBZuJiME/ZhzMoPM=
+
+Name: res/layout/vpi__tab.xml
+SHA1-Digest: ka6f24Zgea5v3HZ1BxM3LXMU0WE=
+
+Name: res/drawable-xhdpi/vpi__tab_selected_holo.9.png
+SHA1-Digest: X7uiJKf04/l2iPAAlDw47tbuZo0=
+
+Name: res/layout-land/recipe_details.xml
+SHA1-Digest: lAbsAaW0kK1VRBckayKmPeaV9c0=
+
+Name: res/layout/simple_list_with_empty.xml
+SHA1-Digest: FCHrORqffFoUXYHf8Fy9rzkwHi8=
+
+Name: res/drawable-mdpi/vpi__tab_unselected_focused_holo.9.png
+SHA1-Digest: 4IT/yVi9NiOSMpNCuEGedvBgnsE=
+
+Name: classes.dex
+SHA1-Digest: mc3dAD5yJUsOM2Tw0ZLzzEXUY+4=
+
+Name: res/layout/recipe_ingredients.xml
+SHA1-Digest: HazlbjcH3Y2OT5NsZe3AgNBoElM=
+
+Name: res/drawable/vpi__tab_indicator.xml
+SHA1-Digest: Cfd68oR08bnrlzUoK9x1QHPo6wQ=
+
+Name: res/drawable/app_icon.png
+SHA1-Digest: 1K0LYq5WHe72F/aC0r/g5cMhT0I=
+
+Name: res/drawable-hdpi/vpi__tab_unselected_holo.9.png
+SHA1-Digest: CCI1pmvHS2u4IcLqYY4WkAoHIzM=
+
+Name: assets/RecipeTemplate.htm
+SHA1-Digest: tBzbp7sMt4zZXi7Ueq/QZfWVAd0=
+
+Name: res/drawable/button_background.xml
+SHA1-Digest: kQ+FA2X6rrzT/f85wNMWEt31qoY=
+

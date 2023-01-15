@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.djavid.puppypet_es">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name=".ANekoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".ANekoReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".AnimationService"/>
+        <activity android:label="@string/skin_name_neko" android:name=".NekoSkin">
+            <intent-filter>
+                <action android:name="com.djavid.puppypet_es.action.GET_SKIN"/>
+            </intent-filter>
+            <meta-data android:name="com.djavid.puppypet_es.skin" android:resource="@xml/neko"/>
+        </activity>
+        <activity android:icon="@drawable/or_stop" android:label="@string/skin_name_or" android:name="com.djavid.puppypet_es.skins.SkinActivity_or" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.djavid.puppypet_es.action.GET_SKIN"/>
+            </intent-filter>
+            <meta-data android:name="com.djavid.puppypet_es.skin" android:resource="@xml/skin_or"/>
+        </activity>
+        <activity android:icon="@drawable/usagi_icon" android:label="@string/skin_name_ham" android:name="com.djavid.puppypet_es.skins.SkinActivity_ham" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.djavid.puppypet_es.action.GET_SKIN"/>
+            </intent-filter>
+            <meta-data android:name="com.djavid.puppypet_es.skin" android:resource="@xml/skin_ham"/>
+        </activity>
+        <activity android:icon="@drawable/inu_icon" android:label="@string/skin_name_inu" android:name="com.djavid.puppypet_es.skins.SkinActivity_inu" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.djavid.puppypet_es.action.GET_SKIN"/>
+            </intent-filter>
+            <meta-data android:name="com.djavid.puppypet_es.skin" android:resource="@xml/skin_inu"/>
+        </activity>
+        <activity android:icon="@drawable/ham_icon" android:label="@string/skin_name_usagi" android:name="com.djavid.puppypet_es.skins.SkinActivity_usagi" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.djavid.puppypet_es.action.GET_SKIN"/>
+            </intent-filter>
+            <meta-data android:name="com.djavid.puppypet_es.skin" android:resource="@xml/skin_usagi"/>
+        </activity>
+        <receiver android:name="lwpBR">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

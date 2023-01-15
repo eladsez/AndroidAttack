@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="#ff363636" android:layout_width="10.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/ndhome" android:paddingRight="2.0dip" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Home" />
+            </LinearLayout>
+            <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/ndallmods" android:paddingRight="2.0dip" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="All Mods" />
+            <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/ndmodcreators" android:paddingRight="2.0dip" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Mods By Creators" />
+            <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/ndallmaps" android:paddingRight="2.0dip" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="All Maps" />
+            <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/ndmapcreators" android:paddingRight="2.0dip" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Maps By Creators" />
+            <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/ndmapcategory" android:paddingRight="2.0dip" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Maps By Category" />
+            <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/ndsubmit" android:paddingRight="2.0dip" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Submit Map/Mod" />
+            <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/ndcontactme" android:paddingRight="2.0dip" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Contact Me" />
+            <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

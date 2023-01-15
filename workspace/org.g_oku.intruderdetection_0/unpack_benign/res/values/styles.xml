@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="switchStyle">@style/Widget.Holo.Light.CompoundButton.Switch</item>
+        <item name="switchPreferenceStyle">@style/Preference.SwitchPreference</item>
+    </style>
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/bounce</item>
+        <item name="android:windowExitAnimation">@anim/scale_down</item>
+    </style>
+    <style name="FadeDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="SlidefromTopDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slidefrombottom_up</item>
+        <item name="android:windowExitAnimation">@anim/slidefrombottom_down</item>
+    </style>
+    <style name="SlidefromBottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slidefromtop_down</item>
+        <item name="android:windowExitAnimation">@anim/slidefromtop_up</item>
+    </style>
+    <style name="Widget.Holo.CompoundButton.Switch" parent="@android:style/Widget.CompoundButton">
+        <item name="thumb">@drawable/switch_inner_holo_dark</item>
+        <item name="track">@drawable/switch_track_holo_dark</item>
+        <item name="textOn">@string/switch_on</item>
+        <item name="textOff">@string/switch_off</item>
+        <item name="thumbTextPadding">12.0dip</item>
+        <item name="switchTextAppearance">@style/TextAppearance.Holo.Widget.Switch</item>
+        <item name="switchMinWidth">96.0dip</item>
+        <item name="switchPadding">16.0dip</item>
+    </style>
+    <style name="Widget.Holo.Light.CompoundButton.Switch" parent="@android:style/Widget.CompoundButton">
+        <item name="thumb">@drawable/switch_inner_holo_light</item>
+        <item name="track">@drawable/switch_track_holo_light</item>
+        <item name="textOn">@string/switch_on</item>
+        <item name="textOff">@string/switch_off</item>
+        <item name="thumbTextPadding">12.0dip</item>
+        <item name="switchTextAppearance">@style/TextAppearance.Holo.Light.Widget.Switch</item>
+        <item name="switchMinWidth">96.0dip</item>
+        <item name="switchPadding">16.0dip</item>
+    </style>
+    <style name="Preference.SwitchPreference" parent="">
+        <item name="android:layout">@layout/preference</item>
+        <item name="android:widgetLayout">@layout/preference_widget_switch</item>
+        <item name="switchTextOn">@string/switch_on</item>
+        <item name="switchTextOff">@string/switch_off</item>
+    </style>
+    <style name="TextAppearance.Holo.Widget.Switch" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/secondary_text_holo_dark</item>
+    </style>
+    <style name="TextAppearance.Holo.Light.Widget.Switch" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/primary_text_holo_dark</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+</resources>

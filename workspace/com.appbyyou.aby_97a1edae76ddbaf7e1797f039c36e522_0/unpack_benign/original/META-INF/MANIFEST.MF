@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: res/drawable-xhdpi/splash.png
+SHA1-Digest: 44cTSEQ3m1LWyWjiJY3lblca+zM=
+
+Name: res/drawable-xhdpi/icon.png
+SHA1-Digest: Rse3IrWeFbv2xNr7xY3giWxV6Wo=
+
+Name: res/xml/config.xml
+SHA1-Digest: U/nH8N22gb0JiYacJO8mINzejD8=
+
+Name: res/drawable-hdpi/splash.png
+SHA1-Digest: KZaLQ45+vHtTJYDX1jOZDceIaa4=
+
+Name: resources.arsc
+SHA1-Digest: Q75TrQWGQ6RMEehJSse4wDC5qGs=
+
+Name: classes.dex
+SHA1-Digest: rUqVOUS5C0WMiS8Vy7L0RtPL30E=
+
+Name: res/drawable-xxhdpi/splash.png
+SHA1-Digest: uWoTx+kCP5CD5hHLV06m4Qwpk/U=
+
+Name: assets/www/cordova.js
+SHA1-Digest: mmsLXxBWsVsaZAs9AGxAx3TzFY8=
+
+Name: AndroidManifest.xml
+SHA1-Digest: LoVqdmv/Z493aWC8a2ecVIDeGIE=
+
+Name: res/drawable-ldpi/icon.png
+SHA1-Digest: oJgCz+gePabGEDw6f1MwBF1XQP4=
+
+Name: res/drawable/icon.png
+SHA1-Digest: Rse3IrWeFbv2xNr7xY3giWxV6Wo=
+
+Name: res/drawable-xxhdpi/icon.png
+SHA1-Digest: mxSaa+N3bu4KHjg08sQA09I92uo=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest: oJgCz+gePabGEDw6f1MwBF1XQP4=
+
+Name: res/drawable-ldpi/splash.png
+SHA1-Digest: db0ZBNvVtOU3JPRutjLXOr8DG5M=
+
+Name: res/drawable/splash.png
+SHA1-Digest: EcqrOulZKGiSvK4E7/zJoQa/SSs=
+
+Name: res/drawable-mdpi/splash.png
+SHA1-Digest: BQZ8kbNQHxIAoBbINYSmtZfCH+4=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: wi0FPJ3LsFwyF5+iQgJgOp0A0Qw=
+

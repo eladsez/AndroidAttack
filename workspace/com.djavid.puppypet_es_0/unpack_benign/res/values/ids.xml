@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="rating_title" />
+    <item type="id" name="rating_description" />
+    <item type="id" name="rating_ratebtn" />
+    <item type="id" name="rating_remindbtn" />
+    <item type="id" name="rating_nothanksbtn" />
+    <item type="id" name="item_icon" />
+    <item type="id" name="item_label" />
+    <item type="id" name="item_check" />
+</resources>

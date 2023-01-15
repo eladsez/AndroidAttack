@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enjoy_mth">If you enjoy using Pet please help us out by taking a moment to rate/review the app. Thank you for your support!</string>
+    <string name="rate_mth">Rate Pet app</string>
+    <string name="remind_me_later">Remind me later</string>
+    <string name="no_thanks_done">No thanks/Already have</string>
+    <string name="rating_button">Rate</string>
+    <string name="rating_button_details">Please, rate this app</string>
+    <string name="more_apps">More apps</string>
+    <string name="more_apps_details">Find and download more apps</string>
+    <string name="app_name">はつらつと生姜子猫</string>
+    <string name="skin_name_neko">neko</string>
+    <string name="skin_name_or">Orange Kote</string>
+    <string name="skin_name_usagi">Hamster</string>
+    <string name="skin_name_ham">Rabbit</string>
+    <string name="skin_name_inu">Dog</string>
+    <string name="notification_enable">neko 実行中。</string>
+    <string name="notification_disable">neko 停止中。</string>
+    <string name="pref_cat_motion">設定</string>
+    <string name="pref_motion_enable_title">neko を有効にする</string>
+    <string name="pref_motion_enable_summary">neko を表示するか否か。</string>
+    <string name="pref_motion_behaviour_title">挙動</string>
+    <string name="pref_motion_behaviour_summary">neko の挙動</string>
+    <string name="pref_motion_behaviour_default">closer</string>
+    <string name="pref_motion_transparency_title">透明度</string>
+    <string name="pref_motion_transparency_summary">neko の透明度</string>
+    <string name="pref_motion_skin_title">スキン</string>
+    <string name="pref_motion_skin_summary">neko の皮</string>
+    <string name="pref_skin_dialog_title">スキン</string>
+    <string name="pref_skin_search_button">スキンを検索</string>
+    <string name="msg_skin_load_failed">スキン読み込み失敗。</string>
+    <string name="msg_market_not_found">マーケットアプリケーションが見付からないようです。</string>
+    <string name="skin_search_uri">market://search?q=</string>
+    <string name="msg_usage">Choose skin from Pet settings.</string>
+    <string name="msg_no_package">"This is skin for Pet.
+To use this, install Pet and choose skin."</string>
+    <string name="msg_unexpected_err">Something is wrong.</string>
+</resources>

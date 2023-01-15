@@ -198,7 +198,7 @@ class MetricsCollector:
         bashCommand = ['adb shell cat /proc/' + str(self.pid) + '/stat']
         try:
             proc = subprocess.check_output(bashCommand, stderr=subprocess.STDOUT, shell=True)
-            self.logger.log("DEBUG", "READ proc/pid/stat DONE")
+            self.logger.log("DEBUG", f"READ proc/{self.pid}/stat DONE")
             return str(proc)
         except subprocess.CalledProcessError as e:
             self.logger.log("ERROR", "ERROR READING proc/pid/stat")

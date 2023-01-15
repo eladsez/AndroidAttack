@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:switchpref="http://schemas.android.com/apk/res-auto">
+    <org.jraf.android.backport.switchwidget.SwitchPreference android:title="@string/pref_switch_title" android:key="switch" android:defaultValue="false" switchpref:switchTextOn="@string/pref_switch_on" switchpref:switchTextOff="@string/pref_switch_off" />
+    <PreferenceScreen android:title="@string/pref_gallery_title" android:key="gallery" android:summary="@string/pref_gallery_summary" />
+    <Preference android:layout="@layout/ad" android:selectable="true" />
+</PreferenceScreen>

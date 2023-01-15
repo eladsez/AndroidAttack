@@ -1,0 +1,93 @@
+// JavaScript Document
+
+{
+	"response": {
+		"version": "0.1"
+		,"termsofService": "http://www.wunderground.com/weather/api/d/terms.html"
+		,"features": {
+		"conditions": 1
+		}
+	}
+		,	"current_observation": {
+		"image": {
+		"url":"http://icons-ak.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Tallahassee, FL",
+		"city":"Tallahassee",
+		"state":"FL",
+		"state_name":"Florida",
+		"country":"US",
+		"country_iso3166":"US",
+		"zip":"32301",
+		"latitude":"30.42930031",
+		"longitude":"-84.25710297",
+		"elevation":"59.00000000"
+		},
+		"observation_location": {
+		"full":"FSUS / Southwood, Tallahassee, Florida",
+		"city":"FSUS / Southwood, Tallahassee",
+		"state":"Florida",
+		"country":"US",
+		"country_iso3166":"US",
+		"latitude":"30.385048",
+		"longitude":"-84.223839",
+		"elevation":"82 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"KFLTALLA38",
+		"observation_time":"Last Updated on October 23, 2:49 PM EDT",
+		"observation_time_rfc822":"Tue, 23 Oct 2012 14:49:38 -0400",
+		"observation_epoch":"1351018178",
+		"local_time_rfc822":"Tue, 23 Oct 2012 15:00:45 -0400",
+		"local_epoch":"1351018845",
+		"local_tz_short":"EDT",
+		"local_tz_long":"America/New_York",
+		"local_tz_offset":"-0400",
+		"weather":"Mostly Cloudy",
+		"temperature_string":"80.6 F (27.0 C)",
+		"temp_f":80.6,
+		"temp_c":27.0,
+		"relative_humidity":"58%",
+		"wind_string":"From the South at 2.0 MPH Gusting to 10.0 MPH",
+		"wind_dir":"South",
+		"wind_degrees":186,
+		"wind_mph":2.0,
+		"wind_gust_mph":"10.0",
+		"wind_kph":3.2,
+		"wind_gust_kph":"16.1",
+		"pressure_mb":"1018",
+		"pressure_in":"30.05",
+		"pressure_trend":"-",
+		"dewpoint_string":"64 F (18 C)",
+		"dewpoint_f":64,
+		"dewpoint_c":18,
+		"heat_index_string":"82 F (28 C)",
+		"heat_index_f":82,
+		"heat_index_c":28,
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"82 F (27.0 C)",
+		"feelslike_f":"82",
+		"feelslike_c":"27.0",
+		"visibility_mi":"10.0",
+		"visibility_km":"16.1",
+		"solarradiation":"0",
+		"UV":"3",
+		"precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.00 in (0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0",
+		"icon":"mostlycloudy",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/mostlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/US/FL/Tallahassee.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KFLTALLA38",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=30.385048,-84.223839"
+	
+}

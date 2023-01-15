@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txtServerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@id/txtServerName" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout04" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_gravity="fill" android:id="@id/ScrollView01" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.9">
+            <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:baselineAlignedChildIndex="2">
+                <TextView android:typeface="monospace" android:autoLink="all" android:layout_gravity="top" android:id="@id/txtBody" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@id/txtBody" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:layout_gravity="bottom|clip_vertical" android:orientation="horizontal" android:id="@id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:baselineAlignedChildIndex="1">
+            <EditText android:id="@id/edtSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:height="14.0px" android:layout_weight="0.9" android:inputType="text" />
+            <Button android:textSize="12.0px" android:id="@id/btnSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send" android:height="14.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

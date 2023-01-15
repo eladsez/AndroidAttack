@@ -20,9 +20,9 @@ import warnings
 
 @click.command()
 @click.option('--dictionarypath', default="apk_dict.txt", help='Path of Drebin Dataset Dictionary')
-@click.option('--workspacepath', default="./workspace/", help='Path of framework workspace')
+@click.option('--workspacepath', default="after_data_collection/", help='Path of framework workspace')
 @click.option('--algorithm', default="dfa", help='Feature extraction algorithm: sampen,dfa')
-@click.option('--filename', default="feature.txt", help='filename for saving feature.txt (optional)')
+@click.option('--filename', default="train_model_features.txt", help='filename for saving feature.txt (optional)')
 @click.option('--regex', default="\w*500out_data\d+.csv", help='regex for file name')
 @click.option('--ncpus', default=1, help='number of cpus for parallel processing')
 def mymain(dictionarypath, workspacepath, algorithm, filename, regex, ncpus):

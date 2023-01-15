@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<version value="1.0.0">
+<weatherInfo>
+<city id="101010100" name="北京"/>
+<real_time_information>
+<time>23日星期四 16:05</time>
+<weather humidity="12%" picId="day1" temperature="-4.1℃" text="晴"/>
+<wind direction="西北风" force="小于3级"/>
+</real_time_information><explanation id="UV_ray">
+<pic>http://www.ad-pv.com/weather/weatherImages/UV/2.png</pic>
+<level>弱</level>
+<detail>紫外线强度较弱，建议出门前涂擦SPF在12-15之间、PA+的防晒护肤品。</detail>
+</explanation>
+<explanation id="clothes">
+<pic>http://www.ad-pv.com/weather/weatherImages/clothes/2.png</pic><level>寒冷</level>
+<detail>天气寒冷，建议着厚羽绒服、毛皮大衣加厚毛衣等隆冬服装。年老体弱者尤其要注意保暖防冻。</detail>
+</explanation>
+<explanation id="makeUp">
+<pic>http://www.ad-pv.com/weather/weatherImages/makeUp/1.png</pic>
+<level>保湿</level>
+<detail>天气寒冷，请用滋润保湿型化妆品，少扑粉，使用润唇膏后再抹口红。</detail>
+</explanation>
+<explanation id="umbrella">
+<pic>http://www.ad-pv.com/weather/weatherImages/umbrella/2.png</pic>
+<level>不带伞</level>
+<detail>天气晴好，阳光明媚，您在出门的时候无须带雨伞。</detail>
+</explanation>
+<explanation id="road_condition">
+<pic>http://www.ad-pv.com/weather/weatherImages/road/1.png</pic>
+<level>干燥</level>
+<detail>晴天，虽然天气有点凉，但其它条件适宜，路面比较干燥，路况较好。</detail>
+</explanation>
+<briefinfo date="23日星期四" id="today">
+<day>
+<weather picId="day1" temperature="高温 -4℃" text="晴"/>
+<wind direction="北风" force="4-5级"/>
+</day>
+<night>
+<weather picId="night1" temperature="低温 -9℃" text="晴"/>
+<wind direction="无持续风向" force="微风"/>
+</night>
+</briefinfo>
+<briefinfo date="24日星期五" id="tomorrow">
+<day>
+<weather picId="day1" temperature="高温 -2℃" text="晴"/>
+<wind direction="无持续风向" force="微风"/>
+</day>
+<night>
+<weather picId="night1" temperature="低温 -10℃" text="晴"/>
+<wind direction="无持续风向" force="微风"/>
+</night>
+</briefinfo>
+<briefinfo date="25日星期六" id="the_day_after_tomorrow">
+<day>
+<weather picId="day1" temperature="高温 -1℃" text="晴"/>
+<wind direction="无持续风向" force="微风"/>
+</day>
+<night>
+<weather picId="night1" temperature="低温 -9℃" text="晴"/>
+<wind direction="无持续风向" force="微风"/>
+</night>
+</briefinfo>
+</weatherInfo>
+</version>

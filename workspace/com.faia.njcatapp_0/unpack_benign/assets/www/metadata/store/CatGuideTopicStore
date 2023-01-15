@@ -1,0 +1,46 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CatGuideTopicStore",
+        "autoLoad": true,
+        "model": "CatGuideMainTopic",
+        "storeId": "CatGuideTopicStore"
+    },
+    "id": "ExtBox1-ext-gen3772",
+    "designerId": "2e52e6ec-879b-4975-8b29-0d17f06374dc",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy2",
+                "url": "appData/CatGuideTopics.json"
+            },
+            "designerId": "852333ef-dcbb-42ce-958c-933b4e630a6e",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader4",
+                        "rootProperty": "GetCatGuideTopicsResult"
+                    },
+                    "designerId": "1857072a-5918-40d4-8b03-55e3d3e781ad"
+                }
+            ]
+        }
+    ]
+}

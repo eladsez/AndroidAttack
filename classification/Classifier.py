@@ -54,8 +54,8 @@ class Classifier:
         res = {"svc": bestSvc, "score": scoreMax}
         return res
 
-    ##This method train using cross validation a linear svm model.
-    # It return an object with two keys:
+    # This method train using cross validation a linear svm model.
+    # It returns an object with two keys:
     # - svc: the trained model
     # - score: score on cross validation of the trained model
     # @param trainData = data for training the model
@@ -108,15 +108,17 @@ class Classifier:
         bestGamma = 0
         combinations = list(itertools.product(c_grid, gamma_grid))
         for C, GAMMA in combinations:
+            print(f'trying {C},{GAMMA}')
             svc = svm.SVC(kernel='poly', degree=5, C=C, gamma=GAMMA)
             score = np.mean(cross_val_score(svc, trainData, trainTarget, cv=5))
+            print(f'score for {C},{GAMMA}: {score}')
             if score > scoreMax:
                 bestC = C
                 bestGamma = GAMMA
                 scoreMax = score
         bestSvc = svm.SVC(kernel='rbf', C=bestC, gamma=bestGamma).fit(trainData, trainTarget)
         res = {"svc": bestSvc, "score": scoreMax}
-        return score
+        return res
 
     ##This method a random forest model 
     # It return an object with two keys:

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="480.0px" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:background="@drawable/widget_4_2_0" android:layout_width="fill_parent" android:layout_height="213.0px">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="114.0px">
+            <LinearLayout android:orientation="vertical" android:id="@id/absoluteLayout" android:visibility="visible" android:layout_width="125.0px" android:layout_height="114.0px" android:layout_marginLeft="15.0px">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/forecastImage" android:layout_width="68.0px" android:layout_height="50.0px" android:layout_marginTop="25.0px" />
+                <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cityName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="200.0px" android:layout_height="114.0px">
+                <LinearLayout android:orientation="horizontal" android:id="@id/absoluteLayout1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0px">
+                    <ImageView android:id="@id/number1" android:layout_width="20.0px" android:layout_height="28.0px" android:layout_marginLeft="44.0px" android:layout_marginTop="4.0px" />
+                    <ImageView android:id="@id/number2" android:layout_width="20.0px" android:layout_height="28.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="4.0px" />
+                    <ImageView android:id="@id/dots" android:layout_width="28.0px" android:layout_height="30.0px" android:layout_marginLeft="4.0px" android:layout_marginTop="2.0px" />
+                    <ImageView android:id="@id/number3" android:layout_width="20.0px" android:layout_height="28.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="4.0px" />
+                    <ImageView android:id="@id/number4" android:layout_width="20.0px" android:layout_height="28.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="4.0px" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/absoluteLayout2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="28.0px" android:layout_marginTop="2.0px">
+                    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/weatherText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0px" android:text="" />
+                    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/absoluteLayout3" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="28.0px" android:layout_marginTop="6.0px">
+                    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/windText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载...." />
+                    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/huminityText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/addcity" android:layout_width="80.0px" android:layout_height="95.0px" android:layout_marginLeft="55.0px" android:layout_marginTop="14.0px" android:src="@drawable/addicon1" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="fill_horizontal" android:orientation="horizontal" android:id="@id/city2" android:layout_width="fill_parent" android:layout_height="89.0px">
+            <LinearLayout android:orientation="vertical" android:id="@id/absoluteLayout" android:visibility="visible" android:layout_width="125.0px" android:layout_height="89.0px" android:layout_marginLeft="15.0px">
+                <ImageView android:layout_gravity="center|top" android:id="@id/city2pic" android:layout_width="70.0px" android:layout_height="45.0px" android:layout_marginTop="2.0px" />
+                <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/city2name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:visibility="visible" android:layout_width="200.0px" android:layout_height="89.0px">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/absoluteLayout2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="28.0px" android:layout_marginTop="10.0px">
+                    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/city2weather" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0px" android:text="" />
+                    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/city2temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/absoluteLayout3" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="28.0px" android:layout_marginTop="5.0px">
+                    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/city2wind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/city2huminity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/setcityinwidget" android:layout_width="80.0px" android:layout_height="86.0px" android:layout_marginLeft="55.0px" android:src="@drawable/deleteicon" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

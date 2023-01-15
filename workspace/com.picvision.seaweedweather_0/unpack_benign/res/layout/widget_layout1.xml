@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/widget30" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/widget31" android:layout_width="316.0px" android:layout_height="125.0px">
+        <ImageView android:id="@id/img3" android:layout_width="115.0px" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv1" android:layout_alignBottom="@id/tv4" />
+        <TextView android:id="@id/tv4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/tv2" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/img1" android:layout_width="120.0px" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/img2" android:layout_width="103.0px" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:id="@id/tv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/tv2" android:layout_alignParentLeft="true" />
+        <TextView android:id="@id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/tv1" android:layout_alignParentRight="true" />
+        <TextView android:id="@id/tv1" android:layout_width="83.0px" android:layout_height="wrap_content" android:text="TextView" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/tv5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <TextView android:id="@id/tv6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/tv7" android:layout_width="315.0px" android:layout_height="wrap_content" android:text="TextView" />
+</LinearLayout>

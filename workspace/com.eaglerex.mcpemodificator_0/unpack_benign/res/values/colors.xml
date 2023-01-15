@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="abc_search_url_text_normal">#ff7fa87f</color>
+    <color name="abc_search_url_text_selected">@android:color/black</color>
+    <color name="abc_search_url_text_pressed">@android:color/black</color>
+    <color name="fbdefault">#ff44619d</color>
+    <color name="fbclick">#ff385185</color>
+    <color name="twitterdefault">#ff55acee</color>
+    <color name="twitterclick">#ff4992ca</color>
+    <color name="emaildefault">#ffdb4b39</color>
+    <color name="emailclick">#ffc84434</color>
+    <color name="divider">#ff2f2f2f</color>
+    <color name="backgroundLV">#ff3c3c3c</color>
+    <color name="modsdefault">#ffe44b00</color>
+    <color name="modsclick">#ffd94700</color>
+    <color name="mapsdefault">#ff0096cd</color>
+    <color name="mapsclick">#ff0087b8</color>
+    <color name="submitdefault">#ffcd0500</color>
+    <color name="submitclick">#ffb60400</color>
+    <color name="errorred">#ffce0000</color>
+    <color name="homedefault">#ff3c3c3c</color>
+    <color name="homeclick">#ff2f2f2f</color>
+</resources>

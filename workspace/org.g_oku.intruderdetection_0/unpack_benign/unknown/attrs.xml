@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BeadOptions">
+        <attr name="sid" format="string" />
+        <attr name="refresh_rate" format="string" />
+        <attr name="is_overlay" format="string" />
+        <attr name="position" format="string" />
+        <attr name="transitionAnimation" format="string" />
+    </declare-styleable>
+</resources> 

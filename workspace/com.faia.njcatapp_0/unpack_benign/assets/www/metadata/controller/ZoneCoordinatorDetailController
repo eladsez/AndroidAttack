@@ -1,0 +1,88 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ZoneCoordinatorDetailController"
+    },
+    "id": "ExtBox1-ext-gen53285",
+    "designerId": "9c84a694-f45e-4e8d-af18-aeb4cc094166",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnAddToContactTap",
+                "fn": "onBtnAddToContactTap",
+                "implHandler": [
+                    "alert(\"Hello\");"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#pnlZCDetails #btnAddToContact"
+            },
+            "designerId": "6c41559a-6ebd-4c12-86e4-38c7c9ec071b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnSendMessageTap",
+                "fn": "onBtnSendMessageTap",
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#btnSendMessage"
+            },
+            "designerId": "2180699b-6e72-4c82-b141-d9cef18ad9ec"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnEmailTap",
+                "fn": "onBtnEmailTap",
+                "implHandler": [
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#btnEmail"
+            },
+            "designerId": "a45ea648-f489-45ec-b264-f66c2f34b9fd"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnCallTap",
+                "fn": "onBtnCallTap",
+                "implHandler": [
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#btnCall"
+            },
+            "designerId": "8c7612d2-fdf9-4aa9-b70e-4f2fcfdc6ac0"
+        }
+    ]
+}

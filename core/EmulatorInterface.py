@@ -179,29 +179,31 @@ class EmulatorInterface:
             return -1
 
     # This method force the adb to connect to localhost:5555;
-    def adbConnect(self):
-        bashCommand = ["time out 20 adb connect 192.168.56.103:5555"]
+    def adbConnect(self, count=0):
+        bashCommand = ["timeout 30 adb connect 192.168.28.149:5555"]
         try:
             self.logger.log("DEBUG", "TRYING TO CONNECT TROUGH ADB TO THE DEVICE")
             wait = True
-            count = 0
-            while wait and count < 10:
+            while wait and count < 12:
                 out = subprocess.check_output(bashCommand, stderr=subprocess.STDOUT, shell=True)
                 if out.decode().split()[0] != 'failed':
                     wait = False
-                print("ADB FAILED. TRY AGAIN")
+                print("ADB FAILED. TRY AGAIN COUNT++")
                 count += 1
                 time.sleep(0.5)
 
-            if count >= 10:
+            if count >= 12:
                 self.timeout = True
+                return -1
 
             self.logger.log("DEBUG", "ADB CONNECTED")
             return 0
         except subprocess.CalledProcessError as e:
-            self.timeout = True
             self.logger.log("ERROR", "ERROR CONNECTING TO DEVICE")
             self.logger.log("ERROR", str(e.output))
+            if count == 0:
+                return self.adbConnect(1)
+            self.timeout = True
             return -1
 
     def genymotionThread(self):
@@ -292,8 +294,9 @@ class EmulatorInterface:
         res = self.startVirtualBoxVM()
         if res == 0:
             self.timeout = False
-            self.adbConnect()
-            self.waitForDevice()
+            adb_status = self.adbConnect()
+            if adb_status == 0:
+                self.waitForDevice()
             # self.clearBufLogcat()
             res = -1
             startTime = datetime.now()
@@ -309,3 +312,8 @@ class EmulatorInterface:
                     self.logger.log("VERBOSE DEBUG", "RUN VIRTUAL BOX TIMEOUT")
                     self.stopVirtualBoxVM()
                     self.runVirtualBoxVM()
+
+            if self.timeout and res == -1:  # if it doesn't get inside the loop because adb set self.timout to true
+                self.logger.log("VERBOSE DEBUG", "RUN VIRTUAL BOX TIMEOUT")
+                self.stopVirtualBoxVM()
+                self.runVirtualBoxVM()

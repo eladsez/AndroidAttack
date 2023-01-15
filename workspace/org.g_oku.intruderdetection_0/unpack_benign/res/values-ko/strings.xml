@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">침입자 감지</string>
+    <string name="action_settings">설정</string>
+    <string name="app_finish_title">종료 하시겠습니까?</string>
+    <string name="app_finish_ok">예</string>
+    <string name="app_finish_cancel">아니오</string>
+    <string name="dialog_error_title">오류</string>
+    <string name="dialog_error_message">전면 카메라가없는 기종에서는 사용할 수 없습니다.</string>
+    <string name="dialog_error_ok">종료</string>
+    <string name="pref_switch_on">ON</string>
+    <string name="pref_switch_off">OFF</string>
+    <string name="pref_switch_title">침입 감지</string>
+    <string name="pref_gallery_title">침입자 확인</string>
+    <string name="pref_gallery_summary">갤러리를 시작하여 촬영 한 사진보기</string>
+    <string name="pref_save_gallery_title">전용 폴더에 저장</string>
+    <string name="pref_save_gallery_summary">촬영 한 사진은 전용 폴더에 저장됩니다. 표준 갤러리에서 보이지 않습니다.</string>
+    <string name="toast_read_error_message">이미지를로드 할 수 없습니다</string>
+    <string name="toast_delete_error_message">제거 할 수 없습니다</string>
+    <string name="pref_action_delete">삭제</string>
+    <string name="pref_action_deleteAll">전체 삭제</string>
+    <string name="pref_action_share">공유</string>
+    <string name="dialog_progress_delete">삭제 중</string>
+    <string name="dialog_confirm_title">확인</string>
+    <string name="dialog_delete_confirm">사진을 삭제 하시겠습니까?</string>
+    <string name="dialog_delete_all_confirm">전체 삭제 하시겠습니까?</string>
+    <string name="ok">예</string>
+    <string name="ng">아니오</string>
+    <string name="dialog_notify_title">알림</string>
+    <string name="dialog_notify_message">화상은 자주 삭제하십시오.</string>
+    <string name="dialog_notify_check">다시 묻지 않음</string>
+</resources>

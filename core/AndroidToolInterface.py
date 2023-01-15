@@ -152,7 +152,9 @@ class AndroidToolInterface:
     ##This method start the execution of a packet with monkey tool; 
     # N.B. the packet has to be already installed;
     # @param packageName = the name of the package to run;
-    # @param monkeyOption = the option for monkey tool;
+    # @param mon
+    #
+    # keyOption = the option for monkey tool;
     def runApplication(self, packageName, monkeyOption):
         self.logger.log("INFO", "STARTING APPLICATION: " + packageName)
         bashCommand = "adb shell monkey -p " + packageName + " " + monkeyOption

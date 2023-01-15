@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Détection d'intrusion"</string>
+    <string name="action_settings">Cadre</string>
+    <string name="app_finish_title">Etes-vous sûr de vouloir quitter?</string>
+    <string name="app_finish_ok">oui</string>
+    <string name="app_finish_cancel">aucun</string>
+    <string name="dialog_error_title">Erreur</string>
+    <string name="dialog_error_message">"N'est pas disponible dans le modèle, il n'y a pas de caméra frontale."</string>
+    <string name="dialog_error_ok">Fin</string>
+    <string name="pref_switch_on">ON</string>
+    <string name="pref_switch_off">OFF</string>
+    <string name="pref_switch_title">Détecte les intrusions</string>
+    <string name="pref_gallery_title">"Vérifiez l'intrus"</string>
+    <string name="pref_gallery_summary">"Voir l'image capturée pour lancer la galerie"</string>
+    <string name="pref_save_gallery_title">Enregistrer dans un dossier dédié</string>
+    <string name="pref_save_gallery_summary">"L'image capturée est stockée dans un dossier dédié. N'est pas visible à partir de la galerie de la norme."</string>
+    <string name="toast_read_error_message">"Windows ne peut pas charger l'image"</string>
+    <string name="toast_delete_error_message">Impossible de supprimer</string>
+    <string name="pref_action_delete">Effacer</string>
+    <string name="pref_action_deleteAll">Supprimer tout</string>
+    <string name="pref_action_share">Part</string>
+    <string name="dialog_progress_delete">Suppression</string>
+    <string name="dialog_confirm_title">Confirmation</string>
+    <string name="dialog_delete_confirm">"Etes-vous sûr de vouloir supprimer l'image?"</string>
+    <string name="dialog_delete_all_confirm">Etes-vous sûr que vous voulez supprimer tous?</string>
+    <string name="ok">oui</string>
+    <string name="ng">aucun</string>
+    <string name="dialog_notify_title">Notification</string>
+    <string name="dialog_notify_message">"S'il vous plaît enlever avec diligence l'image."</string>
+    <string name="dialog_notify_check">Ne pas montrer avenir</string>
+</resources>

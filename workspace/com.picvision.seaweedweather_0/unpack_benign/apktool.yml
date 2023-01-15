@@ -1,0 +1,26 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: app3130.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- jpg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '3'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  cityList.xml: '8'
+  weather.xml: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.5.0-dirty
+versionInfo:
+  versionCode: '1'
+  versionName: 2.0.0

@@ -1,0 +1,35 @@
+{
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ListCatGuide",
+        "designer|userAlias": "listcatguide",
+        "id": "listCatGuide",
+        "store": "CatGuideTopicStore",
+        "disableSelection": true
+    },
+    "id": "ExtBox1-ext-gen4448",
+    "designerId": "8ca02ebc-7e6a-4057-b98d-f13706ac7cb5",
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<div><span class=\"redHeader\">{Name}</span></div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "95b93114-d6b6-464c-890f-b7c3587f8d70"
+        }
+    ]
+}

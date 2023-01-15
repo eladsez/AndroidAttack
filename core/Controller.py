@@ -192,6 +192,18 @@ class Controller:
             self.logger.log("ERROR", str(e.output))
             return -1
 
+    def remove_error_dir(self, apkName):
+        dirName = ""
+        for i in range(len(apkName)):
+            if i == 0:
+                dirName = apkName
+                continue
+            dirName = apkName[:-i]
+            if apkName[len(apkName) - i] == '/':
+                break
+        os.popen("rm -r " + dirName)
+        self.logger.log("ERROR", f"REMOVE {self.packageName} ENTRY FROM WORKSPACE")
+
     # This method handle all the workflow to execute the application and to measure data
     # @param apkName = name of the apk will be executed
     # @param resultName = name of the file where result are printed
@@ -208,6 +220,7 @@ class Controller:
         runningRes = self.androidToolInterface.runApplication(self.packageName, monkeyOptionOnlyStart)
         if runningRes == -1:
             self.logger.log("ERROR", "ERROR STARTING APPLICATION")
+            self.remove_error_dir(apkName)
             return -1
         time.sleep(1)
         self.start_time = datetime.now()

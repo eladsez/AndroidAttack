@@ -1,0 +1,125 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ClaimNumberDetail",
+        "designer|userAlias": "claimnumberdetail",
+        "cls": [
+            "whiteBG"
+        ],
+        "id": "claimNumberDetail",
+        "padding": "10px"
+    },
+    "id": "ExtBox1-ext-gen39801",
+    "designerId": "9b290a8c-430b-4ab5-b0fb-a8c166ed2b9c",
+    "cn": [
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyContainer8",
+                "designer|displayName": "CompanyDetail",
+                "id": "companyDetails"
+            },
+            "designerId": "ec717556-7560-4a34-af14-170bf259fc32",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": [
+                            "<div id=\"divZoneCoordinatorDetail\">\r",
+                            "    <h1>{CompanyName}</h1>\r",
+                            "    <span>Main Phone Number: {Phone1}\r",
+                            "        \r",
+                            "        <tpl if=\"Phone2 != null\">\r",
+                            "            <br />Secondary Phone Number: {Phone2}\r",
+                            "        </tpl>\r",
+                            "        \r",
+                            "        \r",
+                            "        <tpl if=\"Fax != null\">\r",
+                            "            <br />Fax: {Fax}\r",
+                            "        </tpl>\r",
+                            "        \r",
+                            "        <tpl if=\"Website != null\">\r",
+                            "            <br />Website: <a href={Website}>{Website}</a>\r",
+                            "        </tpl>\r",
+                            "        \r",
+                            "        <tpl if=\"Email != null\">\r",
+                            "            <br />Email: <a href=mailto:{Email}>{Email}</a>\r",
+                            "        </tpl>\r",
+                            "    </span>\r",
+                            "</div>"
+                        ],
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "efb69ac6-7a49-4c51-b921-027727fb0896"
+                }
+            ]
+        },
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyContainer9",
+                "designer|displayName": "ButtonContainer",
+                "cls": [
+                    "detailButtonContainer"
+                ],
+                "layout": "hbox"
+            },
+            "designerId": "a993945a-9f10-478c-833e-046b057672ea",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton11",
+                        "cls": "redButton",
+                        "id": "btnCallCompany",
+                        "itemId": "mybutton1",
+                        "icon": "",
+                        "iconCls": "phone",
+                        "iconMask": true,
+                        "text": ""
+                    },
+                    "designerId": "53bb934e-143c-40a3-960f-9eebd407e759"
+                },
+                {
+                    "type": "spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySpacer3",
+                        "width": 20
+                    },
+                    "designerId": "406ab0ee-88eb-490e-b9b2-3a64ebef7f80"
+                }
+            ]
+        }
+    ]
+}

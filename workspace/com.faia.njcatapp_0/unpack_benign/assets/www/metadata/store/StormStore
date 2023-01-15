@@ -1,0 +1,48 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "StormStore",
+        "designer|userAlias": "stormstore",
+        "autoLoad": true,
+        "model": "StormModel",
+        "storeId": "stormStore"
+    },
+    "id": "ExtBox1-ext-gen38970",
+    "designerId": "71cc1914-dbf6-4f6d-b770-5dcdd1fa6dc6",
+    "cn": [
+        {
+            "type": "jsonpproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy1",
+                "designer|displayName": "StormJSONProxy",
+                "url": "http://catnj.faia.net//ResourceWebService.svc/GetStorms"
+            },
+            "designerId": "02bb62af-14a8-4b46-8072-0c3a75b7a38a",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader1",
+                        "rootProperty": "GetStormsResult"
+                    },
+                    "designerId": "596c21bf-a55f-4cea-9236-1c66d68a1bd8"
+                }
+            ]
+        }
+    ]
+}

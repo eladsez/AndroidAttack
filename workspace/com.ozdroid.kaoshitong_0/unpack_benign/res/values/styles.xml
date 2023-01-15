@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NewBorderDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/alpha</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Activity</item>
+        <item name="android:background">@drawable/alpha</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:button">@drawable/btn_check</item>
+    </style>
+</resources>

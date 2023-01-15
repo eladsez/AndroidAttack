@@ -1,0 +1,30 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: app4199.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- ogg
+- jpg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '5'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  com/commonsware/cwac/tlv/README.markdown: '8'
+  com/commonsware/cwac/tlv/LICENSE: '8'
+  com/admogo/assets/ad_frame.gif: '8'
+  com/admogo/assets/close_btn.png: '8'
+  I/I.gif: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.5.0-dirty
+versionInfo:
+  versionCode: '7'
+  versionName: '1.6'

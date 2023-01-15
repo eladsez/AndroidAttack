@@ -30,18 +30,19 @@ droidScribeFamily = ["bengin", "drebin"]
 
 
 @click.command()
-@click.option('--f', default=["feature.txt"], help='Data file to use. Use multiple times to load multiple files',
+@click.option('--f', default=["train_model_features.txt"], help='Data file to use. Use multiple times to load multiple files',
               multiple=True)
 @click.option('--experimentname', default="classification.txt", help='Name of the experiment, used for saving results')
-@click.option('--algorithm', default="linear", help="algorithm for classification: 'linear':linear svm\n \
+@click.option('--algorithm', default="rbf", help="algorithm for classification: 'linear':linear svm\n \
 'sgdSvm': linear svm with sgd\n \
 'rbf': non linear svm with rbf kernel\n \
 'poly': non linear svm with 3 poly kernel\n \
 'forest': random forest classifier\n")
-@click.option('--repetition', type=int, default=20, help='number of experiment repetition')
-@click.option('--threshold', type=int, default=2,
-              help="threshold for selecting families. If == 0 use same family as droidscribe")
-def mymain(f, experimentname, repetition, algorithm, threshold):
+@click.option('--repetition', type=int, default=1, help='number of experiment repetition')
+@click.option('--threshold', type=int, default=2, help="threshold for selecting families. If == 0 use same family as "
+                                                       "droid-scribe")
+@click.option('--pathtomodel', type=str, default=None, help="")
+def mymain(f, experimentname, repetition, algorithm, threshold, pathtomodel):
     warnings.filterwarnings("ignore")
     dataLoader = DataLoader()
     malwareClassifier = MalwareClassifier()
@@ -50,7 +51,7 @@ def mymain(f, experimentname, repetition, algorithm, threshold):
         datas = malwareClassifier.selDataByFamily(datas, droidScribeFamily)
     else:
         datas = malwareClassifier.cleanClass(datas, threshold)
-    res = malwareClassifier.prepareAndRunExperiment(datas, repetition, algorithm, experimentname)
+    res = malwareClassifier.prepareAndRunExperiment(datas, repetition, algorithm, experimentname, pathtomodel)
     print(res)
 
 

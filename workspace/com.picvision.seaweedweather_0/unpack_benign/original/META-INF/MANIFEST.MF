@@ -1,0 +1,612 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: res/drawable/night010.jpg
+SHA1-Digest: catbo7j9cotMJqZLrKWRuLXpNow=
+
+Name: res/drawable/daysnow201.jpg
+SHA1-Digest: A82bvRUIQoQr8TlU2hgl2M9CNI8=
+
+Name: res/drawable/number_2_tahoma.png
+SHA1-Digest: Nxht84TBJMQl1K1sr7OlRHVIQsA=
+
+Name: res/drawable/number_4_tahoma.png
+SHA1-Digest: zx6yUi0EyUN8X0tuSUqEYkkOMAA=
+
+Name: res/drawable/day23.png
+SHA1-Digest: U0zqOf7GydsxZzwxJPyohLMTpxU=
+
+Name: res/layout/widget4.xml
+SHA1-Digest: W+HjGEmU1Q+Ae6aXTL5cBCXmlkY=
+
+Name: res/layout/widget2row3.xml
+SHA1-Digest: IFAQYar+xMf4D9iyNG7dbdfqyRQ=
+
+Name: res/drawable/day000.jpg
+SHA1-Digest: +WgAMls4OFbaqRZ+3/GWKz1AedA=
+
+Name: res/drawable/night2.png
+SHA1-Digest: 4OIRYPi5NAnJCNoznVCR5oxzomw=
+
+Name: res/drawable/night011.jpg
+SHA1-Digest: 1fYmR7WGTLEglviOdVBUnEApbXs=
+
+Name: res/layout/widget_calendar3.xml
+SHA1-Digest: ixtSoUh8NHFiPbizgMyqlpZN1nQ=
+
+Name: res/layout/widget5.xml
+SHA1-Digest: 4aH05043n/bi1VaM4cpqNtqsb9s=
+
+Name: res/drawable/widget_theme5.png
+SHA1-Digest: B8M1HMngrc7FFcXSHRdjfQIzdeo=
+
+Name: res/layout/spname.xml
+SHA1-Digest: Re/McbgmE8V1IqhA779FuSv2bVA=
+
+Name: res/drawable/addicon.png
+SHA1-Digest: +LeKyco0JGmqVYFm40d87H45+AY=
+
+Name: res/drawable/day18.png
+SHA1-Digest: MJUHKfNdmSerFCXxipuEbq3jG+E=
+
+Name: res/drawable/recommend.jpg
+SHA1-Digest: UbWOym55Zv5JyyLJ1Oe3Kdrx0W4=
+
+Name: res/drawable/day25.png
+SHA1-Digest: EsHGJTgQ1N9gcKgAjYu9k+N0jQ4=
+
+Name: res/drawable/night10.png
+SHA1-Digest: lwcF53rphd6FF2WGISCG77z1kD8=
+
+Name: res/drawable/mask.png
+SHA1-Digest: KwNMST17OdHy+sEhb2lGAWd3Wq8=
+
+Name: res/drawable/day002.jpg
+SHA1-Digest: kObhaAJxn9ZbUjbxNEcHEbgxsI8=
+
+Name: res/drawable/widget_3_1_0.png
+SHA1-Digest: t4WEzKxlAMndkEl2oafgAsFrFFM=
+
+Name: res/layout/weatherinfo.xml
+SHA1-Digest: wdTMrSP5zicuN7iHwOj7Hu/wUQ0=
+
+Name: res/drawable/nightsnow212.jpg
+SHA1-Digest: kSTPZCIRPjEcb4+T1PtHwwfTFOQ=
+
+Name: res/drawable/night32.png
+SHA1-Digest: OI6jyCdVpUhguwEip1GKLq2FLE8=
+
+Name: res/drawable/day21.png
+SHA1-Digest: wCvUktj8dbPivWI5F7l4rpOv/IM=
+
+Name: res/drawable/night15.png
+SHA1-Digest: yCNYdQ+7O9NHDmg9hstnaRSp5g8=
+
+Name: res/layout/dialog.xml
+SHA1-Digest: QWfWUPGpuizxzB1OyfdxBvCHUAw=
+
+Name: res/layout/dress.xml
+SHA1-Digest: 2m/esnX7wXp+O8yDLXK8DNxYrJM=
+
+Name: res/drawable/widget_5_1_0.png
+SHA1-Digest: NgEBbHsUiBXpR599jSscVKtHj6w=
+
+Name: res/drawable/night31.png
+SHA1-Digest: D1zeVc6ICt5B/bLnvam7OcNTA0A=
+
+Name: res/drawable/night17.png
+SHA1-Digest: 1ChWYJVBVBAnNGcQ1oH3PaaHhBA=
+
+Name: res/drawable/day27.png
+SHA1-Digest: +rkXeIOVXcf3MFHyKbECArrbEG0=
+
+Name: res/drawable/pdx_.png
+SHA1-Digest: 4+ehOkixg75nV0TYDao9H5ybLSs=
+
+Name: res/drawable/widget_1_1_0.png
+SHA1-Digest: H4pn71rhugVsHGd7gTHt0+qPHsM=
+
+Name: res/drawable/night9.png
+SHA1-Digest: wmI8Qau4Jbh6OmvLYsPgmUE0UEY=
+
+Name: res/drawable/rainnight112.jpg
+SHA1-Digest: RbRSJeaA1QmjNVToc4yEGJ0tzkY=
+
+Name: res/menu/home.xml
+SHA1-Digest: hCv6AfP8XAwDyacurl7rrDVqwyk=
+
+Name: res/drawable/night29.png
+SHA1-Digest: 8UaHOBYgW5ZtyMbM57A+uB8//oU=
+
+Name: res/drawable/day202.jpg
+SHA1-Digest: +1QbwfqANnF/4l7D8KCtRuj2MLo=
+
+Name: res/drawable/widget.png
+SHA1-Digest: VhkQmGud80GkQbTYvmjusgJUJBw=
+
+Name: res/drawable/night18.png
+SHA1-Digest: 8omLg/aK6s22P/DWjrW5faFYUc8=
+
+Name: res/drawable/logo.png
+SHA1-Digest: 6WTAYhnFoR7DQyFntcPF5P8lKsw=
+
+Name: res/drawable/reset_1.png
+SHA1-Digest: YJSbSyCjJPROcPUWiiiGcHSlDWY=
+
+Name: res/drawable/number_8_tahoma.png
+SHA1-Digest: 5anTJoRiCWaYiroG17vuoehFyVk=
+
+Name: res/drawable/night27.png
+SHA1-Digest: xr5voAWXgN3EStnBeKcLznzmhSs=
+
+Name: res/drawable/number_1_tahoma.png
+SHA1-Digest: Nb0m6j8J1Z0qlBL6xJLClGm1pjU=
+
+Name: res/drawable/day5.png
+SHA1-Digest: VBMIRB5EGkHgKzrngZPVMjG1SvA=
+
+Name: res/drawable/day16.png
+SHA1-Digest: ZbXm9YsWUJJFcj5hX7tAGcB9+FI=
+
+Name: res/drawable/timebg.png
+SHA1-Digest: RMyOwk393LU/+xmDm9ZXcEqRHqA=
+
+Name: res/drawable/widget_theme3.png
+SHA1-Digest: FpwnTDohi8yNo0HI6wjlVUP2dWA=
+
+Name: res/drawable/night26.png
+SHA1-Digest: 9VidmSzpRcgQiN6fUN8BCgyc2ek=
+
+Name: res/drawable/addicon1.png
+SHA1-Digest: XIA1DjCo7N0Hj6DEYznpwL7j9J4=
+
+Name: res/drawable/exponent.png
+SHA1-Digest: OVK0TMmDyBj4O1400TKU1CpIX14=
+
+Name: res/drawable/widget_2_2_1.png
+SHA1-Digest: oCsQMxIct6mTIbfl1uwuVoVMXZY=
+
+Name: res/drawable/widget_1_2_1.png
+SHA1-Digest: YuTIlv+4Jv5IhvHzVPXNdksrEbU=
+
+Name: res/layout/widget2row_calendar2.xml
+SHA1-Digest: KZErNiCBnBfBOrPkQi+yeM16JX0=
+
+Name: res/drawable/daysnow200.jpg
+SHA1-Digest: P2/rHA6wQziN77uZPWjg54+Zdgc=
+
+Name: res/drawable/night24.png
+SHA1-Digest: FnSzA59VcNgNVEgEytB/fK21POs=
+
+Name: res/drawable/day26.png
+SHA1-Digest: k76Y0D2GYXI2ERRGgOe1PUqQWRo=
+
+Name: res/drawable/day20.png
+SHA1-Digest: NNaGkyBE20gmWe4no8BJWtvWZTc=
+
+Name: res/drawable/rian101.jpg
+SHA1-Digest: gK0ULi+Vk4Vzc/1U2FzIzMRrBHI=
+
+Name: res/drawable/reset_.png
+SHA1-Digest: YJSbSyCjJPROcPUWiiiGcHSlDWY=
+
+Name: res/drawable/ad_360_640.png
+SHA1-Digest: thgNJiBRNVa8WiFR6HqzBNyinx0=
+
+Name: res/layout/set_city_inwidget.xml
+SHA1-Digest: 69FH2eJPVQkhSdo0DbWHLWSi+FE=
+
+Name: res/layout/show_image.xml
+SHA1-Digest: WBJV7ls1ES6bGEHA+CMmKuLdZUQ=
+
+Name: res/drawable/ad_352_416.png
+SHA1-Digest: 2j8tncQijQCpzvRvXOgdZfBTG+k=
+
+Name: res/drawable/night25.png
+SHA1-Digest: /rwE8rnUNvRo3l8HidOtXXVNlnk=
+
+Name: res/drawable/day11.png
+SHA1-Digest: s7iuMbT74hUF+6kllnpnwjtTsP8=
+
+Name: res/drawable/number_6_tahoma.png
+SHA1-Digest: g3y9k+FDsDGN4FbpsyskDszrhJQ=
+
+Name: res/layout/widget2row_calendar5.xml
+SHA1-Digest: dPUlJHN105WLazktTVgfobDapgM=
+
+Name: res/layout/widget_layout1.xml
+SHA1-Digest: XqJkaAAQawd5fNUOosPC0thsakM=
+
+Name: res/drawable/widget_4_2_1.png
+SHA1-Digest: uhLP8mAbwQNRKCWGjStP0DBtfYY=
+
+Name: res/drawable/ad_240_320.png
+SHA1-Digest: 1KlZ/cwo7AGk8SBtetBVh9xXGAQ=
+
+Name: res/drawable/widget_2_1_0.png
+SHA1-Digest: gXK/HaPxrnKlYwLeAnv9ilGsOoE=
+
+Name: res/layout/widget2row_calendar4.xml
+SHA1-Digest: 6as+8zMwYxUVoODv3+muylrGtq8=
+
+Name: res/drawable/night1.png
+SHA1-Digest: CCsf9QSUKUJXJai3lmnFgPnklwQ=
+
+Name: res/layout/city_manager_list.xml
+SHA1-Digest: 8Cz/gHXWbu1nTW3t0reJGl2INgU=
+
+Name: res/drawable/day6.png
+SHA1-Digest: aVEVZ3MxZybwXvjZwcXtmea2OO8=
+
+Name: res/layout/widget2row_calendar3.xml
+SHA1-Digest: TEKQEWlpmKmk5Kns05v6wTF3mt8=
+
+Name: res/drawable/night6.png
+SHA1-Digest: W8rUv3Q2d6nO5nUX8lVJwJI8e8M=
+
+Name: res/drawable/widget_4_1_0.png
+SHA1-Digest: 31UfFe5IfJ3CCO7+iZYItgrIwkM=
+
+Name: res/drawable/widget_3_2_1.png
+SHA1-Digest: rzoVlsuIo18jZQsUGhAee9hSRNc=
+
+Name: res/drawable/widget_5_1_1.png
+SHA1-Digest: saxPeBUvqQVexHaZ9RSdYka3Tew=
+
+Name: res/layout/widget_calendar5.xml
+SHA1-Digest: slKYAQJb8hX0eRVsu46iI1iiQiM=
+
+Name: res/drawable/day8.png
+SHA1-Digest: 59I2AFeI/yrxYWZVGLQ+iqmGQtU=
+
+Name: res/drawable/ad_480_800.png
+SHA1-Digest: UzamHCEPXXjjik/lvg+aie+FxHI=
+
+Name: res/drawable/day7.png
+SHA1-Digest: okHl9egxZamIuS64/TfYGN3bK9g=
+
+Name: res/layout/widget_theme_selecter.xml
+SHA1-Digest: 9df8tMvQcEVvhmaq+HggSw3P+SE=
+
+Name: res/drawable/night22.png
+SHA1-Digest: DGUggPiZbHicinTVIZkykLsxd+8=
+
+Name: res/drawable/bottom.png
+SHA1-Digest: kPp77sZQYApZYgLNSvRk1gXzz4s=
+
+Name: res/layout/widget_calendar2.xml
+SHA1-Digest: RrMJXZouak7Wmay0HOjtqEroUyQ=
+
+Name: res/drawable/widget_3_1_1.png
+SHA1-Digest: t4WEzKxlAMndkEl2oafgAsFrFFM=
+
+Name: res/drawable/yun.png
+SHA1-Digest: ZTIqHeuK0QdrCJSV15t7o2ZJXf4=
+
+Name: res/drawable/day32.png
+SHA1-Digest: xfPuNVRtPdYY1RJtDi07hu3n+p0=
+
+Name: res/drawable/day001.jpg
+SHA1-Digest: S50/GACCjMs4mZC3+rhnO9obF+s=
+
+Name: res/drawable/number_9_tahoma.png
+SHA1-Digest: rj5gp1wUjBSHehlVmVJvKoOHbaU=
+
+Name: res/layout/widget_calendar4.xml
+SHA1-Digest: GHlWTC4hZzrIFg4KXS/dRmzqUrE=
+
+Name: cityList.xml
+SHA1-Digest: Str5C1iz+Ff5/bRcxrGbRT9eGXE=
+
+Name: res/drawable/day17.png
+SHA1-Digest: FwxDSCgyz+imFpW2FkQDuI1PUzg=
+
+Name: res/drawable/day22.png
+SHA1-Digest: Ws3ov2OZBEPtkUFIqbHnjsquJPw=
+
+Name: res/layout/realweather.xml
+SHA1-Digest: vMO+WtXYlJ1rWmy7h/pIzvKKEgw=
+
+Name: res/drawable/rainnight110.jpg
+SHA1-Digest: iOiZz6kWIBdbCKyaDdQ+/lVIbBY=
+
+Name: res/layout/load.xml
+SHA1-Digest: KfhSLTJzmITXsiXcZly+3RLJsAc=
+
+Name: res/drawable/day30.png
+SHA1-Digest: KgH6dC2VN3HtjMM2E7O3hfRu/vQ=
+
+Name: res/drawable/day14.png
+SHA1-Digest: Yuw7R5C95pcEbaBYqotLLxTdTRQ=
+
+Name: res/drawable/day4.png
+SHA1-Digest: 0aBEoKch5+RCjhW+StpQbXRip+c=
+
+Name: resources.arsc
+SHA1-Digest: HqrQRq5c+zlFU+6268P95UzOW64=
+
+Name: res/drawable/night012.jpg
+SHA1-Digest: 2FjzkDI12xATYhbcEAa0ziOtuMU=
+
+Name: res/drawable/widget_5_2_1.png
+SHA1-Digest: E/7isUn/uVNUucQpNzCcMYZ9yl0=
+
+Name: res/layout/widget.xml
+SHA1-Digest: wbQjmG8lAxNU3m+347GWAVwv9PU=
+
+Name: AndroidManifest.xml
+SHA1-Digest: C/ucqbf8UGWv2iko5Mcwq+ZZt24=
+
+Name: res/layout/update_setting.xml
+SHA1-Digest: EaqEN7SxFDuiPjU971xBK1vb38E=
+
+Name: res/layout/widget2row_calendar1.xml
+SHA1-Digest: lJjY0gOpireNUXQrb4ujDdWbuGc=
+
+Name: res/drawable/night23.png
+SHA1-Digest: h+hU6e8KgllX8TZgWTBzXuKKjvU=
+
+Name: res/drawable/ad_480_854.png
+SHA1-Digest: WBTmYm6Ah5ok93pD9gu7vUZRE7o=
+
+Name: res/drawable/nightsnow211.jpg
+SHA1-Digest: UsIdrT9eA2Tg9hcMNGQIcE3hkvs=
+
+Name: res/drawable/widget_theme2.jpg
+SHA1-Digest: GU+PYGXSO32oN7h3cvrSklpnQj0=
+
+Name: res/drawable/ad_240_300.png
+SHA1-Digest: /IlbXkQXj3Nq53VVBRygdMbH2U0=
+
+Name: res/drawable/number_3_tahoma.png
+SHA1-Digest: gjkitLI75nxdtmxZNRlMJxQFIRE=
+
+Name: res/drawable/number_7_tahoma.png
+SHA1-Digest: SnnFnVXB4berPPTn6XAezJvBZ8o=
+
+Name: res/drawable/night21.png
+SHA1-Digest: DdrcQZnKaUJE27mnxfWK/6ZIk9A=
+
+Name: res/drawable/day12.png
+SHA1-Digest: CpSI6nMJe7lLvkeRBl4GjcLaJXE=
+
+Name: res/drawable/ad_320_480.png
+SHA1-Digest: 7LJuTGPZriHfYGDpgHJjJsJmG5Q=
+
+Name: res/drawable/top.png
+SHA1-Digest: /DdGjVH9e5gMsGavbQNvMExhZsM=
+
+Name: classes.dex
+SHA1-Digest: 1V1IVXmuLcETaShDchXX/abD4gI=
+
+Name: res/drawable/day24.png
+SHA1-Digest: tGwulndO0KRF/NFSMx4RpG5iJI8=
+
+Name: res/drawable/number_5_tahoma.png
+SHA1-Digest: wzjd8+t3pAYYaTASG3+sSMu2oY0=
+
+Name: res/drawable/day28.png
+SHA1-Digest: KVVOoHY6tFMycakBcjX8VV1w0BA=
+
+Name: res/drawable/widget_3_2_0.png
+SHA1-Digest: U0Yk3SkM/pG+vvCu8vyvWBuHG4A=
+
+Name: res/drawable/widget_1_1_1.png
+SHA1-Digest: wUcTOiim4T9yyiONl+OzBwicfVQ=
+
+Name: res/layout/widget1.xml
+SHA1-Digest: nii/28xo3iiP3gcLMxLKlQSaPjw=
+
+Name: res/drawable/ad_176_208.png
+SHA1-Digest: KvWcsQrQ6YsSsvZSPrU3idDdTBU=
+
+Name: res/drawable/night20.png
+SHA1-Digest: VnFw8Mff3dd3HEf4mksTduSoI08=
+
+Name: res/drawable/icon.png
+SHA1-Digest: 7Ft/Rirt+l/JRX2KjDREScdbCZk=
+
+Name: res/drawable/adbg.png
+SHA1-Digest: 6QeU5lA25gxyFAoespow/vxhevs=
+
+Name: res/drawable/rainnight111.jpg
+SHA1-Digest: Trgq/HV8aHSo+ch1sGvOnWkTkAc=
+
+Name: res/drawable/xian.png
+SHA1-Digest: hWENMyOPF97SzPqBCoY/GmngqdY=
+
+Name: res/drawable/widget_4_2_0.png
+SHA1-Digest: MKB4SlFglHU0RFsprPmevUqufsU=
+
+Name: res/drawable/rain102.jpg
+SHA1-Digest: JZz4v1i7eiMkTEuBm+oDrg8NR8Q=
+
+Name: res/layout/widget2row1.xml
+SHA1-Digest: 339r1ER5stiTTrnnMWMWerR7exQ=
+
+Name: res/drawable/night3.png
+SHA1-Digest: nMTDKWeS+8Xl2RfRQFsuye8FohQ=
+
+Name: res/layout/widget2.xml
+SHA1-Digest: ZkZ/JyqdXPeUkcefnXx1Juu4vIM=
+
+Name: res/drawable/deleteicon.png
+SHA1-Digest: 0LwntZ+YKHq52IYccPQlAImbQx0=
+
+Name: res/drawable/night8.png
+SHA1-Digest: lybtWdignqtIJCPwq9YSwYjkXQw=
+
+Name: res/drawable/widget_theme1.png
+SHA1-Digest: zFqFRaL5EyJOpUDjDrNOTaU0LMw=
+
+Name: res/layout/recommend.xml
+SHA1-Digest: Zlfbat3kC3pHjDPfcteNQMRyvOc=
+
+Name: res/drawable/dots.png
+SHA1-Digest: x1o3IJVzWXL2zC6Fjaxdsf6tbYs=
+
+Name: res/drawable/night12.png
+SHA1-Digest: /rwE8rnUNvRo3l8HidOtXXVNlnk=
+
+Name: res/drawable/loading.jpg
+SHA1-Digest: Ranv9jaOlkYbG18HQP0y/SgK9cg=
+
+Name: res/drawable/day1.png
+SHA1-Digest: lTSOFWyh3KIa86Btatqna1a0S4o=
+
+Name: res/drawable/night7.png
+SHA1-Digest: Aa9F7lI7KhzCMiXTxcPx2nyXZAE=
+
+Name: res/drawable/night11.png
+SHA1-Digest: SHoCsbvQE6z3y2dO9SNiqY0RLlw=
+
+Name: res/drawable/widget_5_2_0.png
+SHA1-Digest: hqxitQyAMKeGo7vDqV3q/Q0Xuho=
+
+Name: res/drawable/night5.png
+SHA1-Digest: SALxoBweTh9jNDQa9UAkakQE9Ec=
+
+Name: res/layout/widget2row4.xml
+SHA1-Digest: KvqhnrGXyf73OG746yZQwy5t+mc=
+
+Name: res/drawable/ad_240_400.png
+SHA1-Digest: cp2ulwNeCRy/5OzgNf2c8/ZzAT8=
+
+Name: res/drawable/day13.png
+SHA1-Digest: SLMJ7HZkagPvhUSAm602mUsRNJY=
+
+Name: res/drawable/reset.png
+SHA1-Digest: B72uVWvoHlTwnjxL+VOg5kc3JT4=
+
+Name: res/drawable/nightsnow210.jpg
+SHA1-Digest: r3Y2Q4neY8OXtfFIxtToRhvAzu8=
+
+Name: res/drawable/rain.png
+SHA1-Digest: Sb3+8fslPWz9g1zqvegyb0IftEY=
+
+Name: res/drawable/day29.png
+SHA1-Digest: cyTEJK6AyrtfnaMzOq4p0MicKoM=
+
+Name: res/drawable/rebg.png
+SHA1-Digest: Y5WH75qN+YC6NfKdokDwcHvs5LE=
+
+Name: res/drawable/addcity3.png
+SHA1-Digest: wES5zQtLtQziBUZvVpL1ozMtKqg=
+
+Name: res/drawable/night13.png
+SHA1-Digest: 9VidmSzpRcgQiN6fUN8BCgyc2ek=
+
+Name: res/layout/main.xml
+SHA1-Digest: T6WKw1Z+RJ8GJbTNrj7o5+mQkj8=
+
+Name: res/drawable/day3.png
+SHA1-Digest: 0PnS9BgGLFcQ9NaKeIMvUlCQj8Q=
+
+Name: res/drawable/night30.png
+SHA1-Digest: Dlw4icAgC0BDch+HavrWv8siy7o=
+
+Name: res/drawable/night19.png
+SHA1-Digest: Li2+0kO8cEtTyCc1Tt8aksj7pyk=
+
+Name: res/drawable/widget_1_2_0.png
+SHA1-Digest: tp6gogTzP4IDQdkDtbFPHjSg2Y0=
+
+Name: res/drawable/night4.png
+SHA1-Digest: F1hpu5JWa/4HldezSfJZdsH4tWE=
+
+Name: res/drawable/day2.png
+SHA1-Digest: qIJO8VNGVlTMHlOtFYuclSHhhMQ=
+
+Name: res/drawable/city_img_setting.xml
+SHA1-Digest: UF0YoRLsSm7G23ys2b4+2/LQiOE=
+
+Name: assets/cityList.xml
+SHA1-Digest: Str5C1iz+Ff5/bRcxrGbRT9eGXE=
+
+Name: res/drawable/widget_2_2_0.png
+SHA1-Digest: lJYoEIvFAeXaCNM3l83Q9rFt1lM=
+
+Name: res/layout/shift_city.xml
+SHA1-Digest: dTa1xIDbVLLUqbTNKrPxO5WUtcs=
+
+Name: res/drawable/night14.png
+SHA1-Digest: oJgmbA6/7ifJJ/gV3uM1sfGSXPs=
+
+Name: res/drawable/day31.png
+SHA1-Digest: Jc08z9GSZOxDXQc113+sk+qTrRE=
+
+Name: res/xml/weather_info.xml
+SHA1-Digest: I1sMTm2O7F3EUu9J1fnfjOxNb+0=
+
+Name: res/drawable/night28.png
+SHA1-Digest: H1/Y5D2hdNgKq11RPy6xfmOUCZY=
+
+Name: res/drawable/day19.png
+SHA1-Digest: BuQajqWdk9fy5c/pGQ/G13a7p6w=
+
+Name: res/layout/realweathernocity.xml
+SHA1-Digest: nZ6NTbjLq2t62r4VN4InNE5/Cb4=
+
+Name: res/drawable/day10.png
+SHA1-Digest: j1Bu9xE7+Hl+TsHKLMikpINjZWM=
+
+Name: res/layout/widget2row5.xml
+SHA1-Digest: NCoq6tLSD6wbXvz2fIzJRuxO1i8=
+
+Name: res/drawable/number_0_tahoma.png
+SHA1-Digest: xp4TLxRZmhYoFVnIFtV7jEjrYVU=
+
+Name: res/drawable/night16.png
+SHA1-Digest: 8cvJR86VCMAIrPOY2Ax/XKy5FpA=
+
+Name: res/drawable/na.png
+SHA1-Digest: JXDvkEcS8XmIzy0MeMXXdGt5AY0=
+
+Name: res/drawable/day9.png
+SHA1-Digest: J+T8vWen3swyU6JtU+a1Y/Uh3TQ=
+
+Name: res/drawable/widget_theme4.png
+SHA1-Digest: ZigaPAQk1zb/HscVhRt0cCcfPSM=
+
+Name: res/drawable/snow.png
+SHA1-Digest: 8mO6ei6FEJ11FWvLehlEwR6rI7E=
+
+Name: res/drawable/widget_2_1_1.png
+SHA1-Digest: 6EN9qOn3MynaRycoWHOQBnWuVOg=
+
+Name: res/layout/widget3.xml
+SHA1-Digest: sn7MB3Hsz8sOg2TO0Bon82/nBx4=
+
+Name: res/drawable/ad_208_208.png
+SHA1-Digest: BTqUxi3wsdSpbsMaSyvzlgO+Mw4=
+
+Name: res/drawable/widget_4_1_1.png
+SHA1-Digest: 9m+6DV6xrd6VZOUNfLndA8uMZbc=
+
+Name: res/drawable/day15.png
+SHA1-Digest: 6gykF0F/llRmfCuOsrzlAm5L8b4=
+
+Name: res/layout/widget_calendar1.xml
+SHA1-Digest: /kVq+tJdkPqE6zg9Uo3VKHyNrd0=
+
+Name: res/layout/widget2row2.xml
+SHA1-Digest: 1xd69UNBZywhSQ7iiVf9mU2VqpU=
+
+Name: res/drawable/rian100.jpg
+SHA1-Digest: frnOl3lTcsRgspNO7NzZqkKZY4Q=
+
+Name: res/drawable/img_btn1.png
+SHA1-Digest: ndI2IhAcBhJAVwqBK30R2li09A8=
+
+Name: res/layout/city_manager_list_options.xml
+SHA1-Digest: 60SBRBAlyKoP6C2NU8YoJ5eX8y0=
+
+Name: res/drawable/pdx.png
+SHA1-Digest: +rJrTQvG+CMq0hRZ8ou32mDcsL4=
+
+Name: weather.xml
+SHA1-Digest: /i2xkqRJz2nV14bxyw2lHwkDYsU=
+
+Name: res/drawable/img_btn2.png
+SHA1-Digest: Q+vN/0tuEktOfhHho8ohCoDBAFo=
+

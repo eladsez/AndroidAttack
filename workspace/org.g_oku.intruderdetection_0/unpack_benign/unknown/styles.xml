@@ -1,0 +1,25 @@
+<resources>
+
+    
+<style name="AppTheme" parent="android:Theme.Light" />
+<style name="PauseDialog" parent="@android:style/Theme.Dialog">
+    <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+</style>
+
+<style name="PauseDialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/bounce</item>
+    <item name="android:windowExitAnimation">@anim/scale_down</item>
+</style>
+<style name="FadeDialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/fade_in</item>
+    <item name="android:windowExitAnimation">@anim/fade_out</item>
+</style>
+<style name="SlidefromTopDialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/slidefrombottom_up</item>
+    <item name="android:windowExitAnimation">@anim/slidefrombottom_down</item>
+</style>
+<style name="SlidefromBottomDialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/slidefromtop_down</item>
+    <item name="android:windowExitAnimation">@anim/slidefromtop_up</item>
+</style>
+</resources>

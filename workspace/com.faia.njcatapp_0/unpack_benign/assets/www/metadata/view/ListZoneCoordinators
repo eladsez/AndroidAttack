@@ -1,0 +1,76 @@
+{
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ListZoneCoordinators",
+        "designer|userAlias": "listzonecoordinators",
+        "id": "listZoneCoordinator",
+        "layout": "vbox",
+        "emptyText": "There are no zone coordinators currently on file.",
+        "store": "memberStore",
+        "disableSelection": true,
+        "grouped": true
+    },
+    "id": "ExtBox1-ext-gen23430",
+    "designerId": "e67a4b4e-b5a0-416f-b556-6063e2c3157b",
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "\r",
+                    "<div><span class=\"redHeader\">{FullName}</span><br>\r",
+                    "    <span class=\"subTextGray\">{Company}</span></div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "c8e402cd-fc39-41e6-be3a-9d68e11a038f"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getZoneCoordinators",
+                "fn": "getZoneCoordinators",
+                "implHandler": [
+                    "console.log('getting zone coordinators');\r",
+                    "var store = Ext.data.StoreManager.lookup('memberStore'),\r",
+                    "url = 'http://localhost:49848/ResourceWebService.svc/GetZoneCoordinators';\r",
+                    "\r",
+                    "store.getProxy().setUrl(url);\r",
+                    "\r",
+                    "store.load(store);"
+                ]
+            },
+            "designerId": "0d56c2eb-d7b9-4327-a30e-78da95f55c6c"
+        },
+        {
+            "type": "listindexbar",
+            "reference": {
+                "name": "indexBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyIndexBar",
+                "designer|displayName": "ListZCIndex",
+                "letters": "[\"\"]"
+            },
+            "designerId": "ffedb700-c65b-49ed-85af-7ee15fa1caa4"
+        }
+    ]
+}

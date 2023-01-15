@@ -1,0 +1,74 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "StormModel",
+        "designer|userAlias": "stormmodel",
+        "clientIdProperty": "stormModel"
+    },
+    "id": "ExtBox1-ext-gen64742",
+    "designerId": "2dc2cf10-8dde-4e1b-a253-28888ea51fb2",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field13",
+                "name": "ID",
+                "type": "int"
+            },
+            "designerId": "9df6b8f3-d524-4e95-ba9d-527b6ba57366"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field14",
+                "name": "Name",
+                "type": "string"
+            },
+            "designerId": "ec4b6a43-07ba-484e-98a3-0ea0881d7be4"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field15",
+                "name": "HurricaneSeason",
+                "dateFormat": "%Y-%M-%d",
+                "type": "date"
+            },
+            "designerId": "f758435d-283e-409c-9d2b-a253527f83e0"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field16",
+                "name": "ImageURL",
+                "type": "string"
+            },
+            "designerId": "f62e226b-972d-465b-b696-981030b5612f"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" ads:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:background="#ff0099cb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <Button android:textSize="35.0sp" android:textColor="#ffffffff" android:gravity="start|center" android:id="@id/practiceGame_button" android:paddingLeft="5.0dip" android:paddingTop="0.0dip" android:paddingRight="5.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Just Practice" android:textAllCaps="false" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <Button android:textSize="40.0sp" android:textColor="@android:color/holo_blue_dark" android:gravity="end|center" android:id="@id/wordsperminute_button" android:paddingLeft="5.0dip" android:paddingTop="0.0dip" android:paddingRight="5.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Words Per Minute" android:textAllCaps="false" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:background="#ff0099cb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <Button android:textSize="35.0sp" android:textColor="#ffffffff" android:gravity="start|center" android:id="@id/nomistakesgame_button" android:paddingLeft="5.0dip" android:paddingTop="0.0dip" android:paddingRight="5.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="No Mistakes" android:textAllCaps="false" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.google.android.gms.ads.AdView android:layout_gravity="bottom" android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="81.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</LinearLayout>

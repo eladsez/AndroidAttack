@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="editNotePreview" />
+    <item type="id" name="editNoteTitle" />
+    <item type="id" name="editNoteTitleInput" />
+    <item type="id" name="editNoteAlarmSwitch" />
+    <item type="id" name="editNoteAlarmControls" />
+    <item type="id" name="editNoteAlarmDate" />
+    <item type="id" name="editNoteAlarmTime" />
+    <item type="id" name="editNoteAlarmModes" />
+    <item type="id" name="editNoteSaveBtn" />
+    <item type="id" name="editNoteCancelBtn" />
+    <item type="id" name="scrollView1" />
+    <item type="id" name="extendedNote" />
+    <item type="id" name="viewNotes" />
+    <item type="id" name="settings" />
+    <item type="id" name="rate" />
+    <item type="id" name="exit" />
+    <item type="id" name="paintView" />
+    <item type="id" name="cleanBtn" />
+    <item type="id" name="inputModeBtn" />
+    <item type="id" name="rwModeBtn" />
+    <item type="id" name="saveBtn" />
+    <item type="id" name="textInput" />
+    <item type="id" name="zoomScaleImg" />
+    <item type="id" name="settingsCtrlOrientationCbx" />
+    <item type="id" name="settingsPreferStorageCbx" />
+    <item type="id" name="settingsSaveBtn" />
+    <item type="id" name="settingsCancelBtn" />
+    <item type="id" name="topControls" />
+    <item type="id" name="viewNotePrevBtn" />
+    <item type="id" name="viewNotePageNum" />
+    <item type="id" name="viewNoteNextBtn" />
+    <item type="id" name="bottomControls" />
+    <item type="id" name="notesListView" />
+    <item type="id" name="viewNoteDeleteBtn" />
+    <item type="id" name="viewNoteCancelBtn" />
+    <item type="id" name="noteItemThumbnail" />
+    <item type="id" name="noteItemIcon" />
+    <item type="id" name="noteItemTitle" />
+    <item type="id" name="noteItemUpdated" />
+    <item type="id" name="alarmDate" />
+    <item type="id" name="noteItemSelected" />
+    <item type="id" name="menu_settings" />
+</resources>

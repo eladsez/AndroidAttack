@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Detecção de intrusão</string>
+    <string name="action_settings">Cenário</string>
+    <string name="app_finish_title">Tem certeza de que deseja sair?</string>
+    <string name="app_finish_ok">sim</string>
+    <string name="app_finish_cancel">não</string>
+    <string name="dialog_error_title">Erro</string>
+    <string name="dialog_error_message">Não está disponível no modelo, não há câmera frontal.</string>
+    <string name="dialog_error_ok">Final</string>
+    <string name="pref_switch_on">ON</string>
+    <string name="pref_switch_off">OFF</string>
+    <string name="pref_switch_title">Detecta intrusão</string>
+    <string name="pref_gallery_title">Confira o intruso</string>
+    <string name="pref_gallery_summary">Ver a imagem capturada para abrir a galeria</string>
+    <string name="pref_save_gallery_title">Salve em uma pasta dedicada</string>
+    <string name="pref_save_gallery_summary">A imagem capturada é armazenada em uma pasta dedicada. Não é visível a partir da galeria da norma.</string>
+    <string name="toast_read_error_message">O Windows não pode carregar a imagem</string>
+    <string name="toast_delete_error_message">Não foi possível excluir</string>
+    <string name="pref_action_delete">Excluir</string>
+    <string name="pref_action_deleteAll">Excluir tudo</string>
+    <string name="pref_action_share">Ação</string>
+    <string name="dialog_progress_delete">Excluindo</string>
+    <string name="dialog_confirm_title">Confirmação</string>
+    <string name="dialog_delete_confirm">Tem certeza de que quer apagar a imagem?</string>
+    <string name="dialog_delete_all_confirm">Você tem certeza que deseja deletar tudo?</string>
+    <string name="ok">sim</string>
+    <string name="ng">não</string>
+    <string name="dialog_notify_title">Notificação</string>
+    <string name="dialog_notify_message">Por favor, remova diligentemente imagem.</string>
+    <string name="dialog_notify_check">Não mostrar futuro</string>
+</resources>

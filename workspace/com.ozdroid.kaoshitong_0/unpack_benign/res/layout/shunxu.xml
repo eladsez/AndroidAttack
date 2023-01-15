@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_header" android:background="@drawable/bg_base_content_header" android:layout_width="320.0dip" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/mid_content" android:background="@drawable/bg_base_content" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="320.0dip" android:layout_height="fill_parent" android:layout_above="@id/content_bottom" android:layout_below="@id/content_header">
+        <LinearLayout android:orientation="vertical" android:id="@id/question" android:background="@drawable/bg_text" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/answerlist">
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/testcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/testimage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="60.0dip" />
+        </LinearLayout>
+        <ListView android:id="@id/answerlist" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:listSelector="@drawable/alpha" android:cacheColorHint="#00000000" android:divider="@drawable/alpha" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content_bottom" android:background="@drawable/bg_base_content_bottom" android:paddingLeft="20.0dip" android:paddingTop="7.0dip" android:paddingRight="20.0dip" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_slider" android:background="@drawable/btn_slider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" />
+            <Button android:id="@id/btn_answer" android:background="@drawable/btn_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" />
+            <Button android:id="@id/btn_add" android:background="@drawable/btn_add" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:id="@id/btn_prev" android:background="@drawable/btn_prev" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/btn_next" android:background="@drawable/btn_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

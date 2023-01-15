@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rilevamento Intruder</string>
+    <string name="action_settings">Impostazione</string>
+    <string name="app_finish_title">Sei sicuro di voler uscire?</string>
+    <string name="app_finish_ok">sì</string>
+    <string name="app_finish_cancel">no</string>
+    <string name="dialog_error_title">Errore</string>
+    <string name="dialog_error_message">"Non è disponibile nel modello non c'è fotocamera frontale."</string>
+    <string name="dialog_error_ok">Fine</string>
+    <string name="pref_switch_on">ON</string>
+    <string name="pref_switch_off">OFF</string>
+    <string name="pref_switch_title">Rileva intrusioni</string>
+    <string name="pref_gallery_title">Salvare in una cartella dedicata</string>
+    <string name="pref_gallery_summary">"Guarda l'immagine catturata per lanciare la galleria"</string>
+    <string name="pref_save_gallery_title">Nascondere le immagini</string>
+    <string name="pref_save_gallery_summary">"L'immagine acquisita viene memorizzato in una cartella dedicata. Non è visibile dalla galleria di standard."</string>
+    <string name="toast_read_error_message">"Impossibile caricare l'immagine"</string>
+    <string name="toast_delete_error_message">Impossibile eliminare</string>
+    <string name="pref_action_delete">Cancellare</string>
+    <string name="pref_action_deleteAll">Elimina tutto</string>
+    <string name="pref_action_share">Quota</string>
+    <string name="dialog_progress_delete">Eliminazione</string>
+    <string name="dialog_confirm_title">Conferma</string>
+    <string name="dialog_delete_confirm">"Sei sicuro di voler eliminare l'immagine?"</string>
+    <string name="dialog_delete_all_confirm">Sei sicuro di voler eliminare tutti?</string>
+    <string name="ok">sì</string>
+    <string name="ng">no</string>
+    <string name="dialog_notify_title">Notifica</string>
+    <string name="dialog_notify_message">"Si prega di rimuovere l'immagine diligentemente."</string>
+    <string name="dialog_notify_check">Non mostrare futuro</string>
+</resources>

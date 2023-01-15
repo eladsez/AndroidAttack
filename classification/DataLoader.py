@@ -84,7 +84,7 @@ class DataLoader:
                  'familyEncoder': familyEncoder, 'packetEncoder': packageEncoder,
                  'familyStr': familyStr, 'packageStr': packageStr})
 
-    ##This method merge data loaded from different files
+    # This method merge data loaded from different files
     # It return the same object of load data extended to all data in the dataList
     # @param dataList = list of data object returned by loadData
     def loadDataList(self, fileLists):

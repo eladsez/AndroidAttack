@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">우리아이</string>
+    <string name="action_settings">종 료</string>
+    <string name="settings">설 정</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="download_complete">다운로드 완료</string>
+    <string name="network_error">네트워크 상태를 확인하세요</string>
+    <string name="bad_url">주소가 잘못되었습니다</string>
+</resources>

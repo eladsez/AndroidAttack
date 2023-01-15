@@ -1,7 +1,9 @@
 # Copyright (C) 2017  Luca Massarelli
 #
 # This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
+# it under the terms of the GNU General
+#
+# Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # any later version.
 
@@ -66,6 +68,7 @@ class DataCollection:
     def runExperiment(self):
         self.logger.log("INFO", "STARTING EXPERIMENT")
         dir = os.listdir(self.workspacePath)
+        past_res = 0
         for item in dir:
             if os.path.isdir(self.workspacePath + item):
                 print("--------------------------------------")
@@ -85,10 +88,13 @@ class DataCollection:
                                 self.logger.log("INFO", "RUN: " + str(i) + " OF: " + str(self.numberOfRun))
                                 emulatorInterface = EmulatorInterface(self.playerPath, self.VMName, self.emulator)
                                 # emulatorInterface.restoreSnapshot("Snap1") # Elad commented seems to be not working
-                                emulatorInterface.runEmulator()
+                                if past_res != -1:
+                                    emulatorInterface.runEmulator()
                                 controller = Controller(self.numberOfEvents, self.throttle)
-                                controller.run(path + apk_item, fileName, self.rndSeed)
-                                emulatorInterface.stopEmulator()
+                                res = controller.run(path + apk_item, fileName, self.rndSeed)
+                                if res != -1:
+                                    emulatorInterface.stopEmulator()
+                                past_res = res
                             else:
                                 self.logger.log("INFO", "FILENAME: " + fileName + " ALREADY EXIST -- SKIPPPING")
         self.logger.log("INFO", "FINISH EXPERIMENT")

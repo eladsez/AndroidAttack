@@ -1,0 +1,47 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "StormNoticeStore",
+        "groupDir": "DESC",
+        "groupField": "PostDateString",
+        "model": "NoticeModel",
+        "pageSize": 35,
+        "storeId": "StormNoticeStore"
+    },
+    "id": "ExtBox1-ext-gen18697",
+    "designerId": "6041d508-24b3-4323-9da2-3df2219c75fd",
+    "cn": [
+        {
+            "type": "jsonpproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy2"
+            },
+            "designerId": "2914c871-9b3c-482a-b505-30e889b975a1",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader2",
+                        "rootProperty": "GetStormNoticesResult"
+                    },
+                    "designerId": "4b9d3e0c-4b6c-4b8b-a295-0115e8e83ff2"
+                }
+            ]
+        }
+    ]
+}

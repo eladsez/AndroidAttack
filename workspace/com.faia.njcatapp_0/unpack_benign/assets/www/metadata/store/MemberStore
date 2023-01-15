@@ -1,0 +1,52 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MemberStore",
+        "designer|userAlias": "memberStore",
+        "autoLoad": true,
+        "groupDir": "ASC",
+        "groupField": "Title",
+        "model": "MemberModel",
+        "pageSize": 30,
+        "storeId": "memberStore"
+    },
+    "id": "ExtBox1-ext-gen10249",
+    "designerId": "6cffd73d-a0b4-4b80-8ba7-fc2bb5f29654",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy1",
+                "designer|displayName": "MemberJSONProxy",
+                "url": "appData/ZoneCoordinators.json"
+            },
+            "designerId": "d43b9d69-30c2-4576-97e7-9c3f339291cb",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader2",
+                        "designer|displayName": "MemberJsonReader",
+                        "rootProperty": "GetZoneCoordinatorsResult"
+                    },
+                    "designerId": "9ce6ccf7-21d5-4b2c-9785-749eb51ccf2f"
+                }
+            ]
+        }
+    ]
+}

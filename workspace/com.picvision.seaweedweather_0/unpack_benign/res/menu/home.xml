@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/home_group01">
+        <item android:id="@id/home_menu_update" android:menuCategory="container" android:orderInCategory="0" android:title="刷新" />
+        <item android:id="@id/home_menu_shift_city" android:menuCategory="container" android:orderInCategory="1" android:title="城市管理" />
+        <item android:id="@id/home_menu_more" android:menuCategory="container" android:orderInCategory="2" android:title="更多" />
+        <item android:id="@id/home_menu_share" android:menuCategory="container" android:orderInCategory="3" android:title="分享" />
+        <item android:id="@id/home_menu_setting" android:menuCategory="container" android:orderInCategory="4" android:title="设置" />
+        <item android:id="@id/home_menu_exit" android:menuCategory="container" android:orderInCategory="5" android:title="退出" />
+    </group>
+</menu>

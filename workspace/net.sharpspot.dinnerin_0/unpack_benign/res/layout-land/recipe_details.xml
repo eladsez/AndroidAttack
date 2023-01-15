@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarAlwaysDrawHorizontalTrack="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/LinearLayout01" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/imgPicture" android:background="@drawable/dropshadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+        <TableLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TableRow style="@style/TableRowStyle">
+                <TextView android:gravity="right" android:id="@id/lblName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_column="1" android:text="Name: " />
+                <TextView android:textStyle="bold" android:gravity="left" android:id="@id/txtName" android:tag="Name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="&lt;tap to enter>" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow style="@style/TableRowStyle">
+                <TextView android:gravity="right" android:id="@id/lblDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1" android:text="Description: " />
+                <TextView android:gravity="left" android:id="@id/txtDescription" android:tag="Description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="&lt;tap to enter>" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow style="@style/TableRowStyle">
+                <TextView android:gravity="right" android:id="@id/lblSource" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_column="1" android:text="Source: " />
+                <TextView android:gravity="left" android:id="@id/txtSource" android:tag="Source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="&lt;tap to enter>" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow style="@style/TableRowStyle">
+                <TextView android:gravity="right" android:id="@id/lblTags" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_column="1" android:text="Tags: " />
+                <TextView android:gravity="left" android:id="@id/txtTags" android:tag="Tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="&lt;tap to enter>" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow style="@style/TableRowStyle">
+                <TextView android:gravity="right" android:id="@id/lblPrepTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_column="1" android:text="Prep Time: " />
+                <TextView android:gravity="left" android:id="@id/txtPrepTime" android:tag="Prep Time" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="&lt;tap to enter>" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow style="@style/TableRowStyle">
+                <TextView android:gravity="right" android:id="@id/lblCookTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_column="1" android:text="Cook Time: " />
+                <TextView android:gravity="left" android:id="@id/txtCookTime" android:tag="Cook Time" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="&lt;tap to enter>" android:layout_weight="1.0" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

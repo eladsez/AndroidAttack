@@ -1,0 +1,343 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: VcC/fYjxyOGrsvYYsmsHoe5MRLk=
+
+Name: assets/www/appImages/qReference.png
+SHA1-Digest: RTraYESzpyK9QBOwknT7Xzwj6C4=
+
+Name: res/xml/config.xml
+SHA1-Digest: xdIqCvqARl3oG/cjavOeQfW7aAE=
+
+Name: assets/www/app/view/StormDetail.js
+SHA1-Digest: u5GFY3GgLEckyhl4QmejyTmLpqM=
+
+Name: assets/www/app/view/NoticeDetail.js
+SHA1-Digest: jn8Ausg50/5EBK26YGnh40mNZt4=
+
+Name: assets/www/metadata/view/ClaimNumberDetail
+SHA1-Digest: AwbOD0HzHLe4LbPr5CITCqvJVxs=
+
+Name: assets/www/metadata/Application
+SHA1-Digest: 9T97oUHrz0cUuYQnbXBv5SXtb9k=
+
+Name: assets/www/metadata/resource/css
+SHA1-Digest: UYg5OaIn9OTVXSnjAEVlfV6O4zQ=
+
+Name: assets/www/app/model/EmergencyOperationCenterModel.js
+SHA1-Digest: LW5NcMtbD+J/a717jJ9i38ZzJN8=
+
+Name: assets/www/metadata/view/MainNav
+SHA1-Digest: 0NTD4lnOLTNJcJmzsOTSgFKBZTQ=
+
+Name: assets/www/metadata/controller/MainPageController
+SHA1-Digest: gbEclEtLqBbMhS/wtpMmX2Gkd6g=
+
+Name: assets/www/metadata/view/PanelZoneCoordinatorDetail
+SHA1-Digest: 6whxIcVEXhPeJ9JJlU9MZy9Z8Xs=
+
+Name: assets/www/app/view/ListEOC.js
+SHA1-Digest: woMpZHio6jb2kSNrBFEU2mOIy9M=
+
+Name: assets/www/app/store/MemberStore.js
+SHA1-Digest: s8+dccvEmJF2QnQ26x7sJphnpC0=
+
+Name: assets/www/app/view/ContainerCurrentWeather.js
+SHA1-Digest: 3GJ4R1u7MnEvnJah7FZK8TReHYU=
+
+Name: assets/www/app/controller/ClaimNumberController.js
+SHA1-Digest: YPNUnzJuGMmrbrlKo1frgVm67NE=
+
+Name: assets/www/metadata/model/CompanyClaimNumber
+SHA1-Digest: YWvHJh4TsPtYLG5aNoY9sLsY02E=
+
+Name: assets/www/metadata/view/CTRZoneCoordinator
+SHA1-Digest: o6UlC0p+UroKaVH1z7IxNgT2iFg=
+
+Name: assets/www/metadata/view/ListEOC
+SHA1-Digest: leLMUJrpASV/ZV1e7CaT5/u5Bjg=
+
+Name: assets/www/jquery-1.8.3.min.js
+SHA1-Digest: RrbjSBL0Hi4qH6BGKeqpT8/aUsM=
+
+Name: assets/www/metadata/view/StormDetail
+SHA1-Digest: vOI2jdlw2dR6R1A5o381zeIxkc0=
+
+Name: assets/www/appData/EOC.json
+SHA1-Digest: 67F2dgEZUrCq6V+mTwSJCTOhhXo=
+
+Name: assets/www/app/store/StormStore.js
+SHA1-Digest: 0wq5+a9Vm/XAISp0QBZe5xp9ejU=
+
+Name: res/menu/activity_main.xml
+SHA1-Digest: NvbN6RrvZpCp/2ktrSBk87WjYcQ=
+
+Name: assets/www/metadata/store/MemberStore
+SHA1-Digest: 4syeq722NmXCote4tECQsnwR5ZA=
+
+Name: assets/www/metadata/view/ListCompanyClaimNumbers
+SHA1-Digest: MozKo3X+crK9axTcpIY97OAmJC4=
+
+Name: assets/www/metadata/view/ContainerCurrentWeather
+SHA1-Digest: jyie6iBoHyxk14M5bJE5393MjG4=
+
+Name: assets/www/metadata/store/CompanyClaimNumberStore
+SHA1-Digest: HilXzRocpfG7MraAl03FV5etIJk=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: i4v9tOTK2WauIbAU/zZluv2Usyk=
+
+Name: assets/www/app.html
+SHA1-Digest: rZfHdd8yy8cGhv6SLyJcTHGqLfg=
+
+Name: assets/www/app/view/MainNav.js
+SHA1-Digest: l2yQxxNesVa9sl+jYVN1wBXcB4I=
+
+Name: assets/www/metadata/store/EmergencyOperationCenterStore
+SHA1-Digest: nxeazeVk9yL83wMUSNZNbG9QAp4=
+
+Name: assets/www/app/controller/StormContoller.js
+SHA1-Digest: 9c+4ACkjR6ryI/TsfCuV2GEkKW8=
+
+Name: assets/www/metadata/view/ListCatGuide
+SHA1-Digest: XIQFVSvGqEj3Ix/bIE90WhlKCYI=
+
+Name: resources.arsc
+SHA1-Digest: 8R7MiVN8Jl5RaNM/Ok4jH2ry+ic=
+
+Name: assets/www/appImages/phone.png
+SHA1-Digest: wJnqjRn45aVnE/lxIc9KYoQYieo=
+
+Name: assets/www/appImages/claimNumber.png
+SHA1-Digest: pUlgDVIu2BQ75VTvTnU2vCbNrps=
+
+Name: assets/www/app/view/ListCompanyClaimNumbers.js
+SHA1-Digest: Lyyofsn9iEOT/oe+6V7gEGYOIfE=
+
+Name: AndroidManifest.xml
+SHA1-Digest: 5lfd9KH6qgEO/jelESV/SYNZhFI=
+
+Name: assets/www/appImages/storm.png
+SHA1-Digest: KIoBiiCBxS4cNEWa4D05pZTUdDU=
+
+Name: assets/www/appImages/addcontact.png
+SHA1-Digest: VbMjb8uOAej1Yhurpua6rEUCqUI=
+
+Name: assets/www/metadata/store/StormStore
+SHA1-Digest: +XoDn7zIy0VvfAQFsQFaTfQdD58=
+
+Name: assets/www/appData/Tallahassee.json
+SHA1-Digest: CTg2P3joQLDULGJKvFAZcIA44rc=
+
+Name: assets/www/metadata/resource/GoogleMapsAPI
+SHA1-Digest: AyQSW+RbPu64qUF9IwnMOQT4ypA=
+
+Name: assets/www/appImages/qrIcon.png
+SHA1-Digest: CVbVnCKiEYYTf0E5ts1n0l5XUZo=
+
+Name: assets/www/app/view/ListStorms.js
+SHA1-Digest: rGU0aF3GFhLpOWKOtn/vVXYBiQ4=
+
+Name: assets/www/metadata/model/StormModel
+SHA1-Digest: NuY6Plj0Hu3cYNidrlixnGn0nk0=
+
+Name: assets/www/metadata/view/ListStorms
+SHA1-Digest: /n6uG36qX6VZYWiTWjAcBnoTXjk=
+
+Name: assets/www/metadata/controller/ZoneCoordinatorDetailController
+SHA1-Digest: LzdEDJ5InAqXjd5VvF92CsVCBzg=
+
+Name: classes.dex
+SHA1-Digest: iVESgLxEmc4dpCdDiT+7oIX7sOY=
+
+Name: assets/www/app/model/MemberModel.js
+SHA1-Digest: i9WfMNDad2k2ul0i0fZj8nTvMrI=
+
+Name: assets/www/cssContent.css
+SHA1-Digest: 6khJ8H9f6bwKKbDqLZZMBcTce10=
+
+Name: assets/www/appImages/emerIcon.png
+SHA1-Digest: L0s697Bp9TChQgdx61l/64+EJzs=
+
+Name: assets/www/appImages/logo.png
+SHA1-Digest: 94JY9DNf/ZPyR5Rv5WRRxJRIUJ8=
+
+Name: assets/www/appImages/headerBG.gif
+SHA1-Digest: TXvLudlewxKG52Pg9jxVm9/Rwmo=
+
+Name: assets/www/metadata/view/EOCDetail
+SHA1-Digest: 7C9uT5ycOHg8xCOrYWbV6Yr+cgQ=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: M+EG3M5m3kpZDBSSZcuTSQsP8NQ=
+
+Name: res/drawable-xhdpi/ic_launcher.png
+SHA1-Digest: Eg9b2SAf8kA8OuFTMZStuzlLPgs=
+
+Name: assets/www/app/view/ListCatGuide.js
+SHA1-Digest: oXA0fqmfcTXqnNbyZsFOMVtPi+s=
+
+Name: res/drawable-hdpi/splash.png
+SHA1-Digest: rC1YpIfJyNQQtD0Tl7+fAHEbs54=
+
+Name: assets/www/appImages/zcIcon.png
+SHA1-Digest: T/5uqL2WGW37QQRkK/MmCibFyAs=
+
+Name: assets/www/metadata/model/NoticeModel
+SHA1-Digest: Tt4Ru8Kyayeij7pDtxgIwER7R5Q=
+
+Name: assets/www/metadata/view/ListZoneCoordinators
+SHA1-Digest: lDZsXW8KZbM77EtNP41oWkV6/X4=
+
+Name: assets/www/metadata/model/EmergencyOperationCenterModel
+SHA1-Digest: hrfKXBbxiBXGAsfezuwTXbUkV58=
+
+Name: assets/www/metadata/view/NoticeDetail
+SHA1-Digest: jWZv0PqHEytHjV2asXKML9pjIRw=
+
+Name: assets/www/metadata/view/CatGuideDetail
+SHA1-Digest: sqpGjokiAyp8XtnnKj+2Lr5zSJI=
+
+Name: assets/www/appData/CompanyClaimNumbers.json
+SHA1-Digest: RDozIXQUm6hNXcznVLF+ldP45/Q=
+
+Name: assets/www/app/controller/ZoneCoordinatorDetailController.js
+SHA1-Digest: 1sUmLJH2nPCIT89LihVCCZdKB04=
+
+Name: assets/www/appData/ZoneCoordinators.json
+SHA1-Digest: N+DNEhMVrEUyIeuOx+m25JLVd2Y=
+
+Name: res/drawable-xhdpi/splash.png
+SHA1-Digest: m27b/H3W8aMePe5+NPmg7xKAK+0=
+
+Name: assets/www/appImages/map.png
+SHA1-Digest: 8BXsZ4/NFLXk373uqPBo07FAJQY=
+
+Name: assets/www/appImages/emergency.png
+SHA1-Digest: 5hm3JS2OETIaa92Mcr8CRXhifn8=
+
+Name: assets/www/app/view/PanelZoneCoordinatorDetail.js
+SHA1-Digest: Zw3b7YbZctViM8KfF9ZxczRng2s=
+
+Name: assets/www/app.js
+SHA1-Digest: ntdCBo3z/nFDkdsrNIFSoqJgadA=
+
+Name: assets/www/app/view/CTRZoneCoordinator.js
+SHA1-Digest: bn71WAh8wbsf3sRxoubCj/hCp8I=
+
+Name: assets/www/app/view/ClaimNumberDetail.js
+SHA1-Digest: LNlvtEKPEHnvYQkluaE7FGWih1c=
+
+Name: assets/www/mainStyle.css
+SHA1-Digest: Uqo9pc6fcAmHg7kNMQQadzrFm48=
+
+Name: assets/www/app/view/CatGuideDetail.js
+SHA1-Digest: ai5lSMWM1vqAfhnP7gPWLBnWry8=
+
+Name: assets/www/app/store/StormNoticeStore.js
+SHA1-Digest: aZ2CUSBEOnHqXtQoJ6BTIPxXz2c=
+
+Name: assets/www/app/view/EOCDetail.js
+SHA1-Digest: IqLiFyGL1neGpzM3P1T4MUx5TVY=
+
+Name: assets/www/appImages/buttonContainerBG.gif
+SHA1-Digest: 0tpy4s7kNFUzST8pmzWK3OOdtxY=
+
+Name: assets/www/metadata/view/CTRZoneCoordinatorCard
+SHA1-Digest: b0HOzfd8zi6fEY8Furkuoe9c6V4=
+
+Name: assets/www/metadata/view/CTRZoneMap
+SHA1-Digest: sd0pf3kvasnbuKHumX0IIGrzojU=
+
+Name: assets/www/app/view/ListZoneCoordinators.js
+SHA1-Digest: Fnyof5J5edbSPOmLI5pkxArsXv4=
+
+Name: assets/www/metadata/resource/Library
+SHA1-Digest: j7B8dLtFS7jSUujvoQfmePwAQZ4=
+
+Name: assets/www/app/store/EmergencyOperationCenterStore.js
+SHA1-Digest: nadp/P9nJyuX6rPBJTWnhO83FUg=
+
+Name: assets/www/app/model/NoticeModel.js
+SHA1-Digest: WrSITDvgXG85fiYGfGtI9/j8cq0=
+
+Name: assets/www/cordova-2.2.0.js
+SHA1-Digest: cqd1nGUrNmlRpqw2zxCmCQgGW9A=
+
+Name: assets/www/app/controller/MainPageController.js
+SHA1-Digest: Iz9trcRk4BsiNc4F+0P64LAeze0=
+
+Name: assets/www/app/model/CompanyClaimNumber.js
+SHA1-Digest: jzwO0KjxhkdpaNidONc5CCjwqKk=
+
+Name: assets/www/metadata/store/StormNoticeStore
+SHA1-Digest: YR7MerE2CEuAyBMDE1DCqqgYej8=
+
+Name: assets/www/app/store/CatGuideTopicStore.js
+SHA1-Digest: hp6/ivxrxp5Vck7pKBASf8TaGVU=
+
+Name: res/drawable-ldpi/ic_launcher.png
+SHA1-Digest: R8ZKUv0cDyOuyj2fzciBEI8Myq8=
+
+Name: assets/www/appImages/headerBG.png
+SHA1-Digest: 66c6DOL6ABKcative5cr2qGhuH8=
+
+Name: assets/www/appImages/cnIcon.png
+SHA1-Digest: yK/Il65QMz9Wc/1Km3dOAe+Rcuw=
+
+Name: assets/www/appData/CatGuideTopics.json
+SHA1-Digest: 4zYC4PoOkAOisgVdpoY/oPBs8uA=
+
+Name: assets/www/appImages/buttonBG.png
+SHA1-Digest: R+PjY7YvaPmx2GdNHWF2ln1oTP8=
+
+Name: assets/www/metadata/store/CatGuideTopicStore
+SHA1-Digest: HqlVmkGzDLSizfCu7MpgV6WeNgI=
+
+Name: assets/www/metadata/controller/ClaimNumberController
+SHA1-Digest: n7m0RNGR1Pl+SBKZg2ea1wcZEoA=
+
+Name: res/drawable-mdpi/splash.png
+SHA1-Digest: LyNI5FmCDxlvkHwPsllV/00EuTM=
+
+Name: assets/www/appImages/email.png
+SHA1-Digest: q8eUKRlJHpvFVLucvsAsFAo38sg=
+
+Name: assets/www/metadata/controller/StormContoller
+SHA1-Digest: IV+m6dCGfHtsgh/wbuBYCuyGuAc=
+
+Name: assets/www/app/store/CompanyClaimNumberStore.js
+SHA1-Digest: SzK2MrdWTkCmNKwrc/LP4iXrBlw=
+
+Name: assets/www/appImages/ZoneMap.png
+SHA1-Digest: FXri4BDZ1oq4Ms4+r+yUrVOWsPE=
+
+Name: assets/www/appImages/appBG.png
+SHA1-Digest: FIymbxL/lMhwH6rg3cDpl2ctf6k=
+
+Name: assets/www/app/model/StormModel.js
+SHA1-Digest: 1UK2B7SieY1iNwbJvEBi+lxOmHI=
+
+Name: res/drawable-mdpi/ic_launcher.png
+SHA1-Digest: sdL5wW0XEbl0VHle7EW0AiW4fkc=
+
+Name: assets/www/app/model/CatGuideMainTopic.js
+SHA1-Digest: IbxpuAyX8QeD804oGHOH44zolGI=
+
+Name: res/drawable-ldpi/splash.png
+SHA1-Digest: rWnrbMPp2ou3t89MPYSQWnO/PQs=
+
+Name: assets/www/metadata/model/CatGuideMainTopic
+SHA1-Digest: wOyh0xJ4liO/rQnm+8rY61Tlf/M=
+
+Name: assets/www/metadata/model/MemberModel
+SHA1-Digest: FHnrDIRzXide9VIdo83LTzIdZ4I=
+
+Name: assets/www/appImages/siIcon.png
+SHA1-Digest: AgymCni7XlZZA/M+PPOA7Oohrc8=
+
+Name: assets/www/app/view/CTRZoneMap.js
+SHA1-Digest: LvjtacFIjqg2Cpjnvy3QDQYdR5o=
+
+Name: assets/www/app/view/CTRZoneCoordinatorCard.js
+SHA1-Digest: 51tnnm8OmgrwpvFxF1gnrRcdVZg=
+

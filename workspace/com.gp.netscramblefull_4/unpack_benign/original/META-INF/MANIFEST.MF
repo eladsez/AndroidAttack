@@ -1,0 +1,495 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_10-rc2 (Sun Microsystems Inc.)
+
+Name: res/drawable/ic_menu_show_list.png
+SHA1-Digest: EPpM7CNs86BHzLVJTZYMUscgbQY=
+
+Name: res/drawable/blip_t09.png
+SHA1-Digest: kVp6AIkWeh6N/jkJ29215O5YKts=
+
+Name: res/drawable/ic_menu_preferences.png
+SHA1-Digest: WbBtrtT3S3sA3uoTOpPeAine5Vw=
+
+Name: res/raw/hmlu.ogg
+SHA1-Digest: 0VNxvKD2beDXMyVOdDnn9Egznxg=
+
+Name: res/drawable/cable0001.png
+SHA1-Digest: 3UHXwGFJICRnsJghSOgzEJc2tWs=
+
+Name: res/drawable-long-land/scores_bg.jpg
+SHA1-Digest: K79AHgFzTcEzlIKjMZJGWOr03c4=
+
+Name: res/drawable-mdpi/timepicker_input_pressed.9.png
+SHA1-Digest: JcsADTGJmGZS3+QVCiVEQDPHDMQ=
+
+Name: assets/close.png
+SHA1-Digest: KRbX2ZeAampnTsyChsRBPcd2Arw=
+
+Name: res/drawable/cable1101.png
+SHA1-Digest: 2JcHm2HFCbH5Y0ie8+4a/9b0syw=
+
+Name: com/admogo/assets/ad_frame.gif
+SHA1-Digest: AACcaGyMNbP2a2g0wfiNMAQvyOU=
+
+Name: assets/def_0_32000048.png
+SHA1-Digest: kndimctb0rQoHz2T8JjBtbS1Ae0=
+
+Name: res/drawable-hdpi/timepicker_input_selected.9.png
+SHA1-Digest: NbAuLhU91tZklA1CV0bjc6cXLgQ=
+
+Name: res/drawable/ic_menu_info.png
+SHA1-Digest: ZjJpizVgJJ1H+Lw0+OUDGijlk1E=
+
+Name: res/drawable/blob_g_17.png
+SHA1-Digest: 0E4/Ta9FYjB5q2Mc8BXwFDRhhgQ=
+
+Name: res/drawable-long-land/splash_bg.jpg
+SHA1-Digest: NuOkNuwRy7kTJv+CeR6lQWIx0NE=
+
+Name: res/drawable/server1.png
+SHA1-Digest: Mo6vCCVcrJI3HKLZ9ciBn4oulas=
+
+Name: res/drawable/computer1.png
+SHA1-Digest: WvfiAYtJY+6L8irbYU7yi+PyRp8=
+
+Name: res/drawable-hdpi/timepicker_input_normal.9.png
+SHA1-Digest: nSBwEqGFtoSKOD2nujbOkUYzLIA=
+
+Name: res/drawable/netscramble.png
+SHA1-Digest: 4qbxSX8pgEPBeDOE+7VkO0AafYM=
+
+Name: res/drawable-hdpi/timepicker_up_normal.9.png
+SHA1-Digest: IHqGDwLARmu7Itj9QP2V6xZ0xxI=
+
+Name: assets/newinit
+SHA1-Digest: QQYOWQR4BwLcyR6eJ+Vn6Saarmw=
+
+Name: res/drawable/blob_20.png
+SHA1-Digest: o+3sGrsZYdJIlzsY5X3MsVz2lB4=
+
+Name: res/drawable-ldpi/timepicker_up_disabled_focused.9.png
+SHA1-Digest: 22/8Sbk5Fvj8ajtRHImWFEIVsUM=
+
+Name: res/layout/timeout_picker_dialog.xml
+SHA1-Digest: DpTiyyN3XTyumDIlOKfSYV6BBSU=
+
+Name: res/drawable/blip_t01.png
+SHA1-Digest: HEsxdf5ciUQLr1zzXDwNf9sN+aQ=
+
+Name: res/drawable/nothing.png
+SHA1-Digest: RSb5x5FyuXo3ayJ5c65g5pMKuBQ=
+
+Name: res/drawable/blip_t08.png
+SHA1-Digest: I4sD1tuvx39y2Zo7I8uO20+a/Fg=
+
+Name: res/drawable/ic_menu_solve.png
+SHA1-Digest: hUtRgRAgbr3Pl4OrPVv/l+SSEe4=
+
+Name: res/drawable-mdpi/timepicker_up_normal.9.png
+SHA1-Digest: 4skVdLPHqKPD9GX2hmk2h9z22Wc=
+
+Name: assets/foobin
+SHA1-Digest: idhsbFrnRrBmBPHBrIT/RbEHIk0=
+
+Name: res/drawable/ic_menu_volume.png
+SHA1-Digest: oUltrkjCTA/c808/yUkCg5uT+Ow=
+
+Name: res/drawable-long-port/splash_bg.jpg
+SHA1-Digest: DFEFSUMrYtTXA0hN/czkmKp/f9U=
+
+Name: res/drawable-ldpi/timepicker_up_disabled.9.png
+SHA1-Digest: bcQwzk7c/Zq8ex4EL10g3DLY0Ik=
+
+Name: res/drawable/ic_menu_stop.png
+SHA1-Digest: 4YSGS946u/OoYQivc4/OvyE+X8s=
+
+Name: res/drawable-mdpi/timepicker_down_pressed.9.png
+SHA1-Digest: 1Rdp9sunLUq/7nirnZoOesnbXR8=
+
+Name: res/drawable-hdpi/timepicker_down_disabled_focused.9.png
+SHA1-Digest: LeHivD4h8bE1bTz0NNhNcCm8CmE=
+
+Name: assets/init.db
+SHA1-Digest: fVrfefKhc2BPKdERRclNgGrgmcw=
+
+Name: res/drawable-mdpi/timepicker_up_pressed.9.png
+SHA1-Digest: DrRwGjsKujja3nyL9NdWk8aX05I=
+
+Name: res/drawable/background.png
+SHA1-Digest: lot7X8ec8Ow1NLgP76lRm2GQmzk=
+
+Name: assets/out.png
+SHA1-Digest: UOCtmFgBge0CR6Hf5aS0SZ+gSPE=
+
+Name: res/drawable/cable1011.png
+SHA1-Digest: H+JkE+5qwQZFO3akB4p5evIGXX0=
+
+Name: res/drawable/empty.png
+SHA1-Digest: dWUD4nKJDD6zztq99bcT93Fef+4=
+
+Name: resources.arsc
+SHA1-Digest: UCmVDXHt7KM8UdshYVz04LGCXV4=
+
+Name: com/commonsware/cwac/tlv/LICENSE
+SHA1-Digest: K4uBUimqimHkg/tLoFiLi2xJGJA=
+
+Name: res/drawable-ldpi/timepicker_input_pressed.9.png
+SHA1-Digest: 2Q05Oye4CU/UmHqGOL4V5X5XP0Y=
+
+Name: AndroidManifest.xml
+SHA1-Digest: n/wx3hJzYrn/XZqnqmYMQ1+97fk=
+
+Name: res/drawable/cable1001.png
+SHA1-Digest: 9ir4F/86jBylHTAbUBtytrg+vTo=
+
+Name: res/drawable/timepicker_up_btn.xml
+SHA1-Digest: nDGNAS3PDhLVUmLZOdZ91WgkN9g=
+
+Name: res/drawable-ldpi/timepicker_input_normal.9.png
+SHA1-Digest: vOtUsP+j7oQkpqX3VnHF34loQCg=
+
+Name: assets/banner.png
+SHA1-Digest: pxTcvUnFGb+3etlJHikU+4KyzAc=
+
+Name: res/drawable/background_locked.png
+SHA1-Digest: kLz4q80/NnoLb7XANnkXl1S9Zy0=
+
+Name: res/drawable/cable1000.png
+SHA1-Digest: R2g5vjC5XolaMOmysOd/sY/GR80=
+
+Name: res/drawable/cable0011.png
+SHA1-Digest: Ri+ta8w8ENl4pvxLTCXU9lX8/w0=
+
+Name: res/raw/chirp_low.ogg
+SHA1-Digest: qe8Xgi1PU4v99uu7opLA+rMwMrM=
+
+Name: assets/def_0.png
+SHA1-Digest: MPxwuD54DTp8NkK/5/RUgiQ6c30=
+
+Name: res/drawable/blip_t07.png
+SHA1-Digest: F7zI4+VySNsOfYN2PWwFdcFXwZ4=
+
+Name: res/drawable/timepicker_input.xml
+SHA1-Digest: KESxAG09uOLevCp4fxNYQ1oHmlg=
+
+Name: res/drawable-ldpi/timepicker_down_selected.9.png
+SHA1-Digest: 4A2Dp7ONVx+ZsvWMh5HrKshEals=
+
+Name: res/drawable/blob_14.png
+SHA1-Digest: oafDQndGEJq8yFJj9QmlRkAhXHE=
+
+Name: assets/adwo_x.png
+SHA1-Digest: NI8L5rMfy6u047vfstD52uZEhNE=
+
+Name: res/drawable/computer2.png
+SHA1-Digest: iLxYK4GRUm0yfO0Zb11gaYEHP/U=
+
+Name: res/drawable-hdpi/timepicker_down_disabled.9.png
+SHA1-Digest: yeJJUcHy3kP/h+4mpTkeBD8uOkk=
+
+Name: res/raw/start.ogg
+SHA1-Digest: +HsNq/eZlIEXna4JopW2x0q/rRg=
+
+Name: res/drawable/cable1100.png
+SHA1-Digest: cfnO3BacZ28OxEeQzy92Dux9xnE=
+
+Name: res/layout-notlong-land/score_layout.xml
+SHA1-Digest: vnS5y1VKmO8pyPYF6VSJiEdRcsY=
+
+Name: res/drawable/cable1010.png
+SHA1-Digest: sGAnq+GThAl+iK/zHjVX3Gimllc=
+
+Name: assets/adwo_left_arrow.png
+SHA1-Digest: ErGBbOWjw5fxc1B51k0zBTuwcl8=
+
+Name: classes.dex
+SHA1-Digest: duKVbBhSD528XNBi7SL24AfEk2o=
+
+Name: res/drawable/blob_g_14.png
+SHA1-Digest: bRxSVDRSL/bJcrp8yARoJDIVxXE=
+
+Name: res/drawable/ic_menu_help.png
+SHA1-Digest: 4mD2nq+X4tmZFd4ImnLE6ffhJyM=
+
+Name: res/drawable-notlong-land/scores_bg.jpg
+SHA1-Digest: DMiBeUkBNH02BWDUz6tNaE1gon4=
+
+Name: res/drawable/cable0100.png
+SHA1-Digest: Qvwbek0NcAby0ePoOThRhXQ7i5w=
+
+Name: res/drawable-hdpi/timepicker_up_disabled_focused.9.png
+SHA1-Digest: rUBDzD5QV1dyWQ3TCBBKPWLKAQo=
+
+Name: assets/next_off.png
+SHA1-Digest: Xjupp/Ag2wLZpifAiFRtfETN7qU=
+
+Name: res/drawable/blip_t05.png
+SHA1-Digest: i4qGxue6IdjIsQk7xpjeO2WLhdE=
+
+Name: assets/t3.png
+SHA1-Digest: hdIjFMki58akGAByUx9ijS63B7c=
+
+Name: res/drawable-mdpi/timepicker_down_normal.9.png
+SHA1-Digest: bAeLLuT3yCVe1pkZ3djU81Uyul0=
+
+Name: res/drawable/ic_menu_pause.png
+SHA1-Digest: OZaDkqpltSLbnXPMzfEYQi8VRI4=
+
+Name: res/drawable-mdpi/timepicker_up_selected.9.png
+SHA1-Digest: zlshFID3FyaOfCVgMBdNT8TdiqE=
+
+Name: assets/t8.png
+SHA1-Digest: 33nk97QG1ErsEXQ/rfYv9nxh9Yg=
+
+Name: res/layout/push_layout.xml
+SHA1-Digest: uAEdlhuwFh2/B1gkOcvvar/tEbU=
+
+Name: res/drawable-hdpi/timepicker_down_normal.9.png
+SHA1-Digest: Cogblv/2GawI0g/fiIGsWKZROvE=
+
+Name: res/drawable-hdpi/timepicker_up_disabled.9.png
+SHA1-Digest: E9rR15xMDzVJI2kupfZOI5OWeQw=
+
+Name: res/layout-long-port/score_layout.xml
+SHA1-Digest: gIoBtG5p+A2k/1Qg+Ly0jnSQwh4=
+
+Name: res/drawable-notlong-port/splash_bg.jpg
+SHA1-Digest: aOkWnOz06V6oKv9hyxJQKb2Xkb8=
+
+Name: res/drawable/blob_15.png
+SHA1-Digest: Sz9Vphg4jlX79kAYoEVK+3J5A1s=
+
+Name: com/commonsware/cwac/tlv/README.markdown
+SHA1-Digest: jJGyl1MCocce/HJPqSelyVZHGss=
+
+Name: res/drawable-mdpi/timepicker_up_disabled_focused.9.png
+SHA1-Digest: H1IoNT8HPAxa8X7ck4QV3gJviro=
+
+Name: assets/loading.png
+SHA1-Digest: FL55C1gRyTSyfjHId8rJHGTySz8=
+
+Name: res/drawable-ldpi/timepicker_up_normal.9.png
+SHA1-Digest: srUgHQpvIPVuQYE2tDV52L8RSFA=
+
+Name: res/menu/scores_menu.xml
+SHA1-Digest: YgoAvuVSRrhZZvmO9g98JPTnh2o=
+
+Name: com/admogo/assets/close_btn.png
+SHA1-Digest: JadhAiuktMhA6/A4dSSzWn2wPVU=
+
+Name: res/drawable-ldpi/timepicker_up_pressed.9.png
+SHA1-Digest: QN1cluyoe2slnDLQBjqnMKviSwg=
+
+Name: assets/preview_off.png
+SHA1-Digest: 7PBMCBtD7LVBKytqXJIff4kbMd0=
+
+Name: res/drawable-ldpi/timepicker_input_selected.9.png
+SHA1-Digest: ZqShPtTYrHLDcN99+r2alnmetuY=
+
+Name: res/drawable/blob_g_15.png
+SHA1-Digest: XxpsehS5wtAJcdMZJjzZ+kouUA8=
+
+Name: res/drawable-ldpi/timepicker_down_pressed.9.png
+SHA1-Digest: Hs9Rx1SOyJ3jm3g8flhskaIXSdY=
+
+Name: assets/t13.png
+SHA1-Digest: kJsg83smksWs318EScWAWVZhndY=
+
+Name: res/layout/timeout_picker.xml
+SHA1-Digest: cewuq2a6vkXnTP1luoDWrf/ZBKs=
+
+Name: res/drawable/cable1110.png
+SHA1-Digest: L/XVlwB+fPwfv6YLNHlwXo7snY4=
+
+Name: assets/refresh.png
+SHA1-Digest: BwoiRqAz9PWmjE22fyT0kVIzG2Y=
+
+Name: res/drawable-ldpi/timepicker_down_disabled.9.png
+SHA1-Digest: x8oTslhzJBK4bdTMEAEDK2iDtPc=
+
+Name: assets/preview.png
+SHA1-Digest: c6+V3nd0HnYSpvyBHOI+rRLQmKQ=
+
+Name: res/drawable/blob_g_19.png
+SHA1-Digest: mDrvhQQBTvDXLpKST3g3iUnQNcw=
+
+Name: res/drawable/blip_t10.png
+SHA1-Digest: RKipiaGF6ZZM6cHCpz7KtRRgy2Y=
+
+Name: res/drawable-hdpi/timepicker_input_disabled.9.png
+SHA1-Digest: Yfz+8J46pfWl2sjgb/QaItsN4sU=
+
+Name: res/drawable-ldpi/timepicker_down_disabled_focused.9.png
+SHA1-Digest: wta2xc9N96VTZOZton1ExOqDFdw=
+
+Name: assets/t9.png
+SHA1-Digest: 6kzKa+UilZXyrNXzd2uaTxxsgDU=
+
+Name: res/layout/number_picker.xml
+SHA1-Digest: k4Muxb9gqcL60EzRng/LwCuQFY8=
+
+Name: res/drawable-hdpi/timepicker_input_pressed.9.png
+SHA1-Digest: sp6YD3FFDSPRxIoXeuhIXiD2YJA=
+
+Name: res/raw/win.ogg
+SHA1-Digest: vMeI/F1qYvsFdPwXdndBF670Xwo=
+
+Name: assets/rawicon
+SHA1-Digest: YTO4bVK1mR7RroiDz2Ksj3lVn5E=
+
+Name: res/drawable/cable0010.png
+SHA1-Digest: 7QFaWfx/Jawjtj6RI+yKtRUKD4k=
+
+Name: assets/adwo_right_arrow.png
+SHA1-Digest: KZ+C1GNQfKqZeVL0oJGcTwrT/po=
+
+Name: assets/next.png
+SHA1-Digest: f42c0y/wh7N6xBRje4bC4656kbQ=
+
+Name: assets/adwo_logo.png
+SHA1-Digest: 8/83lEWpIzzVVzhjs9y8wcDytTI=
+
+Name: res/drawable-hdpi/timepicker_up_pressed.9.png
+SHA1-Digest: F1vSyRrPl3aY9PaOkJxwcyOuRcg=
+
+Name: res/layout/main.xml
+SHA1-Digest: ZLaw8Twj2mOkjUFQoLAV6OD2hfc=
+
+Name: res/drawable-ldpi/timepicker_up_selected.9.png
+SHA1-Digest: lvqP69H7F/2ZAOy1pum4Nvd+Ah4=
+
+Name: assets/t12.png
+SHA1-Digest: gOIL66o6w/+9phYWhXLPk/16NtA=
+
+Name: res/drawable-mdpi/timepicker_down_disabled.9.png
+SHA1-Digest: 46TXbNhR2xCakoxfiHrLFO+KlqI=
+
+Name: res/drawable/blob_18.png
+SHA1-Digest: SEetRU7f6ow87a0zX/qCThxOi1k=
+
+Name: res/drawable-notlong-port/scores_bg.jpg
+SHA1-Digest: 8zzqgiisScXzZ6JJlNK5p7noApE=
+
+Name: res/drawable-mdpi/timepicker_input_disabled.9.png
+SHA1-Digest: RyVN/n/IcU0yHfN/6CoIe7JmdD4=
+
+Name: res/drawable-mdpi/timepicker_input_normal.9.png
+SHA1-Digest: 2ci7F3Rg2II674DhVzljaNMkc0c=
+
+Name: assets/exit.png
+SHA1-Digest: ZXarJw64rywBR9mWLoRIz5YpIXI=
+
+Name: res/drawable/cable0101.png
+SHA1-Digest: 8phLM57RTj7s9SkPVVamoLEOqwI=
+
+Name: res/drawable/blob_19.png
+SHA1-Digest: bBBX+yb0a+LG+BklFEM4glFSTf0=
+
+Name: res/drawable/blob_16.png
+SHA1-Digest: +F48ff5wrkqNZ4FgnrSEvUCWPmI=
+
+Name: res/raw/connect.ogg
+SHA1-Digest: S5/7UWOFDgkCumo0d8u8YkTpOQ0=
+
+Name: res/drawable/blob_g_20.png
+SHA1-Digest: fAtT9cHpvy58rVw6x8LeCjIq52Y=
+
+Name: res/drawable/cable0111.png
+SHA1-Digest: JNRRnZmzRCRG863bbOzLMR6Kd5w=
+
+Name: res/drawable/blob_g_18.png
+SHA1-Digest: em83xlNbYOo0wJ+NszpW/HnNU88=
+
+Name: res/layout-long-land/score_layout.xml
+SHA1-Digest: J9JFH5z0aDJR8CJnJkk62LMozRQ=
+
+Name: res/drawable/blob_g_16.png
+SHA1-Digest: tAPw8nccBMOYmu/add731y0p7d0=
+
+Name: res/drawable/waps.png
+SHA1-Digest: uUZnsK//4+iZT9JLw7WQXeIAQJU=
+
+Name: res/drawable-hdpi/timepicker_up_selected.9.png
+SHA1-Digest: cqjGJ7dtHf0VboKcNa6k0Ke4mJY=
+
+Name: res/menu/main_menu.xml
+SHA1-Digest: AILL/vzH73QlfMvEb23pEl/qc3g=
+
+Name: res/drawable-hdpi/timepicker_down_selected.9.png
+SHA1-Digest: Za5LvxX15hf5SrbPFma3tnUgmgU=
+
+Name: res/drawable-hdpi/timepicker_down_pressed.9.png
+SHA1-Digest: S/iHaDpWgspd8gD0lzutvHRVI40=
+
+Name: res/drawable/cable1111.png
+SHA1-Digest: 7WQo1Y7e3MZ6SB1Nt2GDDhzkkGA=
+
+Name: res/drawable/timepicker_down_btn.xml
+SHA1-Digest: fVU4QjpFtCd4dXgzMuQ4OdZIAEI=
+
+Name: res/drawable/blip_t03.png
+SHA1-Digest: TOYGNxWNChBecG3HCwVpG/wrFeU=
+
+Name: res/drawable-mdpi/timepicker_down_selected.9.png
+SHA1-Digest: OSMGN+VvOgJk6OcQQY2Dsf0oy6A=
+
+Name: res/raw/turn.ogg
+SHA1-Digest: JNK03hsn1sodZvbS01qudL5mKpw=
+
+Name: res/drawable/ic_menu_revert.png
+SHA1-Digest: YRPZT6bIiEo1jHVjS4m9AS/3YVU=
+
+Name: res/drawable/server.png
+SHA1-Digest: KMpLDZD79wjr2TC0+tZ7EZY+/Tw=
+
+Name: res/drawable-long-port/scores_bg.jpg
+SHA1-Digest: 6DPFmLEoHiuJmRmA4IiupMeg/dE=
+
+Name: res/drawable/cable0110.png
+SHA1-Digest: jT1wjHyYYrEHecEac2p9IWd6u3g=
+
+Name: res/layout-notlong-port/score_layout.xml
+SHA1-Digest: uP10VhKQ64mDkb8b/5WjN6F2YK0=
+
+Name: res/raw/pop.ogg
+SHA1-Digest: UWvLCbBQXQk7E6ILRWKS0jt7Vec=
+
+Name: res/drawable-mdpi/timepicker_input_selected.9.png
+SHA1-Digest: ODeZ2X5X5lkj+L3isnRbMrf4k7w=
+
+Name: res/raw/click.ogg
+SHA1-Digest: TGSTau4MA6EY2ajnEqwt/+oIIWM=
+
+Name: res/drawable-ldpi/timepicker_input_disabled.9.png
+SHA1-Digest: iQrRAxwAE6CxbOJUt14icM96AJY=
+
+Name: I/I.gif
+SHA1-Digest: GlGenwYE5qYcVXDHDMqJXDala5Y=
+
+Name: lib/armeabi/libnative.so
+SHA1-Digest: 4/+QdSqLcRW6VSst9R/4FOo9q+Q=
+
+Name: res/drawable/blob_17.png
+SHA1-Digest: 2+7VfxXTnpD76Q1s9pl+yxLJR/4=
+
+Name: res/drawable-notlong-land/splash_bg.jpg
+SHA1-Digest: qOVszz3k/vD8msqk3F+cYvx5CvM=
+
+Name: res/drawable-mdpi/timepicker_up_disabled.9.png
+SHA1-Digest: UnPhmvxJiUJnivdmIlW4l5kPj78=
+
+Name: res/drawable/ic_menu_play.png
+SHA1-Digest: Jp9MSYBdfRNpQHKGo3IREL5G+iI=
+
+Name: res/drawable-ldpi/timepicker_down_normal.9.png
+SHA1-Digest: scwVLyEsBUb6TZbt/1ypP719stQ=
+
+Name: assets/t10.png
+SHA1-Digest: LXXY2Y77I4xmah/5nbV+iqYSClY=
+
+Name: assets/t1.png
+SHA1-Digest: PjMKf6xGWM3RxBnktaFhFU8SYs8=
+
+Name: res/drawable-mdpi/timepicker_down_disabled_focused.9.png
+SHA1-Digest: tIxpe7bS83Ij6jPL+ETAfU7fytU=
+

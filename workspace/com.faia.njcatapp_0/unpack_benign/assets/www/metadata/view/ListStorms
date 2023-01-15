@@ -1,0 +1,36 @@
+{
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ListStorms",
+        "designer|userAlias": "liststorms",
+        "id": "listStorms",
+        "emptyText": "No notices currently on file.",
+        "store": "stormStore",
+        "disableSelection": true
+    },
+    "id": "ExtBox1-ext-gen39698",
+    "designerId": "63483df8-b277-4d18-a825-99dc21318762",
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<div><span class=\"redHeader\">{Name}</span><br><span class=\"subTextGray\"></span></div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "ddd24e3c-d837-4f99-9826-3e588cb0f399"
+        }
+    ]
+}

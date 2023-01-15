@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_Main" android:title="Main" />
+    <item android:id="@id/menu_AddIngredient" android:title="Add Ingredient" />
+    <item android:id="@id/menu_AddStep" android:title="Add Step" />
+    <item android:id="@id/menu_AddLink" android:title="Add Link" />
+    <item android:id="@id/menu_DeleteRecipe" android:title="Delete" />
+    <item android:id="@id/menu_Share" android:title="Share" />
+</menu>

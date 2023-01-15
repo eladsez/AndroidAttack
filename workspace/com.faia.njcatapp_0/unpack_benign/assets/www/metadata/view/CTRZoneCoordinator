@@ -1,0 +1,68 @@
+{
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CTRZoneCoordinator",
+        "designer|userAlias": "ctrzonecoordinator",
+        "id": "ctrZoneCoordinator",
+        "layout": "vbox"
+    },
+    "id": "ExtBox1-ext-gen27535",
+    "designerId": "dee9c35b-36bf-415f-b6a0-f0cf8d74bb92",
+    "cn": [
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyButton",
+                "cls": "mainButton",
+                "height": 55,
+                "html": "<img style=\"float:left; margin:2px;height:45px; width:45px\" src='appImages/map.png' /> <h1 style=\"margin-top:0px\" class=\"mainButtonHeader\">Zone Map<br /><span class=\"mainButtonSubtext\">See the zone mapping</span></h1>",
+                "id": "btnZoneMap",
+                "itemId": "mybutton",
+                "text": null
+            },
+            "designerId": "8de6d1de-d1cf-44c0-a578-52f4099fdedd",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onBtnZoneMapTap",
+                        "fn": "onBtnZoneMapTap",
+                        "implHandler": [
+                            "button.up('mainnav').push({ xtype: 'ctrzonemap',title: '' });"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "7a7a52b7-d873-4003-b0ec-546dd70bd821"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1
+            },
+            "designerId": "9458155a-1255-41dc-aa1b-05e4cd821be6",
+            "masterInstanceId": "ExtBox1-ext-gen23430"
+        }
+    ]
+}

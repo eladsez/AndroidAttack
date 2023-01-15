@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enjoy_mth">Если вам нравится программа, пожалуйста, оставьте свой отзыв. Спасибо за вашу помощь!</string>
+    <string name="rate_mth">Оценить программу</string>
+    <string name="remind_me_later">Напомнить позже</string>
+    <string name="no_thanks_done">Нет спасибо/Уже оценил</string>
+    <string name="rating_button">Оценить!</string>
+    <string name="rating_button_details">Оставить свой отзыв о программе</string>
+    <string name="more_apps">Другие программы</string>
+    <string name="more_apps_details">Скачать и установить другие программы</string>
+    <string name="app_name">Задорный рыжий котенок</string>
+    <string name="skin_name_neko">Котяка</string>
+    <string name="skin_name_or">Оранжевый Котяка</string>
+    <string name="skin_name_usagi">Хомячилло</string>
+    <string name="skin_name_ham">Кролик</string>
+    <string name="skin_name_inu">Пёсик</string>
+    <string name="notification_enable">Пэт где-то бегает :)</string>
+    <string name="notification_disable">Пэт спрятался :)</string>
+    <string name="pref_cat_motion">Настройки</string>
+    <string name="pref_motion_enable_title">Показывать пэта</string>
+    <string name="pref_motion_enable_summary">Показывать или не показывать пэта</string>
+    <string name="pref_motion_behaviour_title">Поведение</string>
+    <string name="pref_motion_behaviour_summary">Поведение пэта</string>
+    <string name="pref_motion_behaviour_default">closer</string>
+    <string name="pref_motion_transparency_title">Прозрачность</string>
+    <string name="pref_motion_transparency_summary">Прозрачность пэта</string>
+    <string name="pref_motion_skin_title">Скин</string>
+    <string name="pref_motion_skin_summary">Скин пэта</string>
+    <string name="pref_skin_dialog_title">Выберите скин</string>
+    <string name="pref_skin_search_button">Ок</string>
+    <string name="msg_skin_load_failed">Failed to load skin.</string>
+    <string name="msg_market_not_found">Market application is not found.</string>
+    <string name="skin_search_uri">market://search?q=</string>
+    <string name="msg_usage">Choose skin from Pet settings.</string>
+    <string name="msg_no_package">"This is skin for Pet.
+To use this, install Pet and choose skin."</string>
+    <string name="msg_unexpected_err">Something is wrong.</string>
+</resources>

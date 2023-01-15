@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/image_context_menu_RemoveImage" android:title="Remove Image" />
+    <item android:id="@id/image_context_menu_CaptureImage" android:title="Capture New Image" />
+    <item android:id="@id/image_context_menu_ChooseImage" android:title="Choose Existing Image" />
+</menu>

@@ -1,0 +1,49 @@
+{
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ListCompanyClaimNumbers",
+        "designer|userAlias": "listcompanyclaimnumbers",
+        "id": "listCompanyClaimNumbers",
+        "store": "CompanyClaimNumberStore",
+        "disableSelection": true,
+        "grouped": true
+    },
+    "id": "ExtBox1-ext-gen29295",
+    "designerId": "6d4cfcf8-7105-47fd-83cd-6a6bcd1e6bfc",
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<div><span class=\"redHeader\">{CompanyName}</span></div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "76d45075-58be-4b51-923a-8f11b647099f"
+        },
+        {
+            "type": "listindexbar",
+            "reference": {
+                "name": "indexBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyIndexBar1",
+                "designer|displayName": "IBClaimNumbers"
+            },
+            "designerId": "1c62b815-c7e1-487e-abf4-fe09aa717641"
+        }
+    ]
+}

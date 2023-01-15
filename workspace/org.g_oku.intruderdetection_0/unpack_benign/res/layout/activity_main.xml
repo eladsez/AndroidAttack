@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/button300x250" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="300x250のCVテスト用" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/button480x480" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="480x480のCVテスト用" android:layout_below="@id/button300x250" android:layout_centerHorizontal="true" />
+</RelativeLayout>

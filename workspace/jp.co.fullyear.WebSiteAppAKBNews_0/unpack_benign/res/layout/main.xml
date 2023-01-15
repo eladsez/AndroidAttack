@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff1978f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center|left" android:id="@id/HomeBtn" android:background="@drawable/ic_menu_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" />
+            <Button android:layout_gravity="center|left" android:id="@id/ReloadBtn" android:background="@drawable/ic_menu_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" />
+            <Button android:layout_gravity="center|left" android:id="@id/FavoriteBtn" android:background="@drawable/ic_menu_favorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" />
+            <TextView android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/titleStr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+            <Button android:layout_gravity="center|left" android:id="@id/AddBtn" android:background="@drawable/ic_menu_add" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/webview" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <jp.Adlantis.Android.AdlantisView android:gravity="center" android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+</LinearLayout>

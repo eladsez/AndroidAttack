@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relative3" android:layout_width="fill_parent" android:layout_height="40.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img2" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="40.0px" />
+    <TextView android:textSize="24.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/sptitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="优+画报" />
+</RelativeLayout>
