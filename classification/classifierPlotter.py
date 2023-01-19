@@ -45,7 +45,7 @@ class ClassifierPlotter:
                     recallStd[i] = 1 - recall[i];
             rects1 = ax.bar(ind, recall, width-eps, color='0.8', yerr=recallStd,ecolor="black",hatch="/")
         else:
-            rects1 = ax.bar(ind, result["recall"], width-esp, color='w',hatch="/")
+            rects1 = ax.bar(ind, result["recall"], width, color='w',hatch="/")
         #precision
         ind = ind+width+eps
         if(len(result["precision"].shape)>1):
@@ -228,14 +228,13 @@ class ClassifierPlotter:
         fig.savefig(title + '.png',bbox_inches='tight')
         
      def plotFromPkl(self,filename):
-        datas = pickle.load( open( filename, "rb" ))
-        cm = datas["cnf_matrix"];
-        classes = datas["classes"];
+        datas = pickle.load( open( filename, "rb"))
+        cm = datas["cnf_matrix"]
+        classes = datas["classes"]
         self.plot_confusion_matrix(cm, classes,True)
-        #self.plotStatistic(datas,classes,'20','dfa','svm')
+        self.plotStatistic(datas,classes,'20','dfa','svm')
         #self.plotFeatureOfPackageBox(datas,"com.extend.battery")
         
         
 cl = ClassifierPlotter()
-#cl.plotFromPkl("std.pkl")
-cl.plotFromPkl("exp_finale_svm_0.pkl")
+cl.plotFromPkl("../train_model_classification_0.pkl")

@@ -1,7 +1,0 @@
-{"channel":[
-	{"name":"客车模拟考试","detail":"2011年新版 车型：A1 A3 B1","dburl":"a","version":"1"},
-	{"name":"货车b2模拟考试","detail":"2011年新版 车型：A2 B2","dburl":"b","version":"1"},
-	{"name":"小型汽车考试 (试题2)","detail":"2011年新版 车型 C1 C2 C3","dburl":"c","version":"1"},
-	{"name":"摩托车模拟考试","detail":"2011年新版 车型：D E F","dburl":"d","version":"1"},
-	{"name":"恢复驾驶资格考试","detail":"2011年新版","dburl":"f","version":"1"}
-]}

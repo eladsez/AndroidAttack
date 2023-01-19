@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textColor="#ff666666" android:gravity="center" android:id="@id/number" android:background="@drawable/background" android:layout_width="30.0dip" android:layout_height="30.0dip" />
-</FrameLayout>

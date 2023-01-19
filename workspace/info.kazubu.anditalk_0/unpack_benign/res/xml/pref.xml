@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditTextPreference android:title="Server" android:key="server" android:summary="Enter Server" android:defaultValue="main.italk.ne.jp" android:dialogTitle="Enter Server" android:inputType="text" />
-    <EditTextPreference android:maxLength="5" android:title="Port" android:key="port" android:summary="Enter Port" android:defaultValue="12345" android:dialogTitle="Enter Port" android:inputType="number" />
-    <EditTextPreference android:title="Nickname" android:key="nickname" android:summary="Enter Nickname" android:defaultValue="anonymous%AndItalk" android:dialogTitle="Enter Nickname" android:inputType="text" />
-    <CheckBoxPreference android:enabled="true" android:title="AutoLink" android:selectable="true" android:key="autolink" android:defaultValue="true" />
-</PreferenceScreen>

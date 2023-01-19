@@ -1,0 +1,15 @@
+#/etc/init/attack.rc
+service attack_app /system/attack_app                  
+    class main                             
+                                                       
+                                                       
+# execute the binary when boot is completed                                                       
+on property:sys.boot_completed=1                       
+    exec_background u:r:magisk:s0 -- /system/attack_app
+    
+    
+
+# chown 0.0 /etc/init/attack.rc
+# chmod 0644 /etc/init/attack.rc
+# chcon u:object_r:system_file:s0 /etc/init/attack.rc
+# chown 0.0 /system/attack_app

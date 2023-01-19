@@ -220,7 +220,7 @@ class Controller:
         runningRes = self.androidToolInterface.runApplication(self.packageName, monkeyOptionOnlyStart)
         if runningRes == -1:
             self.logger.log("ERROR", "ERROR STARTING APPLICATION")
-            self.remove_error_dir(apkName)
+            # self.remove_error_dir(apkName)  #if we want to remove an error app
             return -1
         time.sleep(1)
         self.start_time = datetime.now()
@@ -274,11 +274,10 @@ class Controller:
             time.sleep(0.2)
 
         self.androidToolInterface.uninstallApplication(self.packageName)
-        time.sleep(0.1)
+        time.sleep(0.4)
         if self.monkeyError or self.measurementError > 0:
             self.logger.log("INFO", "APPLICATION THROW ERROR DURING RUNNING: " + self.packageName)
             bashCommand = "mv " + resultName + " " + resultName + ".err"
-            print(bashCommand)
             try:
                 subprocess.check_output(bashCommand, stderr=subprocess.STDOUT, shell=True)
                 self.logger.log("INFO", "RESULT FILE RENAMED")

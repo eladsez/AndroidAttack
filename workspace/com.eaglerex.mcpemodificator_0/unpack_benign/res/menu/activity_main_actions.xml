@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:icon="@drawable/ic_action_help" android:id="@id/action_help" android:title="Help" android:showAsAction="always" />
-    <item android:icon="@drawable/ic_action_email" android:id="@id/action_contact" android:title="Contact Me" android:showAsAction="always" />
-</menu>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_gravity="center" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="18.0dip" android:gravity="center" android:id="@id/chooseLbTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Choose which leaderboard to display" />
-    <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/wordsPerMinuteLBButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Words Per Minute Leaderboard" android:layout_below="@id/chooseLbTV" style="@style/Base.Widget.AppCompat.Button.Colored" />
-    <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/noMistakesLBButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Mistakes Leaderboard" android:layout_below="@id/wordsPerMinuteLBButton" android:layout_alignRight="@id/wordsPerMinuteLBButton" android:layout_alignParentLeft="true" android:layout_alignEnd="@id/wordsPerMinuteLBButton" android:layout_alignParentStart="true" style="@style/Base.Widget.AppCompat.Button.Colored" />
-</RelativeLayout>

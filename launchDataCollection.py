@@ -100,7 +100,6 @@ class DataCollection:
         self.logger.log("INFO", "FINISH EXPERIMENT")
 
 
-
 @click.command()
 @click.option("--workspacepath", default="./workspace/", help="Workspace path of apk")
 @click.option("--resultname", default="out_data", help="Prefix of data files")

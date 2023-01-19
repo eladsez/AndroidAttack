@@ -30,9 +30,9 @@ droidScribeFamily = ["bengin", "drebin"]
 
 
 @click.command()
-@click.option('--f', default=["train_model_features.txt"], help='Data file to use. Use multiple times to load multiple files',
+@click.option('--f', default=["attacked_apps_features.txt"], help='Data file to use. Use multiple times to load multiple files',
               multiple=True)
-@click.option('--experimentname', default="classification.txt", help='Name of the experiment, used for saving results')
+@click.option('--experimentname', default="attacked_apps_classification", help='Name of the experiment, used for saving results')
 @click.option('--algorithm', default="rbf", help="algorithm for classification: 'linear':linear svm\n \
 'sgdSvm': linear svm with sgd\n \
 'rbf': non linear svm with rbf kernel\n \
@@ -41,7 +41,7 @@ droidScribeFamily = ["bengin", "drebin"]
 @click.option('--repetition', type=int, default=1, help='number of experiment repetition')
 @click.option('--threshold', type=int, default=2, help="threshold for selecting families. If == 0 use same family as "
                                                        "droid-scribe")
-@click.option('--pathtomodel', type=str, default=None, help="")
+@click.option('--pathtomodel', type=str, default="train_model_classification_0.pkl", help="")
 def mymain(f, experimentname, repetition, algorithm, threshold, pathtomodel):
     warnings.filterwarnings("ignore")
     dataLoader = DataLoader()

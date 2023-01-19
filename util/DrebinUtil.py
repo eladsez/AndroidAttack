@@ -40,6 +40,8 @@ class DrebinUtil:
     # This method read from the dictionary the family of a sample;
     # @param fileName = the name of the sample to find the family  ;  
     def readMalwareFamily(self, fullPath):
+        if self.dictionary == "attack":
+            return "drebin"
         sha256 = subprocess.check_output(f"sha256sum {fullPath}", stderr=subprocess.STDOUT, shell=True).split()[0]
         bashArray = ["grep", sha256, self.dictionary]
         process = subprocess.Popen(bashArray, stdout=subprocess.PIPE, stderr=subprocess.PIPE)

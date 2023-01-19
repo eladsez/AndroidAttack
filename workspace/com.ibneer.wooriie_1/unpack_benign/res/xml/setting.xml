@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference android:title="푸시 알림 설정" android:key="keycheck" android:summary="푸시 알림을 받습니다." android:defaultValue="true" />
-    <CheckBoxPreference android:title="푸시 소리 설정" android:key="sound" android:summary="푸시 알림시 소리로 알려줍니다." android:defaultValue="true" />
-    <CheckBoxPreference android:title="푸시 진동 설정" android:key="vibration" android:summary="푸시 알림시 진동으로 알려줍니다" android:defaultValue="true" />
-    <CheckBoxPreference android:title="푸시 화면 설정" android:key="screen" android:summary="푸시 알림시 화면을 켭니다" android:defaultValue="true" />
-</PreferenceScreen>

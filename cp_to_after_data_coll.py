@@ -13,23 +13,16 @@ def cut_to_dir(path: str):
     return res[::-1]
 
 
-# all_out_data = os.popen("find ./workspace | grep out_data").readlines()
-# data_folders = []
-# for i in all_out_data:
-#     if "err" in i:
-#         continue
-#     folder = cut_to_dir(i)
-#     data_folders.append(folder)
-#
-# for folder in data_folders:
-#     os.popen(f"cp -r {folder} ./after_data_collection")
+all_out_data = os.popen("find ./workspace | grep out_data").readlines()
+data_folders = []
+for i in all_out_data:
+    if "err" in i:
+        continue
+    folder = cut_to_dir(i)
+    data_folders.append(folder)
 
-for dir in os.listdir("./after_data_collection"):
-    apk_name = None
-    for file in dir:
-        if ".apk" in file:
-            apk_name = file
-            break
+for folder in data_folders:
+    os.popen(f"cp -r {folder} ./after_data_collection")
 
 
 

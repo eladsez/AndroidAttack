@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageButton android:id="@id/theme1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/widget_theme1" />
-    <ImageButton android:id="@id/theme2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/widget_theme2" />
-    <ImageButton android:id="@id/theme3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/widget_theme3" />
-    <ImageButton android:id="@id/theme4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/widget_theme4" />
-    <ImageButton android:id="@id/theme5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/widget_theme5" />
-</LinearLayout>

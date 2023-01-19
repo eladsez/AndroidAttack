@@ -60,6 +60,7 @@ class DataLoader:
         data = datas["featureMatrix"]
         packageStr = datas["packetLabels"]
         familyStr = self.cleanFamilyName(datas["familyLabels"])
+        # familyStr = ["bengin", "drebin"]  # Elad added
         packageEncoder = preprocessing.LabelEncoder()
         package = packageEncoder.fit_transform(packageStr)
         familyEncoder = preprocessing.LabelEncoder()

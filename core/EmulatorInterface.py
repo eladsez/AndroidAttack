@@ -146,6 +146,7 @@ class EmulatorInterface:
             return 0
         except subprocess.CalledProcessError as e:
             self.timeout = True
+            print(e)
             self.logger.log("ERROR", "ERROR WAITING FOR DEVICE, TRY AGAIN")
             return -1
 
@@ -180,7 +181,7 @@ class EmulatorInterface:
 
     # This method force the adb to connect to localhost:5555;
     def adbConnect(self, count=0):
-        bashCommand = ["timeout 30 adb connect 192.168.28.149:5555"]
+        bashCommand = ["timeout 30 adb connect 192.168.56.103:5555"]
         try:
             self.logger.log("DEBUG", "TRYING TO CONNECT TROUGH ADB TO THE DEVICE")
             wait = True
